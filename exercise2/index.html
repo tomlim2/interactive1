@@ -1,0 +1,179 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+	<title>
+		Exercise 2 - Card
+	</title>
+	<style>
+
+		body {
+		  font-family: 'Noto Sans', sans-serif;
+      background-color: #4b7293;
+		}
+
+		.card {
+      transition: all 0.5s ease;/*빠르고 느리게*/
+			text-align: center;
+			width: 200px;
+			height: 350px;
+			margin: 50px auto;
+			background-color: black;
+			font-size: 12px;
+			color: white;
+		}
+
+		.logo {
+			padding: 30px 0 0;
+		}
+
+		.logo img {
+			vertical-align: middle;
+			width: 60px;
+			border-radius: 50%;
+			border:1px solid #EEE;
+			position: relative;
+			top:-3px;
+		}
+
+		.content {
+			height: 100%;
+			position: relative;
+		}
+
+		.name {
+			color: #EEE;
+			font-size: 16px;
+			font-weight: 700;
+			padding: 5px 0 0;
+			line-height: 1.0em;
+      color: #f6c755;
+		}
+
+		.contact {
+			padding: 20px 0;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
+    .bio{
+      display: none;
+    }
+
+
+    @media screen and (min-width: 768px) {
+      body{
+        background-color: #f6c755;
+      }
+
+      .card {
+        text-align: left;
+  			width: 400px;
+  			height: 350px;
+  			background-color: #4b7293;
+  			color: #CCC;
+  		}
+
+      .name {
+        font-size: 28px;
+        font-weight: 700;
+        color: black;
+      }
+      .title{
+        font-size: 14px;
+        color: white;
+      }
+      .logo{
+        float: left;
+        padding: 20px;
+      }
+      .text{
+        float: left;
+        padding: 20px 5px;
+      }
+      .contact{
+        font-size: 14px;
+        padding-left: 180px;
+        bottom: 20px;
+        color: white;
+        width: 50%;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      body{
+        background-color: black;
+      }
+
+      .card{
+        background-color: black;
+        transform: rotate(3deg);
+        width: 800px;
+        background-color: #f6c755;
+      }
+      .name{
+        font-size: 32px;
+        color: #4b7293;
+      }
+
+      .bio{
+        float: right;
+        display: block;
+        width: 25%;
+        font-style: italic;
+        padding: 10px;
+        color: black;
+      }
+      .contact{
+        color: white;
+        font-size: 16px;
+      }
+    }
+	</style>
+</head>
+
+<body>
+
+	<div class="card">
+		<div class="content">
+
+			<div class="logo">
+				<img src="logo-mark.jpg" />
+			</div>
+
+			<div class="text">
+
+				<div class="name">Tom</div>
+				<div class="title">Designer</div>
+
+			</div>
+
+			<div class="contact">
+				yousookang@cca.edu<br />
+				510-525-3525<br />
+				San Francisco, CA
+			</div>
+
+      <div class="bio">
+        Typography is a tool of communication.
+
+        It must be communication in its most intense form.
+
+        The emphasis must be on absolute clarity since this distinguishes the character of our own writing from that of ancient pictographic forms.
+
+        Our intellectual relationship to the world is individual-exact (e.g.,this individual-exact relationship is in a state of transition toward a collective-exact orientation).
+
+        This is in contrast to the ancient individual-amorphous and later collective-amorphous mode of communication.
+
+      </div>
+
+		</div>
+	</div>
+
+</body>
+</html>

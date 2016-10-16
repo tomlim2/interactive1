@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+
+		<title>exercise3-Animation</title>
+		<style>
+			.ball2{
+				width: 20px;
+				height: 20px;
+
+
+			}
+			.ball{
+					width: 200px;
+					height: 200px;
+					background-color: red;
+					border-radius: 50%;
+					animation: bounce 10s alternate infinite;
+					   /* the above line is a shortcode for:
+
+					     animation-name: bounce;
+					     animation-duration: 0.25s;
+					     animation-direction: alternate;
+					     animation-iteration-count: infinite;
+					   */
+					position: absolute;
+					left: 50%;
+				}
+				@keyframes bounce {
+					  from {
+					    top:0px;
+							left: 0px;
+					  }
+					  to {
+							left: 70%;
+							top:50%;
+					  }
+				}
+
+		</style>
+	</head>
+
+	<body>
+
+		<div class="ball"></div>
+		<div class="ball2">
+
+		</div>
+
+	</body>
+</html>

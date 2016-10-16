@@ -1,0 +1,230 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <title>
+    Exercise 3
+  </title>
+  <style>
+
+	  .stage {
+	  	border: 1px solid #000;
+	  	background-color: #EEE;
+	  	width: 600px;
+	  	height: 600px;
+	  	margin: 100px auto;
+	  	overflow: hidden; /* hide nested elements when it is outside the stage */
+	  	position: relative;
+	  }
+
+  	.arrow {
+  		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 25px 0 25px 50px;
+		border-color: transparent transparent transparent #000;
+		/* triangle generator: http://apps.eky.hk/css-triangle-generator/ */
+  	}
+
+    .arrow2 {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 50px 100px 50px 0;
+      border-color: transparent #007bff transparent transparent;
+		/* triangle generator: http://apps.eky.hk/css-triangle-generator/ */
+  	}
+
+    .arrow3 {
+  		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 25px 0 25px 50px;
+		border-color: transparent transparent transparent red;
+  	}
+
+  	.arr1 {
+  		animation: across 3s infinite;
+  		position: absolute;
+  		/*left: -100px;
+  		top: 100px; over paste*/
+  	}
+
+  	.arr2 {
+  		animation: down 5s infinite;
+  		transform: rotate(90deg);
+  		position: absolute;
+  		/*top: -100px;
+  		left: 200px;*/
+  	}
+
+  	.arr3 {
+  		animation: whale 15s infinite;
+		border-width: 200px 0 200px 400px;
+		opacity: 0.5;
+  		transform: rotate(180deg);
+  		position: absolute;
+  		/*right: -400px;
+  		top: 250px;*/
+  	}
+
+  	.arr4 {
+  		animation: diagonal 2s infinite;
+		  border-color: transparent transparent transparent #FFCD55;
+  		transform: rotate(45deg);
+  		position: absolute;
+  		/*top: -100px;
+  		left: -100px;*/
+  	}
+
+  	.arr5 {
+  		animation: around 12s infinite;
+      border-color: transparent green transparent transparent;
+  		transform: rotate(0);
+  		position: absolute;
+  		/*top: 50px;
+  		left: 50px;*/
+  	}
+
+  	.arr6 {
+  		transform-origin: 200% 200px;
+  		animation: circling 5s linear infinite;
+  		position: absolute;
+  		top: 20%;
+  		left: 20%;
+  	}
+
+    .arr7 {
+  		transform-origin: 100% 200px;
+  		animation: circling2 10s linear infinite;
+  		position: absolute;
+  		top: 30%;
+  		left: 30%;
+
+  	}
+
+	@keyframes across {
+	  from {
+	    left: -100px;
+	  }
+	  to {
+	    left: 700px;
+	  }
+	}
+
+	@keyframes down {
+	  from {
+	    top: -100px;
+	  }
+	  to {
+	    top: 700px;
+	  }
+	}
+
+	@keyframes whale {
+	  from {
+	    right: -400px;
+	  }
+	  to {
+	    right: 700px;
+	  }
+	}
+
+	@keyframes diagonal {
+	  0% {
+	  	top: -100px;
+	    left: -100px;
+	  }
+	  70% {
+	  	top: 100px;
+	    left: 100px;
+	  }
+	  100% {
+	  	top: 700px;
+	    left: 700px;
+	  }
+	}
+
+	@keyframes around {
+	  0% {
+	  	top: 50px;
+	    left: 50px;
+	  }
+	  24% {
+	  	transform: rotate(0deg);
+	  }
+	  25% {
+	  	transform: rotate(90deg);
+	  	top: 50px;
+	    left: 500px;
+	  }
+	  49% {
+	  	transform: rotate(90deg);
+	  }
+	  50% {
+	  	transform: rotate(180deg);
+	  	top: 500px;
+	    left: 500px;
+	  }
+	  74% {
+	  	transform: rotate(180deg);
+	  }
+	  75% {
+	  	transform: rotate(270deg);
+	  	top: 500px;
+	    left: 50px;
+	  }
+	  99% {
+	  	transform: rotate(270deg);
+	  }
+	  100% {
+	  	transform: rotate(360deg);
+	  	top: 50px;
+	    left: 50px;
+	  }
+	}
+
+	@keyframes circling {
+	    from {
+	    	transform:rotate(0deg);
+	    }
+	    to {
+	    	transform:rotate(360deg);
+	    }
+	}
+
+  @keyframes circling2 {
+	    from {
+	    	transform:rotate(0deg);
+	    }
+	    to {
+	    	transform:rotate(-360deg);
+	    }
+	}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="stage">
+
+  	<div class="arrow arr1"></div>
+
+  	<div class="arrow arr2"></div>
+
+  	<div class="arrow arr3"></div>
+
+  	<div class="arrow arr4"></div>
+
+    <div class="arrow arr5"></div>
+
+  	<div class="arrow3 arr6"></div>
+
+    <div class="arrow2 arr7"></div>
+  </div>
+
+</body>
+</html>

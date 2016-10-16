@@ -1,0 +1,272 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
+  <title>
+    Project2 - Interactive Poster
+  </title>
+  <style>
+    body{
+      background-color: black
+    }
+	  .stage {
+	  	/*border: 1px solid #000;*/
+	  	background-color: #fffef7;
+	  	width: 800px;
+	  	height: 600px;
+	  	margin: 100px auto;
+	  	overflow: hidden; /* hide nested elements when it is outside the stage */
+	  	position: relative;
+	  }
+    .title1{
+      font-size: 40px;
+      position: absolute;
+      left: 90px;
+      top: 50px;
+      padding: 20px;
+      text-align: center;
+      border: dotted 5px black;
+      font-family: 'Bungee Inline', cursive;
+      color: #555555;
+      background-color: #FFCD55;
+    }
+
+  	.people1 {
+  		width: 80px;
+		  height: 80px;
+  		border-radius: 50%;
+      background-color: red;
+      /*border: 5px solid;
+  		border-color: transparent transparent transparent #000;*/
+  		/* triangle generator: http://apps.eky.hk/css-triangle-generator/ */
+  	}
+
+    .peoplebody{
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 60px 200px 60px;
+      border-color: transparent transparent #404040 transparent;
+    }
+
+    .smilemole{
+      width: 80px;
+		  height: 80px;
+  		border-radius: 50%;
+      background-color: #555555;
+      position: absolute;
+      top: 40px;
+      left: 60px;
+    }
+
+    .machinebox1{
+      width: 200px;
+      height: 160px;
+      position: absolute;
+      top: 175px;
+      left: 300px;
+      background-color: #707070;
+    }
+
+    .machinebody{
+      width: 200px;
+      height: 240px;
+      background-color: #555555;
+      position: absolute;
+      top: 360px;
+      left: 300px;
+    }
+
+    .contecter1{
+      width: 25px;
+      height: 25px;
+      background-color: #555555;
+      position: absolute;
+      top: 335px;
+      left: 325px;
+      z-index: 2;
+    }
+    .contecter2{
+      width: 25px;
+      height: 25px;
+      background-color: #555555;
+      position: absolute;
+      top: 335px;
+      left: 450px;
+      z-index: 2;
+    }
+    .contecter3{
+      width: 25px;
+      height: 25px;
+      background-color: #707070;
+      position: absolute;
+      top: 335px;
+      left: 350px;
+      z-index: 2;
+    }
+    .contecter4{
+      width: 25px;
+      height: 25px;
+      background-color: #707070;
+      position: absolute;
+      top: 335px;
+      left: 425px;
+      z-index: 2;
+    }
+    .contecter5{
+      width: 56px;
+      height: 20px;
+      background-color: #464646;
+      position: absolute;
+      top: 338px;
+      left: 322px;
+      z-index: 1;
+    }
+    .contecter6{
+      width: 56px;
+      height: 20px;
+      background-color: #464646;
+      position: absolute;
+      top: 338px;
+      left: 422px;
+      z-index: 1;
+    }
+
+  	.movement1 {
+  		animation: processing1 20s infinite;
+  		position: absolute;
+      z-index: 2;
+  	}
+    .movement2 {
+      animation: processing2 20s infinite;
+      position: absolute;
+      z-index: 1;
+    }
+    .movement3{
+      animation: processing3 20s infinite;
+      position: absolute;
+      z-index: 10;
+    }
+
+
+
+	@keyframes processing1 {
+	  0% {
+      top: 450px;
+	    left: 900px;
+      background-color: red;
+	  }
+	  20% {
+	  	top: 450px;
+	    left: 360px;
+	  }
+    25% {
+      top: 400px;
+      left: 360px;
+      background-color: red;
+    }
+    75% {
+      top: 400px;
+      left: 360px;
+      background-color: #FFCD55;
+    }
+    80% {
+      top: 450px;
+      left: 360px;
+    }
+
+	  100% {
+      top: 450px;
+	    left: -100px;
+      background-color: #FFCD55;
+	  }
+	}
+
+  @keyframes processing2 {
+	  0% {
+      top: 510px;
+	    left: 880px;
+	  }
+	  20% {
+	  	top: 510px;
+	    left: 340px;
+	  }
+    25% {
+      top: 460px;
+      left: 340px;
+    }
+    75% {
+      top: 460px;
+      left: 340px;
+    }
+    80% {
+      top: 510px;
+      left: 340px;
+    }
+
+	  100% {
+      top: 510px;
+	    left: -120px;
+	  }
+	}
+
+  @keyframes processing3 {
+	  0% {
+      top: 175px;
+      left: 300px;
+	  }
+	  20% {
+      top: 175px;
+      left: 300px;
+	  }
+    26% {
+      top: 175px;
+      left: 300px;
+	  }
+    27% {
+      top: 360px;
+      left: 300px;
+    }
+    70% {
+      top: 360px;
+      left: 300px;
+    }
+    75% {
+      top: 175px;
+      left: 300px;
+    }
+
+	  100% {
+      top: 175px;
+      left: 300px;
+	  }
+	}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="stage">
+    <div class="title1">Smile Press Community</div>
+
+    <div class="machinebox1 movement3">
+      <div class="smilemole"></div>
+    </div>
+
+    <div class="contecter1"></div><div class="contecter2"></div>
+    <div class="contecter3"></div><div class="contecter4"></div>
+    <div class="contecter5"></div><div class="contecter6"></div>
+    <div class="machinebody active1"></div>
+
+    <div class="people1 movement1"></div>
+    <div class="peoplebody movement2"></div>
+
+
+
+  </div>
+
+</body>
+</html>

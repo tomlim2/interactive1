@@ -121,7 +121,7 @@
     }
 
 
-    /*person1*/
+    /*person1 devil*/
     .person1{
       height: 210px;
       width: 300px;
@@ -180,11 +180,23 @@
       border-left: black solid 3px;
       transform: rotate(60deg);
     }
+    .person1nose{
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 5px 10px 5px;
+      border-color: transparent transparent #ffac60 transparent;
+      position: absolute;
+      top: 33px;
+      left: 50%;
+      margin-left: -5px;
+
+    }
     .person1mouth{
       position: absolute;
       left: 50%;
       margin-left: -14px;
-      top: 45px;
+      top: 47px;
       width: 26px;
       height: 4px;
       border-bottom-right-radius: 14px;
@@ -207,9 +219,176 @@
       z-index: 1;
     }
 
+    /*person2 fishman*/
+    .person2{
+      height: 210px;
+      width: 300px;
+      position: absolute;
+      top: 450px;
+      left: 50%;
+      margin-left: -150px;
+    }
+    .person2face{
+      width: 80px;
+      height: 65px;
+      border-radius: 50%;
+      background-color: #3bc5c8;
+      position: absolute;
+      top:-3px;
+      left: 50%;
+      margin-left: -40px;
+      z-index: 2;
+    }
+    .person2horn1{
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 20px 30px 20px;
+      border-color: transparent transparent #3bc5c8 transparent;
+      position: absolute;
+      top: 16px;
+      left: 180px;
+      transform: rotate(-90deg);
+    }
+    .person2eyer{
+      position: absolute;
+      left: 8px;
+      top: 25px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #096a63;
+      transform: rotate(120deg);
+    }
+    .person2mouth{
+      position: absolute;
+      left: 7px;
+      top: 43px;
+      width: 13px;
+      height: 6px;
+      border-bottom-right-radius: 14px;
+      border-bottom-left-radius: 14px;
+      border-bottom: black solid 2px;
+      border-left: black 2px solid;
+      border-right: black 2px solid;
+    }
 
+    /*person3 earman*/
+    .person3{
+      height: 210px;
+      width: 300px;
+      position: absolute;
+      top: 450px;
+      left: 50%;
+      margin-left: -150px;
+    }
+    .person3face{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #f8d291;
+      position: absolute;
+      left: 50%;
+      margin-left: -30px;
+      z-index: 2;
+    }
+    .person3earl{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: #f8d291;
+      top: 20px;
+      left: 107px;
+    }
+    .person3earul{
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: #f8d291;
+      top: 37px;
+      left: 104px;
+    }
+    .person3earr{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: #f8d291;
+      top: 20px;
+      left: 172px;
+    }
+    .person3earur{
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: #f8d291;
+      position: absolute;
+      top: 37px;
+      left: 169px;
+    }
+    .person3eyel{
+      position: absolute;
+      left: 38px;
+      top: 38px;
+      width: 8px;
+      height: 5px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom: black solid 2px;
+      border-left: black 2px solid;
+      border-right: black 2px solid;
+    }
+    .person3eyer{
+      position: absolute;
+      left: 10px;
+      top: 38px;
+      width: 8px;
+      height: 5px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom: black solid 2px;
+      border-left: black 2px solid;
+      border-right: black 2px solid;
+    }
+    .person3nose{
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: #e9a844;
+      top: 40px;
+      left: 23px;
+
+    }
+    .person3mouth{
+      position: absolute;
+      left: 23px;
+      top: 52px;
+      width: 12px;
+      height: 5px;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom: black solid 2px;
+      border-left: black 2px solid;
+      border-right: black 2px solid;
+    }
+    .person3body{
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 45px 150px 45px;
+      border-color: transparent transparent #404040 transparent;
+      position: absolute;
+      top: 45px;
+      left: 50%;
+      margin-left: -45px;
+      z-index: 1;
+    }
 
     /* PEOPLE ANIMATION */
+    /*person1*/
     .p1movement1 {
       animation: p1processing1 40s infinite;
       position: absolute;
@@ -227,6 +406,13 @@
       z-index: 1;
     }
 
+    /*person2*/
+    .p2movement5 {
+      animation: p2processing5 40s infinite;
+      position: absolute;
+      z-index: 2;
+    }
+
     .movement5{
       animation: processing5 40s infinite;
       position: absolute;
@@ -236,6 +422,13 @@
       animation: processing6 40s infinite;
       position: absolute;
       z-index: 1;
+    }
+
+    /*person3*/
+    .p3movement7 {
+      animation: p3processing7 40s infinite;
+      position: absolute;
+      z-index: 2;
     }
 
     .movement7{
@@ -272,6 +465,7 @@
       z-index: 1;
     }
 
+    /*person1*/
     @keyframes processing1 {
   	  0% {
         top: 500px;
@@ -453,7 +647,7 @@
   	    left: 885px;
       }
   	}
-
+    /*person1devil*/
     @keyframes p1processing1 {
   	  0% {
         top: 500px;
@@ -540,17 +734,18 @@
       }
   	}
 
+    /*person2*/
     @keyframes processing5 {
       0%{
         top: 60px;
         left: 610px;
-        background-color: red;
+        background-color: #1a938c;
         transform: rotate(180deg);
+        opacity: 0;
       }
       17%{
         top: 60px;
         left: 610px;
-        background-color: red;
       }
       18%{
         top: 60px;
@@ -562,15 +757,9 @@
         left: 900px;
         transform: rotate(0deg);
       }
-      20%{
-        top: 500px;
-  	    left: 900px;
-        background-color: red;
-      }
   	  20% {
         top: 500px;
   	    left: 900px;
-        background-color: red;
   	  }
   	  24% {
   	  	top: 500px;
@@ -579,12 +768,13 @@
       25% {
         top: 450px;
         left: 370px;
-        background-color: red;
+        background-color: #1a938c;
       }
       35% {
         top: 450px;
         left: 370px;
         background-color: #FFCD55;
+        opacity: 1;
       }
       36% {
         top: 500px;
@@ -627,12 +817,14 @@
       99%{
         top: 60px;
         left: 450px;
+        opacity: 1;
       }
       100%{
         top: 60px;
         left: 610px;
-        background-color: red;
+        background-color: #1a938c;
         transform: rotate(180deg);
+        opacity: 0;
       }
   	}
     @keyframes processing6 {
@@ -724,12 +916,106 @@
         left: 595px;
       }
   	}
+    /*person2fishman*/
+    @keyframes p2processing5 {
+      0%{
+        top: -90px;
+        left: 640px;
+        transform: rotate(180deg);
+        opacity: 1;
+      }
+      17%{
+        top: -90px;
+        left: 640px;
+      }
+      18%{
+        top: -90px;
+        left: 930px;
+        transform: rotate(180deg);
+      }
+      19%{
+        top: -90px;
+        left: 930px;
+        transform: rotate(0deg);
+      }
+      20%{
+        top: 500px;
+        left: 930px;
+      }
+      20% {
+        top: 500px;
+        left: 930px;
+        transform: rotate(0deg);
+      }
+      24% {
+        top: 500px;
+        left: 400px;
+      }
+      25% {
+        top: 450px;
+        left: 400px;
+      }
+      30%{
+        opacity: 1;
+      }
+      35% {
+        top: 450px;
+        left: 400px;
+        opacity: 0;
+      }
+      36% {
+        top: 500px;
+        left: 400px;
+      }
+      38% {
+        top: 500px;
+        left: -700px;
+        transform: rotate(0deg);
+      }
+      39%{
+        top: -90px;
+        left: -70px;
+        transform: rotate(180deg);
+      }
+      40%{
+        top: -90px;
+        left: 160px;
+      }
+      59%{
+        top: -90px;
+        left: 160px;
+      }
+      60%{
+        top: -90px;
+        left: 320px;
+      }
+      79%{
+        top: -90px;
+        left: 320px;
+      }
+      80%{
+        top: -90px;
+        left: 480px;
+      }
+      99%{
+        top: -90px;
+        left: 480px;
+        opacity: 0;
+      }
+      100%{
+        top: -90px;
+        left: 640px;
+        opacity: 1;
+        transform: rotate(180deg);
+      }
+    }
 
+    /*person3*/
     @keyframes processing7 {
       0%{
         top: 60px;
         left: 450px;
-        background-color: red;
+        background-color: #f8d291;
         transform: rotate(180deg);
       }
       19%{
@@ -743,7 +1029,6 @@
       37%{
         top: 60px;
         left: 610px;
-        background-color: red;
       }
       38%{
         top: 60px;
@@ -758,13 +1043,7 @@
       40%{
         top: 500px;
   	    left: 900px;
-        background-color: red;
       }
-  	  40% {
-        top: 500px;
-  	    left: 900px;
-        background-color: red;
-  	  }
   	  44% {
   	  	top: 500px;
   	    left: 370px;
@@ -772,7 +1051,7 @@
       45% {
         top: 450px;
         left: 370px;
-        background-color: red;
+        background-color: #f8d291;
       }
       55% {
         top: 450px;
@@ -782,12 +1061,10 @@
       56% {
         top: 500px;
         left: 370px;
-        background-color: #FFCD55;
       }
       58% {
         top: 500px;
   	    left: -100px;
-        background-color: #FFCD55;
         transform: rotate(0deg);
   	  }
       59%{
@@ -806,7 +1083,6 @@
       80%{
         top: 60px;
         left: 290px;
-        background-color: #FFCD55;
       }
       99%{
         top: 60px;
@@ -817,6 +1093,7 @@
         top: 60px;
         left: 450px;
         transform: rotate(180deg);
+        background-color: #f8d291;
       }
 
   	}
@@ -907,6 +1184,99 @@
         transform: rotate(180deg);
         top: -75px;
         left: 435px;
+      }
+  	}
+    /*person3earman*/
+    @keyframes p3processing7 {
+      0%{
+        top: -90px;
+        left: 480px;
+        opacity: 0;
+        transform: rotate(180deg);
+      }
+      19%{
+        top: -90px;
+        left: 480px;
+        opacity: 0;
+      }
+      20%{
+        top: -90px;
+        left: 640px;
+        opacity: 1;
+      }
+      37%{
+        top: -90px;
+        left: 640px;
+      }
+      38%{
+        top: -90px;
+        left: 930px;
+        transform: rotate(180deg);
+      }
+      39%{
+        top: -90px;
+        left: 930px;
+        transform: rotate(0deg);
+      }
+      40%{
+        top: 500px;
+  	    left: 930px;
+      }
+  	  40% {
+        top: 500px;
+  	    left: 930px;
+        transform: rotate(0deg);
+  	  }
+  	  44% {
+  	  	top: 500px;
+  	    left: 400px;
+  	  }
+      45% {
+        top: 450px;
+        left: 400px;
+      }
+      50%{
+        opacity: 1;
+      }
+      55% {
+        top: 450px;
+        left: 400px;
+        opacity: 0;
+      }
+      56% {
+        top: 500px;
+        left: 400px;
+      }
+      58% {
+        top: 500px;
+  	    left: -700px;
+        transform: rotate(0deg);
+  	  }
+      59%{
+        top: -90px;
+        left: -70px;
+        transform: rotate(180deg);
+      }
+      60%{
+        top: -90px;
+        left: 160px;
+      }
+      79%{
+        top: -90px;
+        left: 160px;
+      }
+      80%{
+        top: -90px;
+        left: 320px;
+      }
+      99%{
+        top: -90px;
+        left: 320px;
+      }
+      100%{
+        top: -90px;
+        left: 480px;
+        opacity: 0;
       }
   	}
 
@@ -1586,6 +1956,7 @@
         <div class="person1face">
           <div class="person1eyer"></div>
           <div class="person1eyel"></div>
+          <div class="person1nose"></div>
           <div class="person1mouth"></div>
         </div>
       <div class="person1body">
@@ -1596,7 +1967,7 @@
   </div>
     <!-- person1 end-->
 
-
+    <!-- person2 start -->
     <div class="people1 movement5">
       <div class="smilefaceeye"></div>
       <div class="smilefacemouth"></div>
@@ -1606,7 +1977,22 @@
       <div class="ribonip"></div>
       <div class="ribonip1"></div>
     </div>
+    <!-- person2 fish -->
+    <div class="person2 p2movement5">
+        <div class="person2horn1"></div>
+        <div class="person2face">
+          <div class="person2eyer"></div>
+          <div class="person2mouth"></div>
+        </div>
+      <div class="person1body">
+        <div class="suitup"></div>
+        <div class="ribonip"></div>
+        <div class="ribonip1"></div>
+      </div>
+  </div>
+    <!-- person2 end -->
 
+    <!-- person3 start-->
     <div class="people1 movement7">
       <div class="smilefaceeye"></div>
       <div class="smilefacemouth"></div>
@@ -1616,6 +2002,27 @@
       <div class="ribonip"></div>
       <div class="ribonip1"></div>
     </div>
+
+
+    <!-- person3 earman -->
+    <div class="person3 p3movement7">
+        <div class="person3earr"></div>
+        <div class="person3earur"></div>
+        <div class="person3earl"></div>
+        <div class="person3earul"></div>
+        <div class="person3face">
+          <div class="person3eyer"></div>
+          <div class="person3eyel"></div>
+          <div class="person3nose"></div>
+          <div class="person3mouth"></div>
+        </div>
+      <div class="person1body">
+        <div class="suitup"></div>
+        <div class="ribonip"></div>
+        <div class="ribonip1"></div>
+      </div>
+  </div>
+    <!-- person3 end-->
 
     <div class="people1 movement9">
       <div class="smilefaceeye"></div>

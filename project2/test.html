@@ -60,60 +60,97 @@
     }
 
     .people1 {
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      background-color: #3bc5c8;
+      width: 70px;
+      height: 70px;
+      background-color: #d7e7a0;
       position: absolute;
       left: 50%;
-      margin-left: -30px;
+      margin-left: -35px;
       z-index: 2;
       /* triangle generator: http://apps.eky.hk/css-triangle-generator/ */
     }
 
-    .person1horn1{
+    .person1{
+      height: 210px;
+      width: 300px;
+      position: absolute;
+      top: 450px;
+      left: 50%;
+      margin-left: -150px;
+    }
+    .person1face{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #e6163a;
+      position: absolute;
+      left: 50%;
+      margin-left: -30px;
+      z-index: 2;
+    }
+    .person1ear1{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 25px;
+      left: 95px;
+      background-color: #d7e7a0;
+    }
+    .person1ear2{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 25px;
+      left: 185px;
+      background-color: #d7e7a0;
+    }
+    .person1eyel{
+      position: absolute;
+      left: 10px;
+      top: 20px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: #485e1e;
+    }
+    .person1eyer{
+      position: absolute;
+      left: 46px;
+      top: 20px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background-color: #485e1e;
+    }
+    .person1nose{
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 0 20px 30px 20px;
-      border-color: transparent transparent #3bc5c8 transparent;
+      border-width: 0 7px 60px 7px;
+      border-color: transparent transparent #a0cf67 transparent;
       position: absolute;
-      top: 16px;
-      left: 170px;
-      transform: rotate(-90deg);
-    }
+      top: 14px;
+      left: 25px;
+      transform: rotate(270deg);
 
-    .person1eyel{
-      position: absolute;
-      left: 8px;
-      top: 25px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: #096a63;
-      transform: rotate(120deg);
     }
-    /*.person1eyer{
-      position: absolute;
-      left: 38px;
-      top: 32px;
-      width: 16px;
-      height: 12px;
-      border-left: black solid 3px;
-      transform: rotate(60deg);
-    }*/
-
     .person1mouth{
       position: absolute;
-      left: 7px;
-      top: 43px;
-      width: 13px;
-      height: 6px;
-      border-bottom-right-radius: 14px;
-      border-bottom-left-radius: 14px;
-      border-bottom: black solid 2px;
-      border-left: black 2px solid;
-      border-right: black 2px solid;
+      left: 45px;
+      top: 51px;
+      width: 9px;
+      height: 9px;
+      border-bottom: #485e1e solid 2px;
+      border-left: #485e1e 2px solid;
+      transform: rotate(-45deg);
+    }
+    .person1hat{
+      width: 60px;
+      height: 20px;
+      background-color: red;
+      position: absolute;
+      top: -20px;
+      left: 50px;
     }
     .suitup{
       width: 0;
@@ -167,13 +204,17 @@
 
 
     <div class="human1 movement1">
-        <div class="person1horn1"></div>
-        <div class="person1horn2"></div>
+        <div class="person1hat">
+
+        </div>
+        <div class="person1ear1"></div>
+        <div class="person1ear2"></div>
         <div class="people1">
           <div class="person1eyer"></div>
           <div class="person1eyel"></div>
           <div class="person1mouth"></div>
-          <div class="mouth">
+          <div class="person1nose"></div>
+          <div class="person1mouth">
           </div>
         </div>
       <div class="peoplebody">

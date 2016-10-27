@@ -20,15 +20,719 @@
   	  	overflow: hidden; /* hide nested elements when it is outside the stage */
   	  	position: relative;
   	  }
-      .centercheck{
-        width: 170px;
-        height:15px;
+ /*conferenceroom*/
+      .conferenceroom{
+        width: 700px;
+        height: 400px;
         position: absolute;
-        left:50%;
-        margin-left: -85px;
-        background-color: #436370;
-        z-index: 10;
-        bottom: 0;
+        left: 50px;
+        top:130px;
+        overflow: hidden;
+        background-color: #9bd4cb;
+
+      }
+      .conferencetable1{
+        width: 700px;
+        height: 100px;
+        position: absolute;
+        top: 300px;
+        background-color: #6bc1bc;
+
+      }
+      .cman {}
+      .cmanface {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #e1ca72;
+        position: absolute;
+        /* triangle generator: http://apps.eky.hk/css-triangle-generator/ */
+      }
+      .cman1eyes{
+        position: absolute;
+        left: 50%;
+        top: 25px;
+        margin-left: -9px;
+        width: 14px;
+        height: 10px;
+        border-right: #2d3836 solid 2px;
+        border-left: #2d3836 solid 2px;
+      }
+      .cman1mouth{
+        position: absolute;
+        left: 50%;
+        margin-left: -11px;
+        top: 38px;
+        width: 18px;
+        height: 8px;
+        border-bottom-right-radius: 14px;
+        border-bottom-left-radius: 14px;
+        border-bottom: #2d3836 solid 2px;
+        border-left: #2d3836 2px solid;
+        border-right: #2d3836 2px solid;
+      }
+      .cman1body {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 30px 120px 30px;
+        border-color: transparent transparent #495a59 transparent;
+        position: absolute;
+        top: 38px;
+        left: -5px;
+      }
+      .cman1suit{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 3px 15px 3px;
+        border-color: transparent transparent #e1f3f2 transparent;
+        position: absolute;
+        top: 47px;
+        left: 22px;
+        transform: rotate(180deg);
+      }
+      .cman1ribon1{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 0 6px 12px;
+        border-color: transparent transparent transparent #d1414a;
+        position: absolute;
+        top:-2px;
+        left: -10px;
+      }
+      .cman1ribon2{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 12px 6px 0;
+        border-color: transparent #d1414a transparent transparent;
+        position: absolute;
+        top:-2px;
+        left: -2px;
+      }
+      .cman2face{
+        background-color: #e0ce7f;
+      }
+      .cman2eyes{
+        border-right: #3a4b48 solid 2px;
+        border-left: #3a4b48 solid 2px;
+      }
+      .cman2mouth{
+        border-bottom: #3c4d4a solid 2px;
+        border-left: #3c4d4a 2px solid;
+        border-right: #3c4d4a 2px solid;
+      }
+      .cman2body{
+        border-color: transparent transparent #5b6c69 transparent;
+      }
+      .cman2suit{
+        border-color: transparent transparent #e1f2f0 transparent;
+      }
+      .cman2ribon1{
+        border-color: transparent transparent transparent #d3565d;
+      }
+      .cman2ribon2{
+        border-color: transparent #d3565d transparent transparent;
+      }
+      .cmanplacement1{
+        position: absolute;
+        top: 310px;
+        left: 80px;
+      }
+      .cmanplacement2{
+        position: absolute;
+        top: 310px;
+        left: 210px;
+      }
+      .cmanplacement3{
+        position: absolute;
+        top: 310px;
+        left: 330px;
+      }
+      .cmanplacement4{
+        position: absolute;
+        top: 310px;
+        left: 450px;
+      }
+      .cmanplacement5{
+        position: absolute;
+        top: 310px;
+        left: 570px;
+      }
+      .cmanplacement6{
+        position: absolute;
+        top: 200px;
+        left: 50px;
+      }
+      .cmanplacement7{
+        position: absolute;
+        top: 200px;
+        left: 180px;
+      }
+      .cmanplacement8{
+        position: absolute;
+        top: 200px;
+        left: 310px;
+      }
+      .cmanplacement9{
+        position: absolute;
+        top: 200px;
+        left: 440px;
+      }
+      .cmanplacement10{
+        position: absolute;
+        top: 200px;
+        left: 570px;
+      }
+
+
+/*conferencemen animation*/
+      .cmanmove1{
+        animation: cman1p1 40s infinite;
+      }
+      .cmanmove2{
+        animation: cman1p2 40s infinite;
+      }
+      .cmanmove3{
+        animation: cman1p3 40s infinite;
+      }
+      .cmanmove4{
+        animation: cman1p4 40s infinite;
+      }
+      .cmanmove5{
+        animation: cman1p5 40s infinite;
+      }
+      .cmanmove6{
+        animation: cman2p6 40s infinite;
+      }
+      .cmanmove7{
+        animation: cman2p7 40s infinite;
+      }
+      .cmanmove8{
+        animation: cman2p8 40s infinite;
+      }
+      .cmanmove9{
+        animation: cman2p9 40s infinite;
+      }
+      .cmanmove10{
+        animation: cman2p10 40s infinite;
+      }
+
+      @keyframes cman1p1 {
+        0% {
+          left: 80px;
+          opacity: 1;
+    	  }
+        19%{
+          left: 80px;
+        }
+        20%{
+          left: 210px;
+        }
+        39%{
+          left: 210px;
+        }
+        40%{
+          left: 340px;
+        }
+        59%{
+          left: 340px;
+        }
+        60%{
+          left: 470px;
+        }
+        79%{
+          left: 470px;
+        }
+        80%{
+          left: 600px;
+        }
+        97%{
+          left: 600px;
+        }
+        98%{
+          left: 760px;
+          opacity: 1;
+        }
+        98.5%{
+          left: 760px;
+          opacity: 0;
+        }
+        98.6%{
+          left: -60px;
+          opacity: 0;
+        }
+        99%{
+          left: -60px;
+          opacity: 1;
+        }
+        100%{
+          left: 80px;
+          opacity: 1;
+        }
+      }
+      @keyframes cman1p2 {
+        0%{
+          left: 210px;
+        }
+        19%{
+          left: 210px;
+        }
+        20%{
+          left: 340px;
+        }
+        39%{
+          left: 340px;
+        }
+        40%{
+          left: 470px;
+        }
+        59%{
+          left: 470px;
+        }
+        60%{
+          left: 600px;
+        }
+        77%{
+          left: 600px;
+        }
+        78%{
+          left: 760px;
+          opacity: 1;
+        }
+        78.5%{
+          left: 760px;
+          opacity: 0;
+        }
+        78.6%{
+          left: -60px;
+          opacity: 0;
+        }
+        79%{
+          left: -60px;
+          opacity: 1;
+        }
+        80% {
+          left: 80px;
+        }
+        99%{
+          left: 80px;
+        }
+        100%{
+          left: 210px;
+        }
+      }
+      @keyframes cman1p3 {
+        0%{
+          left: 340px;
+        }
+        19%{
+          left: 340px;
+        }
+        20%{
+          left: 470px;
+        }
+        39%{
+          left: 470px;
+        }
+        40%{
+          left: 600px;
+        }
+        57%{
+          left: 600px;
+        }
+        58%{
+          left: 760px;
+          opacity: 1;
+        }
+        58.5%{
+          left: 760px;
+          opacity: 0;
+        }
+        58.6%{
+          left: -60px;
+          opacity: 0;
+        }
+        59%{
+          left: -60px;
+          opacity: 1;
+        }
+        60% {
+          left: 80px;
+        }
+        79%{
+          left: 80px;
+        }
+        80%{
+          left: 210px;
+        }
+        99%{
+          left: 210px;
+        }
+        100%{
+          left: 340px;
+        }
+      }
+      @keyframes cman1p4 {
+        0%{
+          left: 470px;
+        }
+        19%{
+          left: 470px;
+        }
+        20%{
+          left: 600px;
+        }
+        37%{
+          left: 600px;
+        }
+        38%{
+          left: 760px;
+          opacity: 1;
+        }
+        38.5%{
+          left: 760px;
+          opacity: 0;
+        }
+        38.6%{
+          left: -60px;
+          opacity: 0;
+        }
+        39%{
+          left: -60px;
+          opacity: 1;
+        }
+    	  40% {
+          left: 80px;
+    	  }
+        59%{
+          left: 80px;
+        }
+        60%{
+          left: 210px;
+        }
+        79%{
+          left: 210px;
+        }
+        80%{
+          left: 340px;
+        }
+        99%{
+          left: 340px;
+        }
+        100%{
+          left: 470px;
+        }
+      }
+      @keyframes cman1p5 {
+        0%{
+          left: 600px;
+        }
+        17%{
+          left: 600px;
+        }
+        18%{
+          left: 760px;
+          opacity: 1;
+        }
+        18.5%{
+          left: 760px;
+          opacity: 0;
+        }
+        18.6%{
+          left: -60px;
+          opacity: 0;
+        }
+        19%{
+          left: -60px;
+          opacity: 1;
+        }
+    	  20% {
+          left: 80px;
+    	  }
+        39%{
+          left: 80px;
+        }
+        40%{
+          left: 210px;
+        }
+        59%{
+          left: 210px;
+        }
+        60%{
+          left: 340px;
+        }
+        79%{
+          left: 340px;
+        }
+        80%{
+          left: 470px;
+        }
+        99%{
+          left: 470px;
+        }
+        100%{
+          left: 600px;
+        }
+      }
+
+      @keyframes cman2p6 {
+        0%{
+          left: 50px;
+        }
+        16%{
+          left: 50px;
+        }
+        17%{
+          left: -60px;
+          opacity: 1;
+        }
+        17.5%{
+          left: -60px;
+          opacity: 0;
+        }
+        18%{
+          left: 760px;
+          opacity: 0;
+        }
+        19%{
+          left: 760px;
+          opacity: 1;
+        }
+        20%{
+          left: 570px;
+        }
+        39%{
+          left: 570px;
+        }
+        40%{
+          left: 440px;
+        }
+        59%{
+          left: 440px;
+        }
+        60%{
+          left: 310px;
+        }
+        79%{
+          left: 310px;
+        }
+        80%{
+          left: 180px;
+        }
+        99%{
+          left: 180px;
+        }
+        100%{
+          left: 50px;
+        }
+      }
+      @keyframes cman2p7 {
+        0%{
+          left: 180px;
+        }
+        19%{
+          left: 180px;
+        }
+        20%{
+          left: 50px;
+        }
+        36%{
+          left: 50px;
+        }
+        37%{
+          left: -60px;
+          opacity: 1;
+        }
+        37.5%{
+          left: -60px;
+          opacity: 0;
+        }
+        38%{
+          left: 760px;
+          opacity: 0;
+        }
+        39%{
+          left: 760px;
+          opacity: 1;
+        }
+        40%{
+          left: 570px;
+        }
+        59%{
+          left: 570px;
+        }
+        60%{
+          left: 440px;
+        }
+        79%{
+          left: 440px;
+        }
+        80%{
+          left: 310px;
+        }
+        99%{
+          left: 310px;
+        }
+        100%{
+          left: 180px;
+        }
+      }
+      @keyframes cman2p8 {
+        0%{
+          left: 310px;
+        }
+        19%{
+          left: 310px;
+        }
+        20%{
+          left: 180px;
+        }
+        39%{
+          left: 180px;
+        }
+        40%{
+          left: 50px;
+        }
+        56%{
+          left: 50px;
+        }
+        57%{
+          left: -60px;
+          opacity: 1;
+        }
+        57.5%{
+          left: -60px;
+          opacity: 0;
+        }
+        58%{
+          left: 760px;
+          opacity: 0;
+        }
+        59%{
+          left: 760px;
+          opacity: 1;
+        }
+        60%{
+          left: 570px;
+        }
+        79%{
+          left: 570px;
+        }
+        80%{
+          left: 440px;
+        }
+        99%{
+          left: 440px;
+        }
+        100%{
+          left: 310px;
+        }
+      }
+      @keyframes cman2p9 {
+        0%{
+          left: 440px;
+        }
+        19%{
+          left: 440px;
+        }
+        20%{
+          left: 310px;
+        }
+        39%{
+          left: 310px;
+        }
+        40%{
+          left: 180px;
+        }
+        59%{
+          left: 180px;
+        }
+        60%{
+          left: 50px;
+        }
+        76%{
+          left: 50px;
+        }
+        77%{
+          left: -60px;
+          opacity: 1;
+        }
+        77.5%{
+          left: -60px;
+          opacity: 0;
+        }
+        78%{
+          left: 760px;
+          opacity: 0;
+        }
+        79%{
+          left: 760px;
+          opacity: 1;
+        }
+        80%{
+          left: 570px;
+        }
+        99%{
+          left: 570px;
+        }
+        100%{
+          left: 440px;
+        }
+      }
+      @keyframes cman2p10 {
+        0% {
+          left: 570px;
+          opacity: 1;
+    	  }
+        19%{
+          left: 570px;
+        }
+        20%{
+          left: 440px;
+        }
+        39%{
+          left: 440px;
+        }
+        40%{
+          left: 310px;
+        }
+        59%{
+          left: 310px;
+        }
+        60%{
+          left: 180px;
+        }
+        79%{
+          left: 180px;
+        }
+        80%{
+          left: 50px;
+        }
+        96%{
+          left: 50px;
+        }
+        97%{
+          left: -60px;
+          opacity: 1;
+        }
+        97.5%{
+          left: -60px;
+          opacity: 0;
+        }
+        98%{
+          left: 760px;
+          opacity: 0;
+        }
+        99%{
+          left: 760px;
+          opacity: 1;
+        }
+        100%{
+          left: 570px;
+        }
       }
 
   /* PEOPLE */
@@ -102,8 +806,7 @@
         left: -2px;
       }
 
-
-      /*person1 devil*/
+    /*person1 devil*/
       .person1{
         height: 210px;
         width: 300px;
@@ -201,7 +904,7 @@
         z-index: 1;
       }
 
-      /*person2 fishman*/
+    /*person2 fishman*/
       .person2{
         height: 210px;
         width: 300px;
@@ -255,7 +958,7 @@
         border-right: #096a63 2px solid;
       }
 
-      /*person3 earman*/
+    /*person3 earman*/
       .person3{
         height: 210px;
         width: 300px;
@@ -263,7 +966,7 @@
         top: 450px;
         left: 50%;
         margin-left: -150px;
-      }
+        }
       .person3face{
         width: 60px;
         height: 60px;
@@ -380,7 +1083,7 @@
       .person4face{
         width: 70px;
         height: 69px;
-        background-color: #d7e7a0;
+        background-color: #e7fe9f;
         position: absolute;
         left: 50%;
         margin-left: -35px;
@@ -392,7 +1095,7 @@
         position: absolute;
         top: 25px;
         left: 105px;
-        background-color: #d7e7a0;
+        background-color: #e7fe9f;
       }
       .person4ear2{
         width: 10px;
@@ -400,7 +1103,7 @@
         position: absolute;
         top: 25px;
         left: 185px;
-        background-color: #d7e7a0;
+        background-color: #e7fe9f;
       }
       .person4eyel{
         position: absolute;
@@ -2172,6 +2875,16 @@
       }
 
   /*doorframe*/
+      .centercheck{
+        width: 170px;
+        height:15px;
+        position: absolute;
+        left:50%;
+        margin-left: -85px;
+        background-color: #436370;
+        z-index: 10;
+        bottom: 0;
+      }
       .doorframe1{
         height: 175px;
         width: 25px;
@@ -2339,7 +3052,7 @@
         height: 60px;
         position: absolute;
         background-color: #FFCD55;
-        top: 355px;
+        top: 396px;
         left: 55px;
         z-index: 0;
       }
@@ -2375,7 +3088,7 @@
       }
       .conferencesignwire2{
         width: 5px;
-        height: 106px;
+        height: 145px;
         background-color: #425d68;
       }
       .conferencesignwireplace1{
@@ -2390,17 +3103,17 @@
       }
       .conferencesignwireplace3{
         position: absolute;
-        top: -120px;
+        top: -150px;
         left: 110px;
       }
       .conferencesignwireplace4{
         position: absolute;
-        top: -121px;
+        top: -150px;
         left: 20px;
       }
       .conferencesignwireplace5{
         position: absolute;
-        top: -121px;
+        top: -162px;
         left: 15px;
       }
 
@@ -2939,7 +3652,7 @@
         width: 150px;
         position: absolute;
         top: 340px;
-        left: 580px;
+        left: 615px;
         opacity: 1;
       }
       .smanrealface{
@@ -3090,7 +3803,120 @@
 
 <body>
   <div class="stage">
-<div class="centercheck"></div>
+    <div class="conferenceroom">
+      <div class="cman cmanplacement6 cmanmove6">
+        <div class="cman1body cman2body"></div>
+        <div class="cman1suit cman2suit">
+          <div class="cman1ribon1 cman2ribon1"></div>
+          <div class="cman1ribon2 cman2ribon2"></div>
+        </div>
+        <div class="cmanface cman2face">
+          <div class="cman1eyes"></div>
+          <div class="cman1mouth"></div>
+        </div>
+      </div>
+      <div class="cman cmanplacement7 cmanmove7">
+        <div class="cman1body cman2body"></div>
+        <div class="cman1suit cman2suit">
+          <div class="cman1ribon1 cman2ribon1"></div>
+          <div class="cman1ribon2 cman2ribon2"></div>
+        </div>
+        <div class="cmanface cman2face">
+          <div class="cman1eyes"></div>
+          <div class="cman1mouth"></div>
+        </div>
+      </div>
+      <div class="cman cmanplacement8 cmanmove8">
+        <div class="cman1body cman2body"></div>
+        <div class="cman1suit cman2suit">
+          <div class="cman1ribon1 cman2ribon1"></div>
+          <div class="cman1ribon2 cman2ribon2"></div>
+        </div>
+        <div class="cmanface cman2face">
+          <div class="cman1eyes"></div>
+          <div class="cman1mouth"></div>
+        </div>
+      </div>
+      <div class="cman cmanplacement9 cmanmove9">
+        <div class="cman1body cman2body"></div>
+        <div class="cman1suit cman2suit">
+          <div class="cman1ribon1 cman2ribon1"></div>
+          <div class="cman1ribon2 cman2ribon2"></div>
+        </div>
+        <div class="cmanface cman2face">
+          <div class="cman1eyes"></div>
+          <div class="cman1mouth"></div>
+        </div>
+      </div>
+      <div class="cman cmanplacement10 cmanmove10">
+        <div class="cman1body cman2body"></div>
+        <div class="cman1suit cman2suit">
+          <div class="cman1ribon1 cman2ribon1"></div>
+          <div class="cman1ribon2 cman2ribon2"></div>
+        </div>
+        <div class="cmanface cman2face">
+          <div class="cman1eyes"></div>
+          <div class="cman1mouth"></div>
+        </div>
+      </div>
+      <div class="conferencetable1"></div>
+      <div class="cman cmanplacement1 cmanmove1">
+        <div class="cman1body"></div>
+        <div class="cman1suit">
+          <div class="cman1ribon1"></div>
+          <div class="cman1ribon2"></div>
+        </div>
+        <div class="cmanface">
+          <div class="cman1eyes"></div>
+          <div class="cman1mouth"></div>
+        </div>
+      </div>
+      <div class="cman cmanplacement2 cmanmove2">
+        <div class="cman1body"></div>
+        <div class="cman1suit">
+          <div class="cman1ribon1"></div>
+          <div class="cman1ribon2"></div>
+        </div>
+        <div class="cmanface">
+          <div class="cman1eyes"></div>
+          <div class="cman1mouth"></div>
+        </div>
+      </div>
+      <div class="cman cmanplacement3 cmanmove3">
+        <div class="cman1body"></div>
+        <div class="cman1suit">
+          <div class="cman1ribon1"></div>
+          <div class="cman1ribon2"></div>
+        </div>
+        <div class="cmanface">
+          <div class="cman1eyes"></div>
+          <div class="cman1mouth"></div>
+        </div>
+      </div>
+      <div class="cman cmanplacement4 cmanmove4">
+        <div class="cman1body"></div>
+        <div class="cman1suit">
+          <div class="cman1ribon1"></div>
+          <div class="cman1ribon2"></div>
+        </div>
+        <div class="cmanface">
+          <div class="cman1eyes"></div>
+          <div class="cman1mouth"></div>
+        </div>
+      </div>
+      <div class="cman cmanplacement5 cmanmove5">
+        <div class="cman1body"></div>
+        <div class="cman1suit">
+          <div class="cman1ribon1"></div>
+          <div class="cman1ribon2"></div>
+        </div>
+        <div class="cmanface">
+          <div class="cman1eyes"></div>
+          <div class="cman1mouth"></div>
+        </div>
+      </div>
+    </div>
+    <div class="centercheck"></div>
 <!-- title part -->
     <div class="title1">Smile Factory</div>
     <div class="titlebox1"></div>

@@ -33,14 +33,55 @@
             background-color: #9bd4cb;
 
           }
+          .croomframe0{
+            position: absolute;
+          }
+          .croomframe1{
+            width: 720px;
+            height: 20px;
+            position: absolute;
+            left: 40px;
+            top: 130px;
+            background-color: #9aba80;
+          }
+          .croomframe2{
+            width: 720px;
+            height: 20px;
+            position: absolute;
+            left: 40px;
+            top: 530px;
+            background-color: #9aba80;
+          }
+          .croomframe3{
+            width: 20px;
+            height: 400px;
+            position: absolute;
+            left: 40px;
+            top: 130px;
+            background-color: #9aba80;
+          }
+          .croomframe4{
+            width: 20px;
+            height: 400px;
+            position: absolute;
+            left: 740px;
+            top: 130px;
+            background-color: #9aba80;
+          }
           .conferencetable1{
             width: 700px;
             height: 100px;
             position: absolute;
             top: 300px;
             background-color: #6bc1bc;
-
           }
+          .conferencetable2{
+            width: 700px;
+            height: 155px;
+            position: absolute;
+            top: 0px;
+            background-color: #68aba7;
+            }
           .cman {}
           .cmanface {
             width: 50px;
@@ -3785,12 +3826,12 @@
             left: 35px;
           }
           .sman1box{
-            height: 150px;
-            width: 90px;
+            height: 155px;
+            width: 100px;
             position: absolute;
             background-color: #4a5c50;
-            top: 110px;
-            left: 30px;
+            top: 105px;
+            left: 25px;
             z-index: 1;
           }
 
@@ -3855,7 +3896,7 @@
         }
         .dialog3_1{
            position: absolute;
-           top: 28px;
+           top: 26px;
            left: 12px;
            font-family: sans-serif;
            line-height: 150%;
@@ -3863,22 +3904,35 @@
            color: white;
          }
 
-        .dialogmove_1{
-          animation: dialogprocess_1 30s infinite;
+        .dialogmove1_1{
+          animation: dialogprocess_1 60s infinite;
          }
-        .dialogmove1{
+        .dialogmove1_2{
+           animation: dialogprocess_1 60s infinite;
+           animation-delay: 20s;
+          }
+        .dialogmove1_3{
+           animation: dialogprocess_1 60s infinite;
+           animation-delay: 40s;
+          }
+
+        .dialogmove3_1{
           animation: dialogprocess 5s forwards;
         }
-        .dialogmoveend{
-          animation: dialogprocess 6s forwards;
+        .dialogmove3_2{
+          animation: dialogprocess 5s forwards;
           animation-delay: 4.2s;
+        }
+        .dialogmove3_3{
+          animation: dialogprocess 6s forwards;
+          animation-delay: 8.4s;
         }
 
         @keyframes dialogprocess_1 {
           0%{
             opacity: 0;
           }
-          58%{
+          59%{
             opacity: 0;
           }
           60%{
@@ -3887,7 +3941,7 @@
           70%{
             opacity: 1;
           }
-          80%{
+          75%{
             opacity: 0;
           }
           100%{
@@ -3914,14 +3968,16 @@
     <script>
       $(document).ready(function() {
         $(".conferencesignframe").click(function(){
-					$(".dia3_1_1").toggleClass('dialogmove1');
-          $(".dia3_1_2").toggleClass('dialogmoveend');
+					$(".dia3_1_1").toggleClass('dialogmove3_1');
+          $(".dia3_1_2").toggleClass('dialogmove3_2');
+          $(".dia3_1_3").toggleClass('dialogmove3_3');
 				});
       });
       $(document).ready(function() {
         $(".sman1").click(function(){
-					$(".dia4_1_1").toggleClass('dialogmove1');
-          $(".dia4_1_2").toggleClass('dialogmoveend');
+					$(".dia4_1_1").toggleClass('dialogmove3_1');
+          $(".dia4_1_2").toggleClass('dialogmove3_2');
+          $(".dia4_1_3").toggleClass('dialogmove3_3');
 				});
       });
     </script>
@@ -3931,6 +3987,7 @@
 <body>
   <div class="stage">
     <div class="conferenceroom">
+      <div class="conferencetable2"></div>
       <div class="cman cmanplacement6 cmanmove6">
         <div class="cman1body cman2body"></div>
         <div class="cman1suit cman2suit">
@@ -4059,6 +4116,12 @@
             <div class="glass3"></div>
           </div>
     </div>
+    <div class="croomframe0">
+      <div class="croomframe1"></div>
+      <div class="croomframe2"></div>
+      <div class="croomframe3"></div>
+      <div class="croomframe4"></div>
+    </div>
     <div class="centercheck"></div>
 <!-- title part -->
     <div class="title1">Smile Factory</div>
@@ -4173,10 +4236,18 @@
         <div class="sman1box"></div>
     </div>
     <div class="dialogareahall">
-      <div class="dialogarea1 dialogmove_1">
-        <div class="dialog1_1">...again...again...again...</div>
-        <div class="dialogarrow1"></div>
-      </div>
+        <div class="dialogarea3 dialogmove1_1">
+          <div class="dialog1_1">...A smile is <br>universal welcome...</div>
+          <div class="dialogarrow3"></div>
+        </div>
+        <div class="dialogarea1 dialogmove1_2">
+          <div class="dialog1_1">...again...smile...again...</div>
+          <div class="dialogarrow1"></div>
+        </div>
+        <div class="dialogarea1 dialogmove1_3">
+          <div class="dialog1_1">...smile...again...smile...</div>
+          <div class="dialogarrow1"></div>
+        </div>
         <div class="dialogarea3 dia3_1_1">
           <div class="dialog3_1">...Conference room is <br>on background...</div>
           <div class="dialogarrow3"></div>
@@ -4185,18 +4256,22 @@
           <div class="dialog3_1">...It's an open space for talking and discussion...</div>
           <div class="dialogarrow3"></div>
         </div>
+        <div class="dialogarea3 dia3_1_3">
+          <div class="dialog3_1">...to enter this room you have to be smile...</div>
+          <div class="dialogarrow3"></div>
+        </div>
         <div class="dialogarea1 dia4_1_1">
-          <div class="dialog1_1">...Hi, I'm CB81087...</div>
+          <div class="dialog1_1">...Hi, I'm s14087...</div>
           <div class="dialogarrow1"></div>
         </div>
         <div class="dialogarea3 dia4_1_2">
-          <div class="dialog3_1">...The chiarman of this beautiful community...</div>
+          <div class="dialog3_1">...the chiarman of this beautiful community...</div>
           <div class="dialogarrow3"></div>
         </div>
-        <!-- <div class="dialogarea3 dia4_1_2">
-          <div class="dialog3_1">...Here is a cummunity to help cummunication... wearing monsters suit and smile... problem is they always turn back to </div>
+        <div class="dialogarea3 dia4_1_3">
+          <div class="dialog3_1">...please relax...make yourself at home...</div>
           <div class="dialogarrow3"></div>
-        </div> -->
+        </div>
     </div>
 
 <!-- people -->

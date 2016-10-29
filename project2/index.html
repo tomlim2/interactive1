@@ -3849,7 +3849,7 @@
           width: 220px;
           height: 40px;
           padding: 20px;
-          border: solid white 5px;
+          border: solid #e1e7ef 5px;
           opacity: 0;
           z-index: 0;
         }
@@ -3860,8 +3860,32 @@
           width: 220px;
           height: 80px;
           padding: 20px;
-          border: solid white 5px;
+          border: solid #e1e7ef 5px;
           opacity: 0;
+          z-index: 0;
+        }
+        .anidarea1{
+          position: absolute;
+          top: 135px;
+          left: 90px;
+          background-color: #293c3a;
+          width: 120px;
+          height: 40px;
+          padding: 20px;
+          border: solid #dfdfdf 5px;
+          opacity: 0;
+          z-index: 0;
+        }
+        .anidarea2{
+          position: absolute;
+          top: 135px;
+          left: 90px;
+          background-color: #293c3a;
+          width: 120px;
+          height: 40px;
+          padding: 20px;
+          border: solid #dfdfdf 5px;
+          /*opacity: 0;*/
           z-index: 0;
         }
         .dialogarrow1{
@@ -3888,6 +3912,48 @@
           transform: rotate(-40deg);
           z-index: 11;
         }
+        .anidarea1arrow{
+          position: absolute;
+          top: 56px;
+          left: 156px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 20px 14px 0 14px;
+          border-color: #293c3a transparent transparent transparent;
+          transform: rotate(-90deg);
+          z-index: 11;
+        }
+        .anidarea2arrow{
+          position: absolute;
+          top: 56px;
+          left: 156px;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 20px 14px 0 14px;
+          border-color: #293c3a transparent transparent transparent;
+          transform: rotate(-90deg);
+          z-index: 11;
+        }
+        .anidarea1typo{
+          position: absolute;
+          top: 25px;
+          left: 20px;
+          font-family: sans-serif;
+          line-height: 150%;
+          font-size: 12pt;
+          color: white;
+        }
+        .anidarea2typo{
+           position: absolute;
+           top: 15px;
+           left: 5px;
+           font-family: sans-serif;
+           line-height: 150%;
+           font-size: 12pt;
+           color: white;
+         }
         .dialog1_1{
           position: absolute;
           top: 23px;
@@ -3915,7 +3981,6 @@
             font-size: 17pt;
             color: white;
           }
-
         .dialogmove1_1{
           animation: dialogprocess_1 60s infinite;
          }
@@ -3968,15 +4033,15 @@
           animation-delay: 8.4s;
         }
         .dialogmove5_1{
-          animation: dialogprocess 6s forwards;
+          animation: dialogprocess 7s forwards;
         }
         .dialogmove5_2{
-          animation: dialogprocess 6s forwards;
-          animation-delay: 5.2s;
+          animation: dialogprocess 7s forwards;
+          animation-delay: 6.2s;
         }
         .dialogmove5_3{
-          animation: dialogprocess 6s forwards;
-          animation-delay: 10.4s;
+          animation: dialogprocess 5s forwards;
+          animation-delay: 12.4s;
         }
 
         @keyframes dialogprocess_1 {
@@ -4325,17 +4390,17 @@
         <div class="sman1box"></div>
     </div>
     <div class="dialogareahall">
-        <div class="dialogarea3 dialogmove1_1">
-          <div class="dialog3_1">...A smile is <br>universal welcome...</div>
-          <div class="dialogarrow3"></div>
+        <div class="anidarea2 dialogmove1_1">
+          <div class="anidarea2typo">...A smile is universal welcome...</div>
+          <div class="anidarea2arrow"></div>
         </div>
-        <div class="dialogarea1 dialogmove1_2">
-          <div class="dialog1_1">...again...smile...again...</div>
-          <div class="dialogarrow1"></div>
+        <div class="anidarea1 dialogmove1_2">
+          <div class="anidarea1typo">...again...smile...</div>
+          <div class="anidarea1arrow"></div>
         </div>
-        <div class="dialogarea1 dialogmove1_3">
-          <div class="dialog1_1">...smile...again...smile...</div>
-          <div class="dialogarrow1"></div>
+        <div class="anidarea1 dialogmove1_3">
+          <div class="anidarea1typo">...smile...again...</div>
+          <div class="anidarea1arrow"></div>
         </div>
         <div class="dialogarea1 dia2_1_1">
           <div class="dialog1_1">...People like a smile...</div>
@@ -4390,7 +4455,7 @@
           <div class="dialogarrow3"></div>
         </div>
         <div class="dialogarea3 dia5_1_1">
-          <div class="dialog5_1">...This machine is <br>our historic invention <br>to help people...</div>
+          <div class="dialog5_1">...This machine is <br>our historic invention <br>for helping people...</div>
           <div class="dialogarrow3"></div>
         </div>
         <div class="dialogarea3 dia5_1_2">

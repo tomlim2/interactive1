@@ -1,0 +1,131 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>
+    In-Class Challenge 11/7
+  </title>
+  <style>
+
+
+    .quote {
+    	margin: 10%;
+    }
+
+
+    .quote p {
+    	font-size: 1.5em;
+    	line-height: 1.5em;
+    }
+
+    button{
+      padding: 10px;
+      cursor: pointer;
+      color: white;
+    }
+    #switch1{
+      background-color: blue;
+      border-color: red;
+    }
+    #switch2{
+      background-color: red;
+      border-color: yellow;
+    }
+    #switch3{
+      background-color: yellow;
+      border-color: blue;
+      color: black;
+    }
+    .red1{
+      color: red;
+      background-color: yellow;
+    }
+    .italized{
+      text-decoration: underline;
+      font-style: italic;
+      font-weight: bold;
+    }
+    .white1{
+      color: white;
+    }
+    .black1{
+      background-color: black;
+    }
+
+  </style>
+
+
+  <script>
+    $(document).ready(function() {
+
+      $("#switch1").click(function(){
+
+        $(".everyone1").toggleClass('red1');
+
+      });
+
+      $("#switch2").click(function(){
+
+        $(".waiting1").toggleClass('italized');
+
+      });
+
+      $("#switch3").click(function(){
+
+        $(".no1").toggleClass('white1');
+        $("body").toggleClass('black1');
+
+      });
+
+    });
+  </script>
+</head>
+
+
+<body>
+
+  <button id="switch1" type="button" name="button">Another Chance</button>
+
+  <button id="switch2" type="button" name="button">Waiting</button>
+
+  <button id="switch3" type="button" name="button">No!</button>
+
+  <div class=”quote”>
+
+
+	<p>
+		<span class="waiting1">Waiting</span> for a train to go<br />
+		or a bus to come, or a plane to go<br />
+		or the mail to come, or the rain to go<br />
+		or the phone to ring, or the snow to snow<br />
+		or the <span class="waiting1">waiting</span> around for a Yes or <span class="no1">No</span><br />
+		or <span class="waiting1">waiting</span> for their hair to grow.<br />
+		Everyone is just <span class="waiting1">waiting</span>.<br />
+	</p>
+
+
+	<p>
+		<span class="waiting1">Waiting</span> for the fish to bite<br />
+		or <span class="waiting1">waiting</span> for the wind to fly a kite<br />
+		or <span class="waiting1">waiting</span> around for Friday night<br />
+		or <span class="waiting1">waiting</span>, perhaps, for their Uncle Jake<br />
+		or a pot to boil, or a Better Break<br />
+		or a string of pearls, or a pair of pants<br />
+		or a wig with curls, or <span class="everyone1">Another Chance.</span><br />
+		Everyone is just <span class="waiting1">waiting</span>.<br />
+	</p>
+
+
+	<p>
+		<span class="no1">NO!</span><br />
+		That's not for you!
+	</p>
+
+
+  </div>
+
+
+</body>
+</html>

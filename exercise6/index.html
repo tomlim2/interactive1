@@ -1,0 +1,73 @@
+
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <title>          exercise6        </title>
+        <style>
+          #minion{
+            width: 300px;
+            height: 450px;
+            background-image: url('minion.jpg');
+          }
+          #mario{
+            width: 300px;
+            height: 400px;
+            background-image: url('mario.png');
+            cursor: pointer;
+          }
+          #mario:hover{
+            background-image: url('mario2.jpg');
+          }
+          #minion:hover{
+            background-image: url('minion2.jpg');
+          }
+        </style>
+
+        <script>
+        $(document).ready(function(){
+
+
+          $("#minion").hover(function(){
+            $("#bello")[0].pause();
+            $("#bello")[0].currentTime=0;
+            $("#bello")[0].play();
+            //hover in
+          },
+          function(){
+            //hover out
+          }
+        );
+
+          $("#mario").hover(function(){
+            $("#jump")[0].pause();
+            $("#jump")[0].currentTime=0;
+            $("#jump")[0].play();
+          },
+          function(){
+
+          }
+        );
+        });
+
+        </script>
+    </head>
+
+    <body>
+      <div id="minion">
+
+      </div>
+      <div id="mario">
+
+      </div>
+
+      <audio id="bello">
+        <source src="bello3.mp3" type="audio/mp3">
+      </audio>
+
+      <audio id="jump">
+        <source src="jump.wav" type="audio/wav">
+      </audio>
+    </body>
+</html>

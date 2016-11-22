@@ -9,10 +9,10 @@
         <style>
           body{
             margin: 0px;
-            background-color: #72cad6;
+            background-color: #ade1ee;
             font-family: 'Source Sans Pro', sans-serif;
           }
-
+          /* triangle generator: http://apps.eky.hk/css-triangle-generator/ */
           /*decoration*/
             /*cloud*/
               #cloud {
@@ -65,10 +65,10 @@
             	}
               @keyframes across {
             	  from {
-            	    left: -90%;
+            	    left: -70%;
             	  }
             	  to {
-            	    left: 130%;
+            	    left: 100%;
             	  }
             	}
           .ground0{
@@ -78,20 +78,21 @@
             height: 10px;
             background-color: brown;
           }
-          .treenamebox{
-            top: 20px;
-            height: 40px;
-            width: 300px;
+          .topnav{
+            top: 0%;
+            height: 50px;
+            width: 100%;
             background-color: white;
             position: fixed;
-            left: 50%;
-            margin-left: -150px;
             z-index: 10;
           }
           .date{
             text-align: center;
             font-size: 16pt;
             line-height: 800%;
+            position: absolute;
+            top: 95px;
+            left: 5px;
           }
           .title1{
             text-align: center;
@@ -112,29 +113,26 @@
             top: 80px;
             margin-left: -400px;
             left: 50%;
+            overflow: hidden;
             z-index: 2;
           }
           .timetable1{
             background-color: #fae3c3;
             width: 30px;
-            height: 1800px;
+            height: 5020px;
             position: absolute;
+            top: 80px;
             left: 50%;
             margin-left: -15px;
           }
-          .textleaves0{
-          }
-          .textbox1{
-            position: relative;
-            background-color: #45af43;
-            width: 300px;
-            height: 300px;
-            padding: 10px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            /*margin: 10px;*/
+          .tlleftside{
+            width: 320px;
             float: left;
-            border-radius: 5%;
+          }
+          .tlrightside{
+            width: 320px;
+            padding-top: 170px;
+            float: right;
           }
           .blank1{
             position: relative;
@@ -142,7 +140,83 @@
             height: 100px;
             float: left;
           }
+          .contentbox{
+            position: relative;
+            float: left;
+            width: 300px;
+          }
+          .leaves1{
+            position: relative;
+            background-color: #73ce65;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            /*margin: 10px;*/
+            float: left;
+            border-radius: 2%;
+            z-index: 2;
+          }
+          .textarrowforleft{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0px 100px 30px 0;
+            border-color: transparent #fae3c3 transparent transparent;
+            position: absolute;
+            top: 245px;
+            left: 285px;
+            z-index: 1;
+          }
+          .textarrowforright{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0px 0 30px 100px;
+            border-color: transparent transparent transparent #fae3c3;
+            position: absolute;
+            top: 245px;
+            right: 265px;
+          }
+          .blank1{
+            position: relative;
+            width: 160px;
+            height: 100px;
+            float: left;
+          }
+          .es1{
+            background-color: #f43c34;
+          }
+          .es2{
+            background-color: #d85aa4;
+          }
+          .es3{
+            background-color: #742d79;
+          }
+          .es4{
+            background-color: #563d98;
+          }
+          .es5{
+            background-color: #21409a;
+          }
+          .es6{
+            background-color: #0a5eb4;
+          }
+          .es7{
+            background-color: #098bc7;
+          }
+          .es8{
+            background-color: #16a0ab;
+          }
+          .es9{
+            background-color: #14ad91;
+          }
+          .es10{
+            background-color: #4cc03b;
+          }
           #mario{
+            border-radius: 2%;
             width: 300px;
             height: 300px;
             background-image: url('pic/mario1.jpg');
@@ -156,6 +230,7 @@
           }
 
           #thumb1109{
+            border-radius: 2%;
             width: 300px;
             height: 300px;
             background-image: url('pic/thumb1109.jpg');
@@ -182,11 +257,18 @@
           function(){
           }
         );
+        $("#thumb1109").hover(function(){
+          $("#missile")[0].pause();
+          $("#missile")[0].currentTime=0;
+          $("#missile")[0].play();
+        },
+        function(){
+        }
+        );
+
 
 
         });
-
-
         </script>
     </head>
 
@@ -195,13 +277,16 @@
           <audio id="mjump">
             <source src="audio/mjump.wav" type="audio/wav">
           </audio>
+          <audio id="missile">
+            <source src="audio/Missile_Rip.mp3" type="audio/mp3">
+          </audio>
         </div>
         <div class="decoration">
           <div id = "cloud" class="cloudmv1"></div>
         </div>
-        <div class="treenamebox">
+        <div class="topnav">
           <div class="title2">
-            <  Nov >
+            Nov
           </div>
         </div>
 
@@ -209,136 +294,136 @@
         <div class="wholetree1">
           <div class="timetable1">
             <div class="date">
-                16<br>15<br>14<br>13<br>12<br>11<br>10<br>9<br>8<br>7<br>6<br>5<br>4<br>3<br>2
+                30<br>29<br>28<br>27<br>26<br>25<br>24<br>23<br>22<br>21<br>20<br>19<br>18<br>17<br>16<br>15<br>14<br>13<br>12<br>11<br>10<br>9<br>8<br>7<br>6<br>5<br>4<br>3<br>2
             </div>
           </div>
-          <div class="textleaves0">
-            <div class="textbox1">
-              <div id="mario"></div>
+
+          <div class="tlleftside">
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforleft"></div>
             </div>
-
-            <div class="blank1"></div>
-
-            <div class="textbox1">
-              111316
-              Be: I restored enough to cook!
-              Gt: I can eat very health cooked food! I watch How I met your mother season 9 third times.
-              Bt: My mac is getting slower, I need format it.
-              Cr:
-              Es: 8
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforleft"></div>
             </div>
-
-            <div class="textbox1">
-              111216
-              Be: Bind of Issac I clear greed mode with Margarette!!
-              Gt: I take the best photo of tennis court today, which is my block assignment looking forward for two weeks.
-              Bt: nothing
-              Cr:
-              Es: 9
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforleft"></div>
             </div>
-
-            <div class="blank1"></div>
-
-            <div class="textbox1">
-              111116
-              Be: Finally finished my term paper for intro to the arts!!!!
-              Gt: 아줌마 gives me free tea:)) ARC actually nice. Test print is successful!
-              Bt: Nothing
-              Cr: today is ㅃ빼빼로 데이. People here in the morning also are approximately good as same as our country
-              Es: 8
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforleft"></div>
             </div>
-
-            <div class="textbox1">
-              111016
-              Be: package from home arrived!! And there are phill for shoulder and it works!!!!:))))
-              Gt: i learned a lot from writing2 class as share the opinion about election
-              Bt: i did not make the term paper draft
-              Cr: cca is supported by Trump:(
-              Es: 9
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforleft"></div>
             </div>
-
-            <div class="blank1"></div>
-
-            <div class="textbox1">
-              <div id="thumb1109"></div>
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforleft"></div>
             </div>
-
-            <div class="textbox1">
-              110816
-              Be: dean takes me from oak to SF thank you! But your driving is too tough....
-              Gt: 거의다 나았다!!!! 블럭 책 윤곽이 보인다
-              Bt: intro to the arts term paper D:
-              context observation: 트럼프가 이긴듯 ㅇㅇ
-              Es:6
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforleft"></div>
             </div>
-
-            <div class="blank1"></div>
-
-            <div class="textbox1">
-              110716
-              Be: I met Angie! and it was a final critic of type as word
-              Gt: the book, symbol is coming!
-              Bt: still hurt!!!
-              Es:7 7
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforleft"></div>
             </div>
+            <div class="contentbox">
+              <!-- 111416 -->
+              <div class="leaves1 es8"><div id="mario"></div></div>
+              <div class="textarrowforleft"></div>
 
-            <div class="textbox1">
-              110716
-              Be: i found delicious chicken potpie!!
-              Gt: graphic design tool is waived!!  엄마가 약과 과자를 붙여주셨다!맛있는 쿠키하고 효과 좋은 약이 한국에서 오고있다!!
-              Bt: 아직도 아프다
-              Es: 7
             </div>
-
-            <div class="blank1"></div>
-
-            <div class="textbox1">
-              110616
-              Be: I got an hour for sleeping summer time save is over
-              Gt: i finished typo2 and interactive1
-              Bt: still shoulder is hurt, the muscle relaxant here is so weak.
-              Es: 6
+            <div class="contentbox">
+              <div class="leaves1 es9"></div>
+              <div class="textarrowforleft"></div>
             </div>
-
-            <div class="textbox1">
-              110516
-              Be: Monogram workshop. Kind cool i got new skills! Offset and blend!! And i ate free pizza a lot!!!
-              Gt: I almost completed typo2 assignment making system!!
-              Bt: still sick. There is no progress on Gd2 which is fliming. Teamwork sucks
-              Es: 6 my shoulder is almost restored
+            <div class="contentbox">
+              <div class="leaves1 es9"></div>
+              <div class="textarrowforleft"></div>
             </div>
-
-            <div class="blank1"></div>
-
-            <div class="textbox1">
-              110416
-              Be: typo2 cover page is almost completed!
-              Gt: i saw Brian 10:10~14:20 and he left early than me i am win??
-              I made the system of my block book
-              아줌마 give me a lot of free food: tea, misosil, jumbo size fried rice
-              Bt: 어깨 아직도 아프다 증말 ㅜㅜ
-              Es: 7-그래도 많이 좋아짐
+            <div class="contentbox">
+              <div class="leaves1 es6"></div>
+              <div class="textarrowforleft"></div>
             </div>
-
-            <div class="textbox1">
-              110316
-              Es: 6 shoulder...:(
-              커피 브라우니 4
-              점심 페페로니 피자 strawberry banana 7
-              Be: 머리깍았다 근데 잘라준 사람이 한국사람이었다 신나게 이야기함 ㅋㅋㅋㅋ
-              Gt: I learned about Islamic art, the medicine(muscle relaxant) was coming!
-              Bt: 右腕が相変わらず痛い。
+            <div class="contentbox">
+              <div class="leaves1 es6"></div>
+              <div class="textarrowforleft"></div>
             </div>
-
-            <div class="blank1"></div>
-
-            <div class="textbox1">
-              110216
-              Emotion score: 6 - 어깨통증만빼면 최고의 날
-              Big event: i met mark fox fortunately! + i got permission to signature the symbol book
-              Good thing: i met mark fox finally. Type2 my concept noisy berry is working! GD2 finally we can shot the film
-              Bad thing: 아프다 어깨 이제 팔근육으로 전이되는 듯... 약은 내일 도착한다.
+            <div class="contentbox">
+              <div class="leaves1 es7"></div>
+              <div class="textarrowforleft"></div>
             </div>
+            <div class="contentbox">
+              <div class="leaves1 es6"></div>
+              <div class="textarrowforleft"></div>
+            </div>
+          </div>
+
+
+          <div class="tlrightside">
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforright"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforright"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforright"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforright"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforright"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforright"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforright"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1"></div>
+              <div class="textarrowforright"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es8"></div>
+              <div class="textarrowforright"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es8"></div>
+              <div class="textarrowforright"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es4"><div id="thumb1109"></div></div>
+              <div class="textarrowforright"></div>
+              <!-- 110916 -->
+
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es7"></div>
+              <div class="textarrowforright"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es6"></div>
+              <div class="textarrowforright"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es6"></div>
+              <div class="textarrowforright"></div>
+            </div>
+          </div>
           </div>
         </div>
     </body>

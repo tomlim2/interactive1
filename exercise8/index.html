@@ -1,0 +1,80 @@
+
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- fnacybox -->
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+        <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+        <title>          exercise8        </title>
+        <style>
+        </style>
+
+        <script>
+
+        $(document).ready(function() {
+          $(".fancybox").fancybox({
+
+                nextEffect:'none',
+                prevEffect:'none',
+                openEffect:'none',
+                closeEffect:'none'
+
+              });
+        	$(".fancybox-thumb").fancybox({
+        		prevEffect	: 'none',
+        		nextEffect	: 'none',
+        		helpers	: {
+        			title	: {
+        				type: 'outside'
+        			},
+        			thumbs	: {
+        				width	: 50,
+        				height	: 50
+        			}
+        		}
+        	});
+        });
+
+        </script>
+
+    </head>
+
+    <body>
+      <a class="fancybox" rel="mt_shasta" href="mountain1.jpg" title="mountain1">
+        <img src="mountain1_thumb.jpg" />
+      </a>
+      <a class="fancybox" rel="mt_shasta" href="mountain2.jpg" title="mountain2">
+        2
+      </a>
+      <a class="fancybox" rel="mt_shasta" href="mountain3.jpg" title="mountain3">
+        <img src="mountain3_thumb.jpg" />
+      </a>
+      <br><br>
+
+
+      <br><br>
+      <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm6.staticflickr.com/5444/17679973232_568353a624_b.jpg" title="Golden Manarola (Sanjeev Deo)">
+      	<img src="http://farm6.staticflickr.com/5444/17679973232_568353a624_m.jpg" alt="" />
+      </a>
+      <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
+      	<img src="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_m.jpg" alt="" />
+      </a>
+      <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm6.staticflickr.com/5612/15344856989_449794889d_b.jpg" title="Morning Twilight (Jose Hamra Images)">
+      	<img src="http://farm6.staticflickr.com/5612/15344856989_449794889d_m.jpg" alt="" />
+      </a>
+      <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" title="(Eric Goncalves (cathing up again!))">
+      	<img src="http://farm8.staticflickr.com/7289/16207238089_0124105172_m.jpg" alt="" />
+      </a>
+
+
+    </body>
+</html>

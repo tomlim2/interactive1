@@ -6,19 +6,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
 
-  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-
 	<title>
 		typo_text
 	</title>
 	<style>
 
 		body {
-		  font-family: 'Noto Sans', sans-serif;
 			margin: 0px;
-      background-image: url('pic/bgbackgound.jpg');
+		}
+		.container1{
+			font-family: 'Noto Sans', sans-serif;
+			background-image: url('pic/bgbackgound.jpg');
 			background-size: cover;
-      background-position: center;
+			overflow: hidden;
+
 		}
 		.mainpic{
 			width: 300px;
@@ -84,7 +85,7 @@
 			position: absolute;
 		}
 		.choomv3{
-			animation: chooprss3 16s forwards;
+			animation: chooprss3 12s forwards;
 			position: absolute;
 		}
 		@keyframes chooprss{
@@ -112,13 +113,19 @@
 			}
 		}
 		@keyframes chooprss3{
-			from {
-				top: 80%;
+			0% {
+				top: 60%;
 				left: -1600px;
 			}
-			to {
-				top: 80%;
-				left: 1600px;
+			99% {
+				top: 60%;
+				left: 800px;
+				opacity: 1;
+			}
+			100% {
+				top: 60%;
+				left: 800px;
+				opacity: 0;
 			}
 		}
 
@@ -140,18 +147,21 @@
 </head>
 
 <body>
-	<div class="mainpic"></div>
-	<div class="card">
-		<div class="content">
-			<div class="text">
-				<div class="name">CALTRAIN</div>
-				<div class="title">EVERYWHERE, NOISY BERRY</div>
+	<div class="container1">
+		<div class="mainpic"></div>
+		<div class="card">
+			<div class="content">
+				<div class="text">
+					<div class="name">CALTRAIN</div>
+					<div class="title">Click the Caltrain to play the sound</div>
+				</div>
 			</div>
 		</div>
+		<div class="choochoo2 choomv3"></div>
+		<div class="choochoo choomv"></div>
+		<div class="choochoo choomv2"></div>
 	</div>
-	<div class="choochoo2 choomv3"></div>
-	<div class="choochoo choomv"></div>
-	<div class="choochoo choomv2"></div>
+
 	<audio id="ctsound">
 		<source src="audio/caltrain1.wav" type="audio/wav">
 	</audio>

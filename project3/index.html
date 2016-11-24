@@ -5,6 +5,8 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
         <title>          project3        </title>
         <style>
           body{
@@ -71,12 +73,33 @@
             	    left: 100%;
             	  }
             	}
+
           .ground0{
-            position: absolute;
-            top: 100%;
             width: 100%;
-            height: 10px;
-            background-color: brown;
+            height: 20px;
+            background-color: #c4df9b;
+            position: absolute;
+            top: 5240px;
+          }
+          .mountain1{
+            position: absolute;
+            top: 4840px;
+            left: 70%;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 300px 400px 300px;
+            border-color: transparent transparent #a3d49c transparent;
+          }
+          .mountain2{
+            position: absolute;
+            top: 5040px;
+            left: 60%;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 150px 200px 150px;
+            border-color: transparent transparent #7acdc8 transparent;
           }
           .topnav{
             top: 0%;
@@ -109,6 +132,7 @@
           }
           .wholetree1{
             width: 800px;
+            height: 5180px;
             position: absolute;
             top: 80px;
             margin-left: -400px;
@@ -119,7 +143,7 @@
           .timetable1{
             background-color: #fae3c3;
             width: 30px;
-            height: 5020px;
+            height: 5080px;
             position: absolute;
             top: 80px;
             left: 50%;
@@ -186,35 +210,35 @@
             float: left;
           }
           .es1{
-            background-color: #f43c34;
+            background-color: #ed1c24;
           }
           .es2{
-            background-color: #d85aa4;
+            background-color: #f25235;
           }
           .es3{
-            background-color: #742d79;
+            background-color: #f68846;
           }
           .es4{
-            background-color: #563d98;
+            background-color: #fabf57;
           }
           .es5{
-            background-color: #21409a;
+            background-color: #fff568;
           }
           .es6{
-            background-color: #0a5eb4;
+            background-color: #dee96c;
           }
           .es7{
-            background-color: #098bc7;
+            background-color: #bedd6f;
           }
           .es8{
-            background-color: #16a0ab;
+            background-color: #9dd172;
           }
           .es9{
-            background-color: #14ad91;
+            background-color: #7cc576;
           }
-          .es10{
+          /*.es10{
             background-color: #4cc03b;
-          }
+          }*/
           #mario{
             border-radius: 2%;
             width: 300px;
@@ -242,12 +266,45 @@
             background-position: bottom;
             opacity: 1;
           }
+          #thumb1104{
+            border-radius: 2%;
+            width: 300px;
+            height: 300px;
+            background-image: url('pic/thumb1104.jpg');
+            cursor: pointer;
+            opacity: 1;
+          }
+          #thumb1104:hover{
+            /*background-image: url('mario2.jpg');*/
+            background-position: bottom;
+            opacity: 1;
+          }
+          #thumb1102{
+            border-radius: 2%;
+            width: 300px;
+            height: 300px;
+            background-image: url('pic/thumb1102.jpg');
+            cursor: pointer;
+            opacity: 1;
+          }
+          #thumb1102:hover{
+            /*background-image: url('mario2.jpg');*/
+            background-position: bottom;
+            opacity: 1;
+          }
 
         </style>
 
         <script>
         $(document).ready(function(){
+          $(".fancybox").fancybox({
 
+                nextEffect:'none',
+                prevEffect:'none',
+                openEffect:'none',
+                closeEffect:'none'
+
+              });
 
           $("#mario").hover(function(){
             $("#mjump")[0].pause();
@@ -290,7 +347,7 @@
           </div>
         </div>
 
-        <div class="ground0"></div>
+
         <div class="wholetree1">
           <div class="timetable1">
             <div class="date">
@@ -316,19 +373,19 @@
               <div class="textarrowforleft"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1"></div>
+              <div class="leaves1 es6"></div>
               <div class="textarrowforleft"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1"></div>
+              <div class="leaves1 es7"></div>
               <div class="textarrowforleft"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1"></div>
+              <div class="leaves1 es8"></div>
               <div class="textarrowforleft"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1"></div>
+              <div class="leaves1 es9"></div>
               <div class="textarrowforleft"></div>
             </div>
             <div class="contentbox">
@@ -354,11 +411,15 @@
               <div class="textarrowforleft"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1 es7"></div>
+              <div class="leaves1 es7">
+                <div id="thumb1104"></div>
+              </div>
               <div class="textarrowforleft"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1 es6"></div>
+              <div class="leaves1 es6">
+                <div id="thumb1102"></div>
+              </div>
               <div class="textarrowforleft"></div>
             </div>
           </div>
@@ -378,23 +439,19 @@
               <div class="textarrowforright"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1"></div>
+              <div class="leaves1 es6"></div>
               <div class="textarrowforright"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1"></div>
+              <div class="leaves1 es8"></div>
               <div class="textarrowforright"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1"></div>
+              <div class="leaves1 es9"></div>
               <div class="textarrowforright"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1"></div>
-              <div class="textarrowforright"></div>
-            </div>
-            <div class="contentbox">
-              <div class="leaves1"></div>
+              <div class="leaves1 es9"></div>
               <div class="textarrowforright"></div>
             </div>
             <div class="contentbox">
@@ -406,7 +463,27 @@
               <div class="textarrowforright"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1 es4"><div id="thumb1109"></div></div>
+              <div class="leaves1 es8"></div>
+              <div class="textarrowforright"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es4">
+
+                <a class="fancybox" rel="mt_shasta" href="pic/pic1109_5.jpg" title="on Nov.9th">
+                <div id="thumb1109"></div></a>
+                <a class="fancybox" rel="mt_shasta" href="pic/pic1109_1.jpg" title="on Nov.9th">
+                </a>
+                <a class="fancybox" rel="mt_shasta" href="pic/pic1109_2.jpg" title="on Nov.9th">
+                </a>
+                <a class="fancybox" rel="mt_shasta" href="pic/pic1109_3.jpg" title="on Nov.9th">
+                </a>
+                <a class="fancybox" rel="mt_shasta" href="pic/pic1109_4.jpg" title="on Nov.9th">
+                </a>
+                <a class="fancybox" rel="mt_shasta" href="pic/pic1109_6.jpg" title="on Nov.9th">
+                </a>
+                <a class="fancybox" rel="mt_shasta" href="pic/pic1109_7.jpg" title="on Nov.9th">
+                </a>
+              </div>
               <div class="textarrowforright"></div>
               <!-- 110916 -->
 
@@ -423,8 +500,14 @@
               <div class="leaves1 es6"></div>
               <div class="textarrowforright"></div>
             </div>
+
+
           </div>
           </div>
         </div>
+        <div class="mountain2"></div>
+        <div class="mountain1"></div>
+
+        <div class="ground0"> </div>
     </body>
 </html>

@@ -5,293 +5,11 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="css/project3.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
         <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
         <title>          project3        </title>
         <style>
-          body{
-            margin: 0px;
-            background-color: #ade1ee;
-            font-family: 'Source Sans Pro', sans-serif;
-          }
-          /* triangle generator: http://apps.eky.hk/css-triangle-generator/ */
-          /*decoration*/
-            /*cloud*/
-              #cloud {
-              	width: 350px; height: 120px;
-              	background: #f2f9fe;
-              	background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-              	background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-              	background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-              	background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-              	background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-
-              	border-radius: 100px;
-              	-webkit-border-radius: 100px;
-              	-moz-border-radius: 100px;
-
-              	position: relative;
-              	margin: 120px auto 20px;
-              }
-
-              #cloud:after, #cloud:before {
-              	content: '';
-              	position: absolute;
-              	background: #f2f9fe;
-              	z-index: -1
-              }
-
-              #cloud:after {
-              	width: 100px; height: 100px;
-              	top: -50px; left: 50px;
-
-              	border-radius: 100px;
-              	-webkit-border-radius: 100px;
-              	-moz-border-radius: 100px;
-              }
-
-              #cloud:before {
-              	width: 180px; height: 180px;
-              	top: -90px; right: 50px;
-
-              	border-radius: 200px;
-              	-webkit-border-radius: 200px;
-              	-moz-border-radius: 200px;
-              }
-              .cloudmv1 {
-            		animation: across 60s infinite;
-            		position: absolute;
-                top: 100px;
-            		/*left: -100px;
-            		top: 100px; over paste*/
-            	}
-              @keyframes across {
-            	  from {
-            	    left: -70%;
-            	  }
-            	  to {
-            	    left: 100%;
-            	  }
-            	}
-
-          .ground0{
-            width: 100%;
-            height: 20px;
-            background-color: #c4df9b;
-            position: absolute;
-            top: 5240px;
-          }
-          .mountain1{
-            position: absolute;
-            top: 4840px;
-            left: 70%;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0 300px 400px 300px;
-            border-color: transparent transparent #a3d49c transparent;
-          }
-          .mountain2{
-            position: absolute;
-            top: 5040px;
-            left: 60%;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0 150px 200px 150px;
-            border-color: transparent transparent #7acdc8 transparent;
-          }
-          .topnav{
-            top: 0%;
-            height: 50px;
-            width: 100%;
-            background-color: white;
-            position: fixed;
-            z-index: 10;
-          }
-          .date{
-            text-align: center;
-            font-size: 16pt;
-            line-height: 800%;
-            position: absolute;
-            top: 95px;
-            left: 5px;
-          }
-          .title1{
-            text-align: center;
-            font-size: 18pt;
-            text-transform: uppercase;
-            margin: 80px;
-          }
-          .title2{
-            text-align: center;
-            font-weight: bold;
-            font-size: 16pt;
-            text-transform: uppercase;
-            line-height: 180%;
-          }
-          .wholetree1{
-            width: 800px;
-            height: 5180px;
-            position: absolute;
-            top: 80px;
-            margin-left: -400px;
-            left: 50%;
-            overflow: hidden;
-            z-index: 2;
-          }
-          .timetable1{
-            background-color: #fae3c3;
-            width: 30px;
-            height: 5080px;
-            position: absolute;
-            top: 80px;
-            left: 50%;
-            margin-left: -15px;
-          }
-          .tlleftside{
-            width: 320px;
-            float: left;
-          }
-          .tlrightside{
-            width: 320px;
-            padding-top: 170px;
-            float: right;
-          }
-          .blank1{
-            position: relative;
-            width: 160px;
-            height: 100px;
-            float: left;
-          }
-          .contentbox{
-            position: relative;
-            float: left;
-            width: 300px;
-          }
-          .leaves1{
-            position: relative;
-            background-color: #73ce65;
-            width: 300px;
-            height: 300px;
-            padding: 10px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            /*margin: 10px;*/
-            float: left;
-            border-radius: 2%;
-            z-index: 2;
-          }
-          .textarrowforleft{
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0px 100px 30px 0;
-            border-color: transparent #fae3c3 transparent transparent;
-            position: absolute;
-            top: 245px;
-            left: 285px;
-            z-index: 1;
-          }
-          .textarrowforright{
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0px 0 30px 100px;
-            border-color: transparent transparent transparent #fae3c3;
-            position: absolute;
-            top: 245px;
-            right: 265px;
-          }
-          .blank1{
-            position: relative;
-            width: 160px;
-            height: 100px;
-            float: left;
-          }
-          .es1{
-            background-color: #ed1c24;
-          }
-          .es2{
-            background-color: #f25235;
-          }
-          .es3{
-            background-color: #f68846;
-          }
-          .es4{
-            background-color: #fabf57;
-          }
-          .es5{
-            background-color: #fff568;
-          }
-          .es6{
-            background-color: #dee96c;
-          }
-          .es7{
-            background-color: #bedd6f;
-          }
-          .es8{
-            background-color: #9dd172;
-          }
-          .es9{
-            background-color: #7cc576;
-          }
-          /*.es10{
-            background-color: #4cc03b;
-          }*/
-          #mario{
-            border-radius: 2%;
-            width: 300px;
-            height: 300px;
-            background-image: url('pic/mario1.jpg');
-            cursor: pointer;
-            opacity: 0.8;
-          }
-          #mario:hover{
-            /*background-image: url('mario2.jpg');*/
-            background-position: bottom;
-            opacity: 1;
-          }
-
-          #thumb1109{
-            border-radius: 2%;
-            width: 300px;
-            height: 300px;
-            background-image: url('pic/thumb1109.jpg');
-            cursor: pointer;
-            opacity: 1;
-          }
-          #thumb1109:hover{
-            /*background-image: url('mario2.jpg');*/
-            background-position: bottom;
-            opacity: 1;
-          }
-          #thumb1104{
-            border-radius: 2%;
-            width: 300px;
-            height: 300px;
-            background-image: url('pic/thumb1104.jpg');
-            cursor: pointer;
-            opacity: 1;
-          }
-          #thumb1104:hover{
-            /*background-image: url('mario2.jpg');*/
-            background-position: bottom;
-            opacity: 1;
-          }
-          #thumb1102{
-            border-radius: 2%;
-            width: 300px;
-            height: 300px;
-            background-image: url('pic/thumb1102.jpg');
-            cursor: pointer;
-            opacity: 1;
-          }
-          #thumb1102:hover{
-            /*background-image: url('mario2.jpg');*/
-            background-position: bottom;
-            opacity: 1;
-          }
 
         </style>
 
@@ -324,12 +42,12 @@
         );
 
 
-
         });
         </script>
     </head>
 
     <body>
+      <div class="container0">
         <div class="audio">
           <audio id="mjump">
             <source src="audio/mjump.wav" type="audio/wav">
@@ -341,15 +59,24 @@
         <div class="decoration">
           <div id = "cloud" class="cloudmv1"></div>
         </div>
+
         <div class="topnav">
-          <div class="title2">
+          <div class="topnavline"></div>
+          <div class="topbutton navbutton1">
+            Oct
+          </div>
+          <div class="topbutton navbutton2">
             Nov
           </div>
+          <div class="topbutton navbutton3">
+            Dec
+          </div>
         </div>
-
-
         <div class="wholetree1">
           <div class="timetable1">
+            <div class="topleaves"></div>
+            <div class="topbrunch"></div>
+            <div class="topbrunch2"></div>
             <div class="date">
                 30<br>29<br>28<br>27<br>26<br>25<br>24<br>23<br>22<br>21<br>20<br>19<br>18<br>17<br>16<br>15<br>14<br>13<br>12<br>11<br>10<br>9<br>8<br>7<br>6<br>5<br>4<br>3<br>2
             </div>
@@ -357,157 +84,187 @@
 
           <div class="tlleftside">
             <div class="contentbox">
-              <div class="leaves1"></div>
+              <div class="leaves1 leftl2 es0"></div>
+              <div class="textarrowforleft llarrow2"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 leftl3 lrutle2 es0"></div>
               <div class="textarrowforleft"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1"></div>
+              <div class="leaves1 es6 leftl1">
+              <div id="thumb1126"></div></div>
+              <div class="textarrowforleft llarrow1"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es4 leftl3 lrutle1 spinmv">
+              <div id="thumb1124"></div></div>
               <div class="textarrowforleft"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1"></div>
+              <div class="leaves1 es6 leftl2">
+              <div id="thumb1122"></div></div>
+              <div class="textarrowforleft llarrow2"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es7 leftl3 lrutle2"></div>
               <div class="textarrowforleft"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1"></div>
-              <div class="textarrowforleft"></div>
+              <div class="leaves1 es8 leftl1">
+              <div id="thumb1118"></div></div>
+              <div class="textarrowforleft llarrow1"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1 es6"></div>
-              <div class="textarrowforleft"></div>
-            </div>
-            <div class="contentbox">
-              <div class="leaves1 es7"></div>
-              <div class="textarrowforleft"></div>
-            </div>
-            <div class="contentbox">
-              <div class="leaves1 es8"></div>
-              <div class="textarrowforleft"></div>
-            </div>
-            <div class="contentbox">
-              <div class="leaves1 es9"></div>
+              <div class="leaves1 es9 leftl3 lrutle1">
+              <div id="thumb1116"></div></div>
               <div class="textarrowforleft"></div>
             </div>
             <div class="contentbox">
               <!-- 111416 -->
-              <div class="leaves1 es8"><div id="mario"></div></div>
-              <div class="textarrowforleft"></div>
+              <div class="leaves1 es8 leftl2">
+                <div id="thumb1114"></div></div>
+              <div class="textarrowforleft llarrow2"></div>
 
             </div>
             <div class="contentbox">
-              <div class="leaves1 es9"></div>
+              <div class="leaves1 es9 leftl3 lrutle2">
+              <div id="thumb1112"></div></div>
               <div class="textarrowforleft"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1 es9"></div>
+              <div class="leaves1 es9 leftl1">
+              <div id="thumb1110"></div></div>
+              <div class="textarrowforleft llarrow1"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es6 leftl3 lrutle1">
+              <div id="thumb1108"></div>
+            </div>
               <div class="textarrowforleft"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1 es6"></div>
-              <div class="textarrowforleft"></div>
+              <div class="leaves1 es6 leftl2"></div>
+              <div class="textarrowforleft llarrow2"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1 es6"></div>
-              <div class="textarrowforleft"></div>
-            </div>
-            <div class="contentbox">
-              <div class="leaves1 es7">
+              <div class="leaves1 es7 leftl3 lrutle2">
                 <div id="thumb1104"></div>
               </div>
               <div class="textarrowforleft"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1 es6">
+              <div class="leaves1 es6 leftl1">
                 <div id="thumb1102"></div>
               </div>
-              <div class="textarrowforleft"></div>
+              <div class="textarrowforleft llarrow1"></div>
             </div>
           </div>
 
 
           <div class="tlrightside">
             <div class="contentbox">
-              <div class="leaves1"></div>
+              <div class="leaves1 rightl3 es0"></div>
               <div class="textarrowforright"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1"></div>
+              <div class="leaves1 es6 rightl1 lrutle1">
+              <div id="thumb1127"></div></div>
+              <div class="textarrowforright rlarrow1"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es9 rightl3">
+              <div id="thumb1125"></div></div>
               <div class="textarrowforright"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1"></div>
+              <div class="leaves1 es6 rightl2 lrutle2">
+              <div id="thumb1123"></div></div>
+              <div class="textarrowforright rlarrow2"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es8 rightl3">
+              <div id="thumb1121"></div></div>
               <div class="textarrowforright"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1 es6"></div>
+              <div class="leaves1 es9 rightl1 lrutle1"></div>
+              <div class="textarrowforright rlarrow1"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es9 rightl3">
+              <div id="thumb1117"></div></div>
               <div class="textarrowforright"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1 es8"></div>
+              <div class="leaves1 es8 rightl2 lrutle2"></div>
+              <div class="textarrowforright rlarrow2"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es8 rightl3">
+              <div id="thumb1113"></div></div>
               <div class="textarrowforright"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1 es9"></div>
-              <div class="textarrowforright"></div>
+              <div class="leaves1 es8 rightl1 lrutle1"></div>
+              <div class="textarrowforright rlarrow1"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1 es9"></div>
-              <div class="textarrowforright"></div>
-            </div>
-            <div class="contentbox">
-              <div class="leaves1 es8"></div>
-              <div class="textarrowforright"></div>
-            </div>
-            <div class="contentbox">
-              <div class="leaves1 es8"></div>
-              <div class="textarrowforright"></div>
-            </div>
-            <div class="contentbox">
-              <div class="leaves1 es8"></div>
-              <div class="textarrowforright"></div>
-            </div>
-            <div class="contentbox">
-              <div class="leaves1 es4">
-
-                <a class="fancybox" rel="mt_shasta" href="pic/pic1109_5.jpg" title="on Nov.9th">
-                <div id="thumb1109"></div></a>
-                <a class="fancybox" rel="mt_shasta" href="pic/pic1109_1.jpg" title="on Nov.9th">
-                </a>
-                <a class="fancybox" rel="mt_shasta" href="pic/pic1109_2.jpg" title="on Nov.9th">
-                </a>
-                <a class="fancybox" rel="mt_shasta" href="pic/pic1109_3.jpg" title="on Nov.9th">
-                </a>
-                <a class="fancybox" rel="mt_shasta" href="pic/pic1109_4.jpg" title="on Nov.9th">
-                </a>
-                <a class="fancybox" rel="mt_shasta" href="pic/pic1109_6.jpg" title="on Nov.9th">
-                </a>
-                <a class="fancybox" rel="mt_shasta" href="pic/pic1109_7.jpg" title="on Nov.9th">
-                </a>
+              <div class="leaves1 rightl3 lrutle2">
+                <div class="leaves2 lsposition1 es4">
+                  <a class="fancybox" rel="mt_shasta" href="pic/pic1109_5.jpg" title="on Nov.9th">
+                  <div id="pic110901"></div></a></div>
+                <div class="leaves2 lsposition2 es4">
+                  <a class="fancybox" rel="mt_shasta" href="pic/pic1109_1.jpg" title="on Nov.9th">
+                  <div id="pics110902"></div></a></div>
+                <div class="leaves2 lsposition3 es4">
+                  <a class="fancybox" rel="mt_shasta" href="pic/pic1109_2.jpg" title="on Nov.9th">
+                  <div id="pics110903"></div></a></div>
+                <div class="leaves2 lsposition4 es4">
+                  <a class="fancybox" rel="mt_shasta" href="pic/pic1109_3.jpg" title="on Nov.9th">
+                  <div id="pics110904"></div></a></div>
+                <div class="leaves2 lsposition5 es4">
+                  <a class="fancybox" rel="mt_shasta" href="pic/pic1109_4.jpg" title="on Nov.9th">
+                  <div id="pics110905"></div></a></div>
+                <div class="leaves2 lsposition6 es4">
+                  <a class="fancybox" rel="mt_shasta" href="pic/pic1109_6.jpg" title="on Nov.9th">
+                  <div id="pics110906"></div></a></div>
+                <div class="leaves2 lsposition7 es4">
+                  <a class="fancybox" rel="mt_shasta" href="pic/pic1109_7.jpg" title="on Nov.9th">
+                  <div id="pics110907"></div></a></div>
               </div>
               <div class="textarrowforright"></div>
               <!-- 110916 -->
 
             </div>
             <div class="contentbox">
-              <div class="leaves1 es7"></div>
+              <div class="leaves1 es7 rightl2 lrutle1"></div>
+              <div class="textarrowforright rlarrow2"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 es6 rightl3">
+                <a class="fancybox" rel="pics1105" href="pic/pic1105_1.jpg" title="on Nov.9th">
+                <div id="thumb1105"></div></a>
+                <a class="fancybox" rel="pics1105" href="pic/pic1105_2.jpg" title="on Nov.9th">
+                </a>
+                <a class="fancybox" rel="pics1105" href="pic/pic1105_3.jpg" title="on Nov.9th">
+                </a>
+              </div>
               <div class="textarrowforright"></div>
             </div>
             <div class="contentbox">
-              <div class="leaves1 es6"></div>
-              <div class="textarrowforright"></div>
-            </div>
-            <div class="contentbox">
-              <div class="leaves1 es6"></div>
-              <div class="textarrowforright"></div>
+              <div class="leaves1 es6 rightl1 lrutle1"></div>
+              <div class="textarrowforright rlarrow1"></div>
             </div>
 
 
           </div>
           </div>
-        </div>
+
         <div class="mountain2"></div>
         <div class="mountain1"></div>
 
         <div class="ground0"> </div>
+      </div>
     </body>
 </html>

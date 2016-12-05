@@ -1,142 +1,48 @@
 body{
   margin: 0px;
-  background-color: #bee4e7;
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+a{
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: #d9ffd4;
+}
+
 /* triangle generator: http://apps.eky.hk/css-triangle-generator/ */
-/*decoration*/
 
-  /*leaves*/
-  .topleaves{
-    position: absolute;
-    background-color: #73ce65;
-    width: 100px;
-    height: 100px;
-    border-radius: 10%;
-    z-index: 2;
-    top: -70px;
-    left: 40px;
-    transform: rotate(-22deg);
-  }
-  .topbrunch{
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 11px 30px 0 0;
-    border-color: #ade1ee transparent transparent transparent;
-    z-index: 4;
-  }
-  .topbrunch2{
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 12px 20px 10px 60px;
-    border-color: transparent transparent transparent #fae3c3;
-    position: absolute;
-    top: -18px;
-    right: -68px;
-    transform: rotate(-32deg);
-    z-index: 2;
-  }
-  /*cloud*/
-    #cloud {
-      width: 350px; height: 120px;
-      background: #f2f9fe;
-      background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-      background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-      background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-      background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-      background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
 
-      border-radius: 100px;
-      -webkit-border-radius: 100px;
-      -moz-border-radius: 100px;
-
-      position: relative;
-      margin: 120px auto 20px;
-    }
-
-    #cloud:after, #cloud:before {
-      content: '';
-      position: absolute;
-      background: #f2f9fe;
-      z-index: -1
-    }
-
-    #cloud:after {
-      width: 100px; height: 100px;
-      top: -50px; left: 50px;
-
-      border-radius: 100px;
-      -webkit-border-radius: 100px;
-      -moz-border-radius: 100px;
-    }
-
-    #cloud:before {
-      width: 180px; height: 180px;
-      top: -90px; right: 50px;
-
-      border-radius: 200px;
-      -webkit-border-radius: 200px;
-      -moz-border-radius: 200px;
-    }
-    .cloudmv1 {
-      animation: across 60s infinite;
-      position: absolute;
-      top: 200px;
-      /*left: -100px;
-      top: 100px; over paste*/
-    }
-    @keyframes across {
-      from {
-        left: -70%;
-      }
-      to {
-        left: 100%;
-      }
-    }
 .container0{
+  background-color: #bee4e7;
   position: relative;
   height: 5260px;
   width: 100%;
   overflow: hidden;
 }
-.ground0{
+.container1{
+  background-color: #0f555f;
+  position: relative;
+  height: 1680px;
   width: 100%;
-  height: 20px;
-  background-color: #c4df9b;
-  position: absolute;
-  top: 5240px;
+  overflow: hidden;
 }
-.mountain1{
-  position: absolute;
-  top: 4840px;
-  left: 70%;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 300px 400px 300px;
-  border-color: transparent transparent #a3d49c transparent;
-}
-.mountain2{
-  position: absolute;
-  top: 5040px;
-  left: 60%;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 150px 200px 150px;
-  border-color: transparent transparent #7acdc8 transparent;
-}
+
 .topnav{
-  background-color: rgba(22, 160, 171, 0.4);
+  background-color: #8ec9d7;
   width: 100%;
   height: 75px;
   top: 0%;
   position: fixed;
   z-index: 10;
 }
+
+.tpnvdec{
+  background-color: #0a3b42;
+}
+
 .topnavline{
   height: 6px;
   width: 90%;
@@ -144,6 +50,14 @@ body{
   position: fixed;
   top: 34px;
 }
+.tpnvlndec{
+  height: 6px;
+  width: 50%;
+  background-color: rgba(196, 223, 155, 1);
+  position: fixed;
+  top: 34px;
+}
+
 .topbutton{
   text-align: center;
   font-weight: bold;
@@ -183,6 +97,9 @@ body{
   top: 95px;
   left: 5px;
 }
+.dcolor{
+  color: #f5f7f6;
+}
 .title1{
   text-align: center;
   font-size: 18pt;
@@ -205,6 +122,16 @@ body{
   left: 50%;
   z-index: 2;
 }
+.wholetree2{
+  width: 800px;
+  height: 1600px;
+  position: absolute;
+  top: 80px;
+  margin-left: -400px;
+  left: 50%;
+  z-index: 2;
+}
+
 .timetable1{
   background-color: #fae3c3;
   width: 30px;
@@ -214,6 +141,17 @@ body{
   left: 50%;
   margin-left: -15px;
 }
+
+.timetable2{
+  background-color: #b4712d;
+  width: 30px;
+  height: 1500px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -15px;
+}
+
 .tlleftside{
   width: 320px;
   float: left;
@@ -234,6 +172,7 @@ body{
   float: left;
   width: 300px;
 }
+
 .leaves1{
   position: relative;
   width: 300px;
@@ -252,24 +191,105 @@ body{
   height: 150px;
   padding: 20px;
   border-radius: 5%;
+  z-index: 3;
+  }
+.leaves3{
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 5%;
+  }
+
+  .rsposition1{
+    position: absolute;
+    top: -5px;
+    left: -90px;
+    z-index: 3;
+    transform: rotate(-2deg);
+  }
+  .rsposition2{
+    position: absolute;
+    top: 60px;
+    left: 90px;
+    z-index: 3;
+    transform: rotate(4deg);
+  }
+  .rsposition3{
+    position: absolute;
+    top: 170px;
+    left: -50px;
+    z-index: 3;
+    transform: rotate(-4deg);
+  }
+  .rsposition4{
+    position: absolute;
+    top: -60px;
+    left: 190px;
+    z-index: 3;
+  }
+  .rsposition5{
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    z-index: 3;
+    transform: rotate(2deg);
+  }
+  .rsposition6{
+    position: absolute;
+    top: 150px;
+    left: 310px;
+    z-index: 3;
+    transform: rotate(-2deg);
+  }
+  .rsposition7{
+    position: absolute;
+    top: 220px;
+    left: 150px;
+    z-index: 3;
+    transform: rotate(4deg);
+  }
+
+  .lsp31{
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    z-index: 3;
+    transform: rotate(-2deg);
+  }
+  .lsp32{
+    position: absolute;
+    top: 80px;
+    left: 210px;
+    z-index: 3;
+    transform: rotate(4deg);
+  }
+  .lsp33{
+    position: absolute;
+    top: 160px;
+    left: 15px;
+    z-index: 3;
+    transform: rotate(-4deg);
   }
 .lsposition1{
   position: absolute;
   top: -15px;
   left: 20px;
   z-index: 3;
+  transform: rotate(-2deg);
 }
 .lsposition2{
   position: absolute;
   top: 60px;
   left: 150px;
   z-index: 3;
+  transform: rotate(4deg);
 }
 .lsposition3{
   position: absolute;
   top: 160px;
   left: -10px;
   z-index: 3;
+  transform: rotate(-4deg);
 }
 .lsposition4{
   position: absolute;
@@ -282,19 +302,23 @@ body{
   top: 0px;
   left: 300px;
   z-index: 3;
+  transform: rotate(2deg);
 }
 .lsposition6{
   position: absolute;
   top: 150px;
   left: 310px;
   z-index: 3;
+  transform: rotate(-2deg);
 }
 .lsposition7{
   position: absolute;
   top: 220px;
   left: 150px;
   z-index: 3;
+  transform: rotate(4deg);
 }
+
 .textarrowforleft{
   width: 0;
   height: 0;
@@ -316,12 +340,37 @@ body{
   top: 245px;
   right: 265px;
 }
+.textarrowforleft2{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 110px 30px 0;
+  border-color: transparent #b4712d transparent transparent;
+  position: absolute;
+  top: 245px;
+  left: 275px;
+  z-index: 1;
+}
+.textarrowforright2{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 0 30px 100px;
+  border-color: transparent transparent transparent #b4712d;
+  position: absolute;
+  top: 245px;
+  right: 265px;
+}
+
 .blank1{
   position: relative;
   width: 160px;
   height: 100px;
   float: left;
 }
+
+
+
 .es1{
   background-color: #ed1c24;
 }
@@ -353,338 +402,35 @@ body{
   background-color: #73ce65;
 }
 
-
-
-#mario{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/mario1.jpg');
-  cursor: pointer;
-  opacity: 0.8;
+.des1{
+  background-color: #c5322b;
 }
-#mario:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
+.des2{
+  background-color: #c85835;
 }
-
-#thumb1126{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1126.jpg');
-  cursor: pointer;
-  opacity: 1;
+.des3{
+  background-color: #cc7e3e;
 }
-#thumb1126:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
+.des4{
+  background-color: #cfa347;
 }
-
-#thumb1124{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1124.jpg');
-  cursor: pointer;
-  opacity: 1;
+.des5{
+  background-color: #d2c951;
 }
-#thumb1124:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
+.des6{
+  background-color: #acb74c;
 }
-
-#thumb1122{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1122.jpg');
-  cursor: pointer;
-  opacity: 1;
+.des7{
+  background-color: #85a547;
 }
-#thumb1122:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
+.des8{
+  background-color: #5f9442;
 }
-
-#thumb1118{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1118.jpg');
-  cursor: pointer;
-  opacity: 1;
+.des9{
+  background-color: #39823d;
 }
-#thumb1118:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
-}
-
-#thumb1116{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1116.jpg');
-  cursor: pointer;
-  opacity: 1;
-}
-#thumb1116:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
-}
-
-#thumb1114{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1114.jpg');
-  cursor: pointer;
-  opacity: 1;
-}
-#thumb1114:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
-}
-
-#thumb1112{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1112.jpg');
-  cursor: pointer;
-  opacity: 1;
-}
-#thumb1112:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
-}
-
-#thumb1110{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1110.jpg');
-  cursor: pointer;
-  opacity: 1;
-}
-#thumb1110:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
-}
-
-#thumb1127{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1127.jpg');
-  cursor: pointer;
-  opacity: 1;
-}
-#thumb1127:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
-}
-
-#thumb1125{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1125.jpg');
-  cursor: pointer;
-  opacity: 1;
-}
-#thumb1125:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
-}
-
-#thumb1123{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1123.jpg');
-  cursor: pointer;
-  opacity: 1;
-}
-#thumb1123:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
-}
-
-#thumb1121{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1121.jpg');
-  cursor: pointer;
-  opacity: 1;
-}
-#thumb1121:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
-}
-
-#thumb1117{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1117.jpg');
-  cursor: pointer;
-  opacity: 1;
-}
-#thumb1117:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
-}
-
-#thumb1113{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1113.jpg');
-  cursor: pointer;
-  opacity: 1;
-}
-#thumb1113:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
-}
-
-#pic110901{
-  position: absolute;
-  border-radius: 5%;
-  width: 150px;
-  height: 150px;
-  background-image: url('../pic/thumb1109.jpg');
-  background-size: cover;
-  background-position:top;
-  cursor: pointer;
-}
-#pic110901:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-}
-
-#pics110902{
-  border-radius: 5%;
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  background-position:center;
-  cursor: pointer;
-  background-image: url('../pic/pic1109_1.jpg');
-}
-#pics110903{
-  border-radius: 5%;
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  background-position:center;
-  cursor: pointer;
-  background-image: url('../pic/pic1109_2.jpg');
-}
-#pics110904{
-  border-radius: 5%;
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  background-position:center;
-  cursor: pointer;
-  background-image: url('../pic/pic1109_3.jpg');
-}
-#pics110905{
-  border-radius: 5%;
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  background-position:center;
-  cursor: pointer;
-  background-image: url('../pic/pic1109_4.jpg');
-}
-#pics110906{
-  border-radius: 5%;
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  background-position:center;
-  cursor: pointer;
-  background-image: url('../pic/pic1109_6.jpg');
-}
-#pics110907{
-  border-radius: 5%;
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  background-position:center;
-  cursor: pointer;
-  background-image: url('../pic/pic1109_7.jpg');
-}
-#thumb1108{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1108.jpg');
-  cursor: pointer;
-  opacity: 1;
-}
-#thumb1108:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
-}
-#thumb1105{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1105.jpg');
-  cursor: pointer;
-  opacity: 1;
-}
-#thumb1105:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
-}
-#thumb1104{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1104.jpg');
-  cursor: pointer;
-  opacity: 1;
-}
-#thumb1104:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
-}
-#thumb1102{
-  border-radius: 2%;
-  width: 300px;
-  height: 300px;
-  background-image: url('../pic/thumb1102.jpg');
-  cursor: pointer;
-  opacity: 1;
-}
-#thumb1102:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
+.des0{
+  background-color: #39823d;
 }
 
 /*leaves*/
@@ -729,10 +475,32 @@ body{
   left: 215px;
 }
 .lrutle1{
-  transform: rotate(2deg);
+  transform: rotate(-2deg);
 }
 .lrutle2{
-  transform: rotate(-2deg);
+  transform: rotate(-1.5deg);
+}
+.lrutle3{
+  transform: rotate(-1deg);
+}
+.lrutle4{
+  transform: rotate(-0.5deg);
+}
+.lrutle5{
+  transform: rotate(0deg);
+}
+.lrutle6{
+  transform: rotate(0.5deg);
+  z-index: 3;
+}
+.lrutle7{
+  transform: rotate(1deg);
+}
+.lrutle8{
+  transform: rotate(1.5deg);
+}
+.lrutle9{
+  transform: rotate(2deg);
 }
 .spinmv{
   animation: spinprss 10s infinite linear;

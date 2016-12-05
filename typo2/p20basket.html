@@ -1,0 +1,495 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<title>
+		typo_text
+	</title>
+	<style>
+
+		body {
+			margin: 0px;
+			background-color: white;
+			font-family: 'Noto Sans', sans-serif;
+		}
+		.clickbox{
+			text-transform: capitalize;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 210%;
+			color: white;
+			position: absolute;
+			top: 10px;
+			left: 50%;
+			z-index: 10;
+			width: 160px;
+			height: 30px;
+			margin-left: -81px;
+			border-radius: 1%;
+			border: 2px black solid;
+			background-color: #f6c755	;
+			opacity: 0;
+		}
+		.cbmv{
+			animation: cbprss 6s forwards linear;
+			animation-delay: 5s;
+		}
+		@keyframes cbprss {
+			0%{
+				opacity: 1;
+			}
+			8%{
+				opacity: 0;
+			}
+			16%{
+				opacity: 1;
+			}
+			24%{
+				opacity: 0;
+			}
+			32%{
+				opacity: 1;
+			}
+			99%{
+				opacity: 1;
+				z-index: 10;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+		.container1{
+			text-align: center;
+			width: 100%;
+			height: 600px;
+			background-color: white;
+			font-size: 12px;
+			color: black;
+			line-height: 180%;
+			position: relative;
+			z-index: 9;
+		}
+		.container0{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+			/*max-width: 400px;*/
+		}
+		.mainpic{
+			width: 100%;
+			height: 76%;
+			background-image: url('pic/p20_0.jpg');
+			background-size: cover;
+      background-position: right;
+			position: absolute;
+			margin-bottom: 10px;
+			cursor: pointer;
+		}
+
+		/*.content {
+			height: 100%;
+			position: relative;
+		}*/
+
+		.name {
+			padding: 5px 0 0;
+			line-height: 1.2em;
+			width: 300px;
+			position: absolute;
+			top: 80%;
+			left: 50%;
+			margin-left: -150px;
+		}
+		#main1{
+			font-size: 24px;
+			font-weight: 900;
+			color: #f6c755;
+		}
+		#sub1{
+			font-size: 10px;
+		}
+		.choochoo1{
+			background-image: url('pic/p20_1.png');
+			background-size: cover;
+      background-position: center;
+			width: 97px;
+			height: 53px;
+		}
+		.choomv1{
+			animation: chooprss1 0.6s forwards linear;
+			animation-delay: 0s;
+			opacity: 0;
+			position: absolute;
+			top: 95%;
+			left: 3%;
+			z-index: 13;
+		}
+		@keyframes chooprss1{
+			0% {
+				opacity: 0;
+				z-index: 13;
+			}
+			19% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				top: 87%;
+				opacity: 1;
+			}
+			99% {
+				top: 82%;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+
+		.choochoo2{
+			background-image: url('pic/p20_2.png');
+			background-size: cover;
+      background-position: center;
+			width: 106px;
+			height: 53px;
+		}
+		.choomv2{
+			animation: chooprss2 0.6s forwards linear;
+			animation-delay: 0.6s;
+			opacity: 0;
+			position: absolute;
+			top: 82%;
+			left: 73%;
+			z-index: 13;
+		}
+		@keyframes chooprss2{
+			0% {
+				opacity: 0;
+				z-index: 13;
+			}
+			19% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				top: 80%;
+				opacity: 1;
+			}
+			99% {
+				top: 75%;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+
+		.choochoo3{
+			background-image: url('pic/p20_3.png');
+			background-size: cover;
+      background-position: center;
+			width: 95px;
+			height: 53px;
+		}
+		.choomv3{
+			animation: chooprss3 0.6s forwards linear;
+			animation-delay: 1.2s;
+			opacity: 0;
+			position: absolute;
+			top: 73%;
+			left: 23%;
+			z-index: 13;
+		}
+		@keyframes chooprss3{
+			0% {
+				opacity: 0;
+				z-index: 13;
+			}
+			19% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				top: 73%;
+				opacity: 1;
+			}
+			99% {
+				top: 68%;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+
+		.choochoo4{
+			background-image: url('pic/p20_4.png');
+			background-size: cover;
+      background-position: center;
+			width: 108px;
+			height: 53px;
+		}
+		.choomv4{
+			animation: chooprss4 0.6s forwards linear;
+			animation-delay: 1.4s;
+			opacity: 0;
+			position: absolute;
+			top: 73%;
+			left: 6%;
+			z-index: 13;
+		}
+		@keyframes chooprss4{
+			0% {
+				opacity: 0;
+				z-index: 13;
+			}
+			19% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				top: 69%;
+				opacity: 1;
+			}
+			99% {
+				top: 64%;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+
+		.choochoo5{
+			background-image: url('pic/p20_5.png');
+			background-size: cover;
+			background-position: center;
+			width: 235px;
+			height: 114px;
+		}
+		.choomv5{
+			animation: chooprss5 0.9s forwards linear;
+			animation-delay: 2.0s;
+			opacity: 0;
+			position: absolute;
+			top: 53%;
+			left: 6%;
+			z-index: 13;
+		}
+		@keyframes chooprss5{
+			0% {
+				opacity: 0;
+				z-index: 13;
+			}
+			19% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				top: 29%;
+				opacity: 1;
+			}
+			99% {
+				top: 24%;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+
+		.choochoo6{
+			background-image: url('pic/p20_6.png');
+			background-size: cover;
+			background-position: center;
+			width: 327px;
+			height: 376px;
+		}
+		.choomv6{
+			animation: chooprss6 2s forwards linear;
+			animation-delay: 2.8s;
+			opacity: 0;
+			position: absolute;
+			top: 23%;
+			left: 3%;
+			z-index: 13;
+		}
+		@keyframes chooprss6{
+			0% {
+				opacity: 0;
+				z-index: 13;
+			}
+			9% {
+				opacity: 0;
+				z-index: 13;
+			}
+			10%{
+				top: 1%;
+				opacity: 1;
+				transform: rotate(0deg);
+			}
+			10%{
+				transform: rotate(-20deg);
+			}
+			11%{
+				transform: rotate(20deg);
+			}
+			15%{
+				transform: rotate(-15deg);
+			}
+			17%{
+				transform: rotate(15deg);
+			}
+			20%{
+				transform: rotate(0deg);
+			}
+			30%{
+				top: 1%;
+				opacity: 1;
+			}
+			99% {
+				top: -12%;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+
+		.choochoo7{
+			background-image: url('pic/p20_7.png');
+			background-size: cover;
+			background-position: center;
+			width: 201px;
+			height: 75px;
+		}
+		.choomv7{
+			animation: chooprss7 1.2s forwards linear;
+			animation-delay: 4.2s;
+			opacity: 0;
+			position: absolute;
+			top: 53%;
+			left: 6%;
+			z-index: 13;
+		}
+		@keyframes chooprss7{
+			0% {
+				opacity: 0;
+				z-index: 13;
+			}
+			19% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				top: 39%;
+				opacity: 1;
+			}
+			99% {
+				top: 37%;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+
+		.choochoo8{
+			background-image: url('pic/p20_8.png');
+			background-size: cover;
+			background-position: center;
+			width: 110px;
+			height: 66px;
+		}
+		.choomv8{
+			animation: chooprss8 1.2s forwards linear;
+			animation-delay: 4.8s;
+			opacity: 0;
+			position: absolute;
+			transform: rotate(40deg);
+			top: 23%;
+			left: 56%;
+			z-index: 13;
+		}
+		@keyframes chooprss8{
+			0% {
+				opacity: 0;
+				z-index: 13;
+			}
+			19% {
+				opacity: 0;
+				z-index: 13;
+			}
+			20%{
+				top: 9%;
+				opacity: 1;
+			}
+			99% {
+				top: 7%;
+				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
+		}
+
+	</style>
+	<script>
+	$(document).ready(function(){
+
+
+		$(".mainpic").click(function(){
+
+			$("#ctsound")[0].play();
+
+		});
+
+	});
+
+	</script>
+</head>
+
+<body>
+	<div class="container0">
+		<div class="container1">
+			<div class="mainpic"></div>
+			<div class="clickbox cbmv">CLICK THE IMAGE</div>
+			<div class="name"><span id="main1">BASKETBALL COURT</span>
+				<br><span id="sub1"><strong>NOISY BERRY</strong></span></div>
+		</div>
+		<div class="choochoo1 choomv1"></div>
+		<div class="choochoo2 choomv2"></div>
+		<div class="choochoo3 choomv3"></div>
+		<div class="choochoo4 choomv4"></div>
+		<div class="choochoo5 choomv5"></div>
+		<div class="choochoo6 choomv6"></div>
+		<div class="choochoo7 choomv7"></div>
+		<div class="choochoo8 choomv8"></div>
+	</div>
+	<audio id="ctsound">
+		<source src="audio/caltrain1.wav" type="audio/wav">
+	</audio>
+</body>
+</html>

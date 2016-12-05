@@ -1,0 +1,530 @@
+#mario{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/mario1.jpg');
+  cursor: pointer;
+  opacity: 0.8;
+}
+#mario:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
+#thumb1126{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1126.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1126:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
+#thumb1124{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1124.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1124:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
+#pic112201{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1122_1.jpg');
+}
+#pic112202{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1122_2.jpg');
+}
+#pic112203{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1122_3.jpg');
+}
+
+#thumb1122:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
+#thumb1118{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1118.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1118:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
+#thumb1116{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1116.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1116:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
+#thumb1114{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1114.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1114:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
+#thumb1112{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1112.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1112:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
+#pic111001{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1110_1.jpg');
+}
+#pic111002{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1110_2.jpg');
+}
+
+#thumb1127{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1127.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1127:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
+#thumb1125{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1125.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1125:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
+#thumb1123{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1123.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1123:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
+#thumb1121{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1121.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1121:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
+#thumb1117{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1117.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1117:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
+#thumb1113{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1113.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1113:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
+#thumb1108{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1108.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1108:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+}
+
+#pic110901{
+  position: absolute;
+  border-radius: 5%;
+  width: 150px;
+  height: 150px;
+  background-image: url('../pic/thumb1109.jpg');
+  background-size: cover;
+  background-position:top;
+  cursor: pointer;
+}
+#pic110901:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+}
+
+#pics110902{
+  border-radius: 5%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1109_1.jpg');
+}
+#pics110903{
+  border-radius: 5%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1109_2.jpg');
+}
+#pics110904{
+  border-radius: 5%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1109_3.jpg');
+}
+#pics110905{
+  border-radius: 5%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1109_4.jpg');
+}
+#pics110906{
+  border-radius: 5%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1109_6.jpg');
+}
+#pics110907{
+  border-radius: 5%;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1109_7.jpg');
+}
+
+#pic110501{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1105_1.jpg');
+}
+#pic110502{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1105_2.jpg');
+}
+#pic110503{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1105_3.jpg');
+}
+
+#thumb1105{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1105.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1105:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+#thumb1104{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1104.jpg');
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1104:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+#thumb1102{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/thumb1102.jpg');
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1102:hover{
+  background-position: bottom;
+  z-index: 32;
+}
+.bttn01{
+  width: 50px;
+  height: 50px;
+  background-color: #89be5e;
+  position: absolute;
+  left: 290px;
+  top: 265px;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.playbttn{
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 0 25px 50px;
+  border-color: transparent transparent transparent #0c7d85;
+}
+.psbttn{
+  cursor: pointer;
+  width: 10px;
+  height: 50px;
+  border-left: 20px solid;
+  border-right: 20px solid;
+  border-color: #0c7d85;
+  display: none;
+}
+
+.txtbbl1{
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 260px;
+  height: 30px;
+  padding: 10px;
+  position: absolute;
+  bottom: 0%;
+  z-index: 20;
+  opacity: 0;
+}
+.onltxt1{
+  line-height: 150%;
+  color: #5a290b;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  width: 280px;
+  height: 20px;
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  margin-left: -155px;
+}
+.onltxtdeco{
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  height: 150px;
+  border-top: 2px solid #76cc6a;
+  border-bottom: 2px solid #76cc6a;
+}
+.otdc1{
+  width: 100px;
+  position: absolute;
+  left: 5px;
+}
+.otdc2{
+  width: 100px;
+  position: absolute;
+  top:190px;
+  left: 5px;
+}
+.otdeco1{
+  position: absolute;
+  top: -35px;
+  background-color: #76cc6a;
+  width: 10px;
+  height: 30px;
+  border-radius: 50%;
+}
+.otd2{
+  left: 20px;
+}
+.otd3{
+  left: 40px;
+}
+.otd4{
+  left: 60px;
+}
+.otd5{
+  left: 80px;
+}
+
+.txtbblapp{
+  opacity: 1;
+}
+.txtbblmv{
+  animation: appearprss 20s;
+}
+
+
+@keyframes appearprss {
+  0%{
+    opacity: 0;
+  }
+  0.1%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}

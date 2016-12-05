@@ -1,0 +1,172 @@
+/* triangle generator: http://apps.eky.hk/css-triangle-generator/ */
+/*decoration*/
+  /*leaves*/
+  .topleaves{
+    position: absolute;
+    background-color: #73ce65;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    z-index: 2;
+    top: -70px;
+    left: 40px;
+    transform: rotate(-22deg);
+  }
+
+  .topleave2{
+    position: absolute;
+    background-color: #39823d;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    z-index: 2;
+    top: -60px;
+    left: 52px;
+    transform: rotate(2deg);
+  }
+
+
+  .topbrunch{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 30px 0 0;
+    border-color: #bee4e7 transparent transparent transparent;
+    z-index: 4;
+  }
+  .topbrunch2{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 20px 10px 60px;
+    border-color: transparent transparent transparent #fae3c3;
+    position: absolute;
+    top: -18px;
+    right: -68px;
+    transform: rotate(-32deg);
+    z-index: 2;
+  }
+
+  .topbrunch3{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 30px 0 0;
+    border-color: #0f555f transparent transparent transparent;
+    z-index: 4;
+  }
+  .topbrunch4{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 20px 10px 60px;
+    border-color: transparent transparent transparent #b4712d;
+    position: absolute;
+    top: -18px;
+    right: -68px;
+    transform: rotate(-32deg);
+    z-index: 2;
+  }
+
+  /*cloud*/
+    #cloud {
+      width: 350px; height: 120px;
+      background: #f2f9fe;
+      background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+      background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+      background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+      background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+      background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+
+      border-radius: 100px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+
+      position: relative;
+      margin: 120px auto 20px;
+    }
+
+    #cloud:after, #cloud:before {
+      content: '';
+      position: absolute;
+      background: #f2f9fe;
+      z-index: -1
+    }
+
+    #cloud:after {
+      width: 100px; height: 100px;
+      top: -50px; left: 50px;
+
+      border-radius: 100px;
+      -webkit-border-radius: 100px;
+      -moz-border-radius: 100px;
+    }
+
+    #cloud:before {
+      width: 180px; height: 180px;
+      top: -90px; right: 50px;
+
+      border-radius: 200px;
+      -webkit-border-radius: 200px;
+      -moz-border-radius: 200px;
+    }
+    .cloudmv1 {
+      animation: across 60s infinite;
+      position: absolute;
+      top: 200px;
+      /*left: -100px;
+      top: 100px; over paste*/
+    }
+    @keyframes across {
+      from {
+        left: -70%;
+      }
+      to {
+        left: 100%;
+      }
+    }
+
+
+    .ground0{
+      width: 100%;
+      height: 20px;
+      background-color: #c4df9b;
+      position: absolute;
+      top: 5240px;
+    }
+    .gdec{
+      background-color: white;
+      top: 1660px;
+    }
+
+    .mountain1{
+      position: absolute;
+      top: 4840px;
+      left: 70%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 300px 400px 300px;
+      border-color: transparent transparent #a3d49c transparent;
+    }
+    .m1dec{
+      top: 1260px;
+      border-color: transparent transparent #c9eee7 transparent;
+    }
+
+    .mountain2{
+      position: absolute;
+      top: 5040px;
+      left: 60%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 150px 200px 150px;
+      border-color: transparent transparent #7acdc8 transparent;
+    }
+    .m2dec{
+      top: 1460px;
+      border-color: transparent transparent #9bdadf transparent;
+    }

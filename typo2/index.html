@@ -13,18 +13,66 @@
 
 		body {
 			margin: 0px;
-			background-image: url('pic/bgbackgound.jpg');
+			background-color: white;
 			font-family: 'Noto Sans', sans-serif;
+		}
+		.clickbox{
+			text-transform: capitalize;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 210%;
+			color: white;
+			position: absolute;
+			top: 10px;
+			left: 50%;
+			z-index: 10;
+			width: 160px;
+			height: 30px;
+			margin-left: -81px;
+			border-radius: 1%;
+			border: 2px black solid;
+			background-color: #f6c755	;
+			opacity: 0;
+		}
+		.cbmv{
+			animation: cbprss 6s forwards linear;
+			animation-delay: 5s;
+		}
+		@keyframes cbprss {
+			0%{
+				opacity: 1;
+			}
+			8%{
+				opacity: 0;
+			}
+			16%{
+				opacity: 1;
+			}
+			24%{
+				opacity: 0;
+			}
+			32%{
+				opacity: 1;
+			}
+			99%{
+				opacity: 1;
+				z-index: 10;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
+			}
 		}
 		.container1{
 			text-align: center;
-			width: 300px;
-			height: 400px;
-			margin: 20px auto;
+			width: 100%;
+			height: 600px;
 			background-color: white;
 			font-size: 12px;
 			color: black;
 			line-height: 180%;
+			position: relative;
+			z-index: 9;
 		}
 		.container0{
 			width: 100%;
@@ -34,14 +82,12 @@
 			/*max-width: 400px;*/
 		}
 		.mainpic{
-			width: 300px;
-			height: 300px;
-			background-image: url('pic/choochoo.jpg');
+			width: 100%;
+			height: 76%;
+			background-image: url('pic/caltrain_0.jpg');
 			background-size: cover;
-      background-position: center;
-			position: relative;
-			left: 50%;
-			margin-left: -150px;
+      background-position: right;
+			position: absolute;
 			margin-bottom: 10px;
 			cursor: pointer;
 		}
@@ -52,14 +98,24 @@
 		}*/
 
 		.name {
-			font-size: 16px;
-			font-weight: 700;
 			padding: 5px 0 0;
-			line-height: 1.0em;
-      color: #f6c755;
+			line-height: 1.2em;
+			width: 300px;
+			position: absolute;
+			top: 80%;
+			left: 50%;
+			margin-left: -150px;
+		}
+		#main1{
+			font-size: 24px;
+			font-weight: 900;
+			color: #f6c755;
+		}
+		#sub1{
+			font-size: 10px;
 		}
 		.choochoo{
-			background-image: url('pic/choochoo1.png');
+			background-image: url('pic/caltrain_2.png');
 			background-size: cover;
       background-position: center;
 			width: 600px;
@@ -67,7 +123,7 @@
 			opacity: 0;
 		}
 		.choochoo2{
-			background-image: url('pic/choochoo2.png');
+			background-image: url('pic/caltrain_3.png');
 			background-size: cover;
       background-position: center;
 			width: 1600px;
@@ -88,45 +144,60 @@
 		.choomv3{
 			animation: chooprss3 12s forwards;
 			position: absolute;
+
 		}
 		@keyframes chooprss{
-			from {
-				top: -70px;
+			0% {
+				top: 5%;
 				left: -20%;
 				opacity: 1;
+				z-index: 13;
 			}
-			to {
-				top: -200px;
+			99% {
+				top: -30%;
 				left: -20%;
 				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				opacity: 0;
+				z-index: 0;
 			}
 		}
 		@keyframes chooprss2{
-			from {
-				top: 200px;
-				left: 45%;
+			0% {
+				top: 70%;
+				left: 35%;
 				opacity: 1;
+				z-index: 13;
 			}
-			to {
-				top: 110px;
-				left: 45%;
+			99% {
+				top: 50%;
+				left: 35%;
 				opacity: 0;
+				z-index: 13;
+			}
+			100%{
+				z-index: 0;
 			}
 		}
 		@keyframes chooprss3{
 			0% {
-				top: 60%;
+				top: 74%;
 				left: -1600px;
+				z-index: 13;
 			}
 			99% {
-				top: 60%;
+				top: 74%;
 				left: 800px;
 				opacity: 1;
+				z-index: 13;
 			}
 			100% {
-				top: 60%;
+				top: 74%;
 				left: 800px;
 				opacity: 0;
+				z-index: 1;
 			}
 		}
 
@@ -151,13 +222,9 @@
 	<div class="container0">
 		<div class="container1">
 			<div class="mainpic"></div>
-
-				<div class="content">
-					<div class="text">
-						<div class="name">CALTRAIN</div>
-						<div class="title">Click the Caltrain to play the sound</div>
-					</div>
-				</div>
+			<div class="clickbox cbmv">CLICK THE IMAGE</div>
+			<div class="name"><span id="main1">INTRODUCTION</span>
+				<br><span id="sub1"><strong>NOISY BERRY,</strong> page 1</span></div>
 		</div>
 		<div class="choochoo2 choomv3"></div>
 		<div class="choochoo choomv"></div>

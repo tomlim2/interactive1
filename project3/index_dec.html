@@ -1,0 +1,137 @@
+
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="css/project3.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/pics.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/deco.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+        <title>          Journal Tree Dec Tree        </title>
+        <style>
+
+        </style>
+
+        <script>
+        $(document).ready(function(){
+          $(".fancybox").fancybox({
+
+                nextEffect:'none',
+                prevEffect:'none',
+                openEffect:'none',
+                closeEffect:'none'
+
+              });
+
+          $("#mario").hover(function(){
+            $("#mjump")[0].pause();
+            $("#mjump")[0].currentTime=0;
+            $("#mjump")[0].play();
+          },
+          function(){
+          }
+        );
+        $("#thumb1109").hover(function(){
+          $("#missile")[0].pause();
+          $("#missile")[0].currentTime=0;
+          $("#missile")[0].play();
+        },
+        function(){
+        }
+        );
+
+
+        });
+        </script>
+    </head>
+
+    <body>
+      <div class="container1">
+        <div class="audio">
+          <audio id="missile">
+            <source src="audio/Missile_Rip.mp3" type="audio/mp3">
+          </audio>
+        </div>
+        <div class="decoration">
+          <div class="snowman0">
+            <div class="smhead0"></div>
+
+          </div>
+          <div id = "cloud" class="cloudmv1"></div>
+        </div>
+
+        <div class="topnav tpnvdec">
+          <div class="tpnvlndec"></div>
+          <div class="topbutton navbutton1">
+            <a href="index.html">Nov</a>
+          </div>
+          <div class="topbutton navbutton2">
+            Dec
+          </div>
+          <!-- <div class="topbutton navbutton3"></div> -->
+        </div>
+        <div class="wholetree2">
+          <div class="timetable2">
+            <div class="topleave2"></div>
+            <div class="topbrunch3"></div>
+            <div class="topbrunch4"></div>
+            <div class="date dcolor">
+                8<br>7<br>6<br>5<br>4<br>3<br>2<br>1
+            </div>
+          </div>
+
+          <div class="tlleftside">
+            <div class="contentbox">
+              <div class="leaves1 leftl2 des0"></div>
+              <div class="textarrowforleft2 llarrow2"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 leftl3 lrutle2 des0"></div>
+              <div class="textarrowforleft2"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 des6 leftl1">
+              <div id="thumb1126"></div></div>
+              <div class="textarrowforleft2 llarrow1"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 des4 leftl3 lrutle1">
+              <div id="thumb1124"></div></div>
+              <div class="textarrowforleft2"></div>
+            </div>
+          </div>
+
+
+          <div class="tlrightside">
+            <div class="contentbox">
+              <div class="leaves1 rightl3 des0"></div>
+              <div class="textarrowforright2"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 des6 rightl1 lrutle1">
+              <div id="thumb1127"></div></div>
+              <div class="textarrowforright2 rlarrow1"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 des9 rightl3">
+              <div id="thumb1125"></div></div>
+              <div class="textarrowforright2"></div>
+            </div>
+            <div class="contentbox">
+              <div class="leaves1 des6 rightl2 lrutle2">
+              <div id="thumb1123"></div></div>
+              <div class="textarrowforright2 rlarrow2"></div>
+            </div>
+          </div>
+          </div>
+
+        <div class="mountain2 m2dec"></div>
+        <div class="mountain1 m1dec"></div>
+
+        <div class="ground0 gdec"> </div>
+      </div>
+    </body>
+</html>

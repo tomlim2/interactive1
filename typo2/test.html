@@ -21,7 +21,6 @@
 			height: 100%;
 			background-image: url('pic/bgbackgound.jpg');
 			background-size: cover;
-			overflow: hidden;
 			position: absolute;
 			/*max-width: 400px;*/
 		}
@@ -30,6 +29,7 @@
 			text-align: center;
 			width: 320px;
 			height: 568px;
+			overflow: hidden;
 			margin-left: -160px;
 			position: absolute;
 			top: 0px;
@@ -80,6 +80,46 @@
 			margin-left: -150px;
 		}
 
+		.choochoo{
+			background-image: url('pic/p10_2.png');
+			background-size: cover;
+			background-position: center;
+			width: 1190px;
+			height: 70px;
+			opacity: 0;
+		}
+		.choomv{
+			animation: chooprss 3s forwards linear;
+			position: absolute;
+			top: 170px;
+			left: 50px;
+			z-index: 13;
+		}
+		.choomv2{
+			animation: chooprss 2s forwards linear;
+			animation-delay: 2.4s;
+			position: absolute;
+			top: 170px;
+			left: 50px;
+			z-index: 13;
+		}
+		@keyframes chooprss{
+			0% {
+				left: 320px;
+				opacity: 1;
+				z-index: 13;
+			}
+			99% {
+				left: -1190px;
+				opacity: 1;
+				z-index: 13;
+			}
+			100% {
+				left: -1190px;
+				opacity: 0;
+				z-index: 1;
+			}
+		}
 
 		.clickbox{
 			text-transform: capitalize;
@@ -132,56 +172,6 @@
 
 
 
-
-
-		/*.content {
-			height: 100%;
-			position: relative;
-		}*/
-
-
-
-
-		.choochoo{
-			background-image: url('pic/p10_2.png');
-			background-size: cover;
-      background-position: center;
-			width: 1190px;
-			height: 70px;
-			opacity: 0;
-		}
-		.choomv{
-			animation: chooprss 3s forwards linear;
-			position: absolute;
-			top: 39%;
-			z-index: 13;
-		}
-		.choomv2{
-			animation: chooprss 2s forwards linear;
-			animation-delay: 2.4s;
-			position: absolute;
-			top: 39%;
-			z-index: 13;
-		}
-		@keyframes chooprss{
-			0% {
-    		left: 100%;
-				opacity: 1;
-				z-index: 13;
-			}
-			99% {
-				left: -300%;
-				opacity: 1;
-				z-index: 13;
-			}
-			100% {
-				left: -300%;
-				opacity: 0;
-				z-index: 1;
-			}
-		}
-
-
 	</style>
 	<script>
 	$(document).ready(function(){
@@ -203,11 +193,13 @@
 		<div class="container1">
 			<div class="interior">
 
+				<div class="clickbox cbmv">CLICK THE IMAGE</div>
 
 				<div class="mainpic"></div>
 				<div class="mainpic2"></div>
-				<div class="clickbox cbmv">CLICK THE IMAGE</div>
 
+				<div class="choochoo choomv"></div>
+				<div class="choochoo choomv2"></div>
 
 				<div class="name">
 					HIGHWAY
@@ -216,8 +208,6 @@
 
 			</div>
 		</div>
-		<div class="choochoo choomv"></div>
-		<div class="choochoo choomv2"></div>
 	</div>
 	<audio id="ctsound">
 		<source src="audio/caltrain1.wav" type="audio/wav">

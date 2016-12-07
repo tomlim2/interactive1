@@ -1,0 +1,233 @@
+/* triangle generator: http://apps.eky.hk/css-triangle-generator/ */
+
+a{
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: #d9ffd4;
+}
+
+.topnav{
+  background-color: #bee4e7;
+  width: 100%;
+  height: 72px;
+  top: 0%;
+  position: fixed;
+  z-index: 10;
+}
+
+.topbutton{
+  text-align: center;
+  font-weight: bold;
+  font-size: 16pt;
+  text-transform: uppercase;
+  line-height: 290%;
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  top: -10px;
+}
+.navbutton1{
+  color: #f3e9e8;
+  left: 30%;
+  z-index: 18;
+  /*background-color: #0b873f;*/
+  cursor: pointer;
+}
+.navbutton2{
+  color: #251c17;
+  left: 50%;
+  z-index: 18;
+  /*background-color: rgba(196, 223, 155, 1);*/
+}
+.navbutton3{
+  color: #f3e9e8;
+  left: 70%;
+  z-index: 18;
+  /*background-color: #0b873f;*/
+  cursor: pointer;
+}
+
+.maintptree1 {
+    width: 18px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: #88b14b;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    margin-left: -9px;
+}
+.maintpttrunk1{
+  width: 4px;
+  height: 5px;
+  background-color: #d1af94;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.tpnvdec{
+  background-color: #0f555f;
+}
+.decnvlin{
+  background-color: white;
+}
+.novnvlin{
+  background-color: rgba(196, 223, 155, 1);
+}
+
+.decojt1 {
+    position: absolute;
+    left: 1%;
+    top: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 40px 60px 40px;
+    border-color: transparent transparent #a3d49c transparent;
+    z-index: 10;
+}
+.decojt2 {
+    position: absolute;
+    top: 25px;
+    left: 5%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 30px 45px 30px;
+    border-color: transparent transparent #7acdc8 transparent;
+    z-index: 9;
+}
+.topnavline{
+  height: 2px;
+  width: 100%;
+  position: fixed;
+  top: 70px;
+}
+
+
+
+/*decoforest*/
+
+.dfside01{
+  position: absolute;
+  left: 28px
+}
+.dfside02{
+  position: absolute;
+  left: 285px;
+}
+.dfside03{
+  position: absolute;
+  left: 527px;
+}
+.dfside04{
+  position: absolute;
+  left: 795px;
+}
+.dfside05{
+  position: absolute;
+  left: 1038px;
+}
+.dfside06{
+  position: absolute;
+  left: 1294px;
+}
+.decoforest1 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    z-index: 13;
+}
+.decoforest2 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50px;
+    left: 52px;
+    z-index: 13;
+}
+.decoforest3 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50px;
+    left: 114px;
+    z-index: 13;
+}
+.decoforest4 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50px;
+    left: 176px;
+    z-index: 13;
+}
+.dftree1{
+  width: 10px;
+  height: 20px;
+  border-radius: 50%;
+}
+.dftree2{
+  width: 10px;
+  height: 20px;
+  border-radius: 50%;
+}
+.dftree3{
+  width: 10px;
+  height: 20px;
+  border-radius: 50%;
+}
+.dftree4{
+  width: 10px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+
+.dft1{
+  position: absolute;
+  top: 0px;
+  left: 8px;
+  z-index: 13;
+}
+.dft2{
+  position: absolute;
+  top: 0px;
+  left: 16px;
+  z-index: 14;
+}
+.dft3{
+  position: absolute;
+  top: 0px;
+  left: 24px;
+  z-index: 13;
+}
+.dft4{
+  position: absolute;
+  top: 0px;
+  left: 32px;
+  z-index: 14;
+}
+.dft5{
+  position: absolute;
+  top: 0px;
+  left: 40px;
+  z-index: 13;
+}
+.dft6{
+  position: absolute;
+  top: 0px;
+  left: 48px;
+  z-index: 14;
+}
+
+/*the end of the decoforest*/

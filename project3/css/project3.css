@@ -1,16 +1,10 @@
 body{
   margin: 0px;
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: #bee4e7;
 }
 
-a{
-  font-weight: 600;
-  color: white;
-  text-decoration: none;
-}
-a:hover{
-  color: #d9ffd4;
-}
+
 
 /* triangle generator: http://apps.eky.hk/css-triangle-generator/ */
 
@@ -18,38 +12,18 @@ a:hover{
 .container0{
   background-color: #bee4e7;
   position: relative;
-  height: 5260px;
+  height: 5330px;
   width: 100%;
   overflow: hidden;
 }
 .container1{
   background-color: #0f555f;
   position: relative;
-  height: 1680px;
+  height: 1750px;
   width: 100%;
   overflow: hidden;
 }
 
-.topnav{
-  background-color: #8ec9d7;
-  width: 100%;
-  height: 75px;
-  top: 0%;
-  position: fixed;
-  z-index: 10;
-}
-
-.tpnvdec{
-  background-color: #0a3b42;
-}
-
-.topnavline{
-  height: 6px;
-  width: 90%;
-  background-color: rgba(196, 223, 155, 1);
-  position: fixed;
-  top: 34px;
-}
 .tpnvlndec{
   height: 6px;
   width: 50%;
@@ -58,36 +32,6 @@ a:hover{
   top: 34px;
 }
 
-.topbutton{
-  text-align: center;
-  font-weight: bold;
-  font-size: 16pt;
-  text-transform: uppercase;
-  line-height: 290%;
-  margin-left: -30px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  position: fixed;
-  top: 7px;
-}
-.navbutton1{
-  color: #f3e9e8;
-  left: 10%;
-  background-color: #0b873f;
-  cursor: pointer;
-}
-.navbutton2{
-  color: #251c17;
-  left: 50%;
-  background-color: rgba(196, 223, 155, 1);
-}
-.navbutton3{
-  color: #f3e9e8;
-  left: 90%;
-  background-color: #0b873f;
-  cursor: pointer;
-}
 .date{
   text-align: center;
   font-size: 16pt;
@@ -117,7 +61,7 @@ a:hover{
   width: 800px;
   height: 5180px;
   position: absolute;
-  top: 80px;
+  top: 150px;
   margin-left: -400px;
   left: 50%;
   z-index: 2;
@@ -126,7 +70,7 @@ a:hover{
   width: 800px;
   height: 1600px;
   position: absolute;
-  top: 80px;
+  top: 150px;
   margin-left: -400px;
   left: 50%;
   z-index: 2;

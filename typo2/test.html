@@ -13,9 +13,74 @@
 
 		body {
 			margin: 0px;
-			background-color: white;
 			font-family: 'Noto Sans', sans-serif;
 		}
+
+		.container0{
+			width: 100%;
+			height: 100%;
+			background-image: url('pic/bgbackgound.jpg');
+			background-size: cover;
+			overflow: hidden;
+			position: absolute;
+			max-width: 400px;
+		}
+
+		.container1{
+			text-align: center;
+			width: 320px;
+			height: 568px;
+			margin-left: -154px;
+			position: absolute;
+			top: 20px;
+			left: 50%;
+			z-index: 9;
+		}
+
+		.mainpic{
+			width: 320px;
+			height: 370px;
+			background-image: url('pic/p10_0.jpg');
+			background-size: cover;
+			background-position: right;
+			position: absolute;
+			cursor: pointer;
+		}
+
+		.mainpic2{
+			width: 320px;
+			height: 370px;
+			background-image: url('pic/p10_1.png');
+			background-size: cover;
+			background-position: right;
+			position: absolute;
+			cursor: pointer;
+			z-index: 14;
+		}
+
+		.interior{
+			height: 100%;
+	    position: relative;
+
+		}
+
+		.name {
+			font-size: 24px;
+			font-weight: 900;
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			-moz-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			-webkit-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			color: #f6c755;
+			padding: 5px 0 0;
+			line-height: 1.2em;
+			width: 300px;
+	    position: absolute;
+	    top: 380px;
+	    left: 50%;
+			margin-left: -150px;
+		}
+
+
 		.clickbox{
 			text-transform: capitalize;
 			font-size: 14px;
@@ -63,68 +128,19 @@
 				z-index: 0;
 			}
 		}
-		.container1{
-			text-align: center;
-			width: 320px;
-			height: 568px;
-			margin: 160px auto;
-			background-color: white;
-			font-size: 12px;
-			color: black;
-			line-height: 180%;
-			z-index: 9;
-		}
-		.container0{
-			width: 100%;
-			height: 100%;
-			overflow: hidden;
-			position: relative;
-			/*max-width: 400px;*/
-		}
-		.mainpic{
-			width: 320px;
-			height: 370px;
-			background-image: url('pic/p10_0.jpg');
-			background-size: cover;
-      background-position: right;
-			position: absolute;
-			margin-bottom: 10px;
-			cursor: pointer;
-		}
-		.mainpic2{
-			width: 320px;
-			height: 568px;
-			background-image: url('pic/p10_1.png');
-			background-size: cover;
-      background-position: right;
-			position: absolute;
-			margin-bottom: 10px;
-			cursor: pointer;
-			z-index: 14;
-		}
+
+
+
+
+
 
 		/*.content {
 			height: 100%;
 			position: relative;
 		}*/
 
-		.name {
-			padding: 5px 0 0;
-			line-height: 1.2em;
-			width: 300px;
-			position: absolute;
-			top: 80%;
-			left: 50%;
-			margin-left: -150px;
-		}
-		#main1{
-			font-size: 24px;
-			font-weight: 900;
-			color: #f6c755;
-		}
-		#sub1{
-			font-size: 10px;
-		}
+
+
 
 		.choochoo{
 			background-image: url('pic/p10_2.png');
@@ -185,15 +201,23 @@
 <body>
 	<div class="container0">
 		<div class="container1">
-			<div class="mainpic"></div>
-			<div class="choochoo choomv"></div>
-			<div class="choochoo choomv2"></div>
-			<div class="mainpic2"></div>
-			<div class="clickbox cbmv">CLICK THE IMAGE</div>
-			<div class="name"><span id="main1">HIGHWAY</span>
-				<br><span id="sub1"><strong>NOISY BERRY</strong></span></div>
-		</div>
+			<div class="interior">
 
+
+				<div class="mainpic"></div>
+				<div class="mainpic2"></div>
+				<div class="clickbox cbmv">CLICK THE IMAGE</div>
+
+
+				<div class="name">
+					HIGHWAY
+				</div>
+
+
+			</div>
+		</div>
+		<div class="choochoo choomv"></div>
+		<div class="choochoo choomv2"></div>
 	</div>
 	<audio id="ctsound">
 		<source src="audio/caltrain1.wav" type="audio/wav">

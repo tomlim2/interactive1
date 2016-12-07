@@ -134,16 +134,16 @@
       height: 20px;
       background-color: #c4df9b;
       position: absolute;
-      top: 5240px;
+      top: 5310px;
     }
     .gdec{
       background-color: white;
-      top: 1660px;
+      top: 1730px;
     }
 
     .mountain1{
       position: absolute;
-      top: 4840px;
+      top: 4910px;
       left: 70%;
       width: 0;
       height: 0;
@@ -152,13 +152,13 @@
       border-color: transparent transparent #a3d49c transparent;
     }
     .m1dec{
-      top: 1260px;
+      top: 1330px;
       border-color: transparent transparent #c9eee7 transparent;
     }
 
     .mountain2{
       position: absolute;
-      top: 5040px;
+      top: 5110px;
       left: 60%;
       width: 0;
       height: 0;
@@ -167,6 +167,6 @@
       border-color: transparent transparent #7acdc8 transparent;
     }
     .m2dec{
-      top: 1460px;
+      top: 1530px;
       border-color: transparent transparent #9bdadf transparent;
     }

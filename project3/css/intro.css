@@ -1,20 +1,96 @@
+.introcloud{
+}
+.ic1{
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 20%;
+}
+.icps1{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.icps2{
+  position: absolute;
+  top: 0px;
+  left: 40px;
+}
+
+
+
+.introcloudmv{
+  animation: introcloudprss 160s infinite linear;
+  position: absolute;
+  top: 120px;
+}
+.introcloudmv2{
+  animation: introcloudprss2 200s forwards linear;
+  position: absolute;
+  top: 220px;
+}
+.introcloudmv3{
+  animation: introcloudprss 240s infinite linear;
+  animation-delay: 60s;
+  position: absolute;
+  top: 300px;
+  opacity: 0;
+}
+.introcloudmv4{
+  animation: introcloudprss3 160s forwards linear;
+  position: absolute;
+  top: 400px;
+
+}
+@keyframes introcloudprss {
+  from{
+    opacity: 0.9;
+    left: -100px;
+  }
+  to{
+    opacity: 0.9;
+    left: 1800px;
+  }
+}
+@keyframes introcloudprss2 {
+  from{
+    opacity: 0.9;
+    left: 860px;
+  }
+  to{
+    opacity: 0.9;
+    left: 1800px;
+  }
+}
+@keyframes introcloudprss3 {
+  from{
+    opacity: 0.9;
+    left: 160px;
+  }
+  to{
+    opacity: 0.9;
+    left: 1800px;
+  }
+}
+
 .bigtitle{
   width: 800px;
   height: 200px;
   position: absolute;
   left: 50%;
-  top: 20%;
+  top: 50%;
   margin-left: -400px;
   margin-top: -100px;
   font-size: 100px;
   font-weight: 900;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.9);
   text-align: center;
   z-index: 20;
+  text-transform: capitalize;
 }
 .introbigtreetrunk{
   width: 20px;
-  height: 520px;
+  height: 100%;
   position: absolute;
   bottom: 1%;
   left: 50%;
@@ -34,35 +110,50 @@
 }
 .introbigtreelps1{
   position: absolute;
-  top: -10px;
+  bottom: 50px;
   left: 30px;
 }
 .introbigtreelps2{
   position: absolute;
-  top: 20px;
+  bottom: 170px;
   left: -235px;
 }
 .introbigtreelps3{
   position: absolute;
-  top: 145px;
-  left: 40px;
+  bottom: 290px;
+  left: 50px;
 }
 .introbigtreelps4{
   position: absolute;
-  top: 235px;
+  bottom: 410px;
   left: -215px;
+}
+.introbigtreelps5{
+  position: absolute;
+  bottom: 530px;
+  left: 30px;
+}
+.introbigtreelps6{
+  position: absolute;
+  bottom: 650px;
+  left: -235px;
+}
+.introbigtreelps7{
+  position: absolute;
+  bottom: 770px;
+  left: 30px;
 }
 
 .middletreetrunk1{
   width: 10px;
   height: 80px;
-  background-color: brown;
+  background-color: #d1af94;
   z-index: 20;
 }
 .middletreeleaves1{
   width: 80px;
   height: 100px;
-  background-color: green;
+  background-color: #8ac745;
   position: absolute;
   top: -40px;
   left: -35px;

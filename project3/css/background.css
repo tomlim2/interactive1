@@ -71,54 +71,119 @@
   }
 
   /*cloud*/
-    #cloud {
-      width: 350px; height: 120px;
-      background: #f2f9fe;
-      background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-      background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-      background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-      background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-      background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  .treecloud{
+  }
+  .tc1{
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 20%;
+  }
+  .tc2{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 20%;
+  }
+  .tc3{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 20%;
+  }
+  .tc301{
+    width: 40px;
+    height: 20px;
+    background-color: white;
+  }
+  .tcps1{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .tcps2{
+    position: absolute;
+    top: 0px;
+    left: 150px;
+  }
+  .tcps3{
+    position: absolute;
+    top: 0px;
+    left: 75px;
+  }
+  .tc2ps1{
+    position: absolute;
+    top: 0px;
+    left: 50px;
+  }
+  .tc3ps1{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+  }
+  .tc3ps2{
+    position: absolute;
+    top: 0px;
+    left: 47px;
+  }
 
-      border-radius: 100px;
-      -webkit-border-radius: 100px;
-      -moz-border-radius: 100px;
 
-      position: relative;
-      margin: 120px auto 20px;
+  .treecloudmv{
+    animation: treecloudprss3 30s infinite linear;
+    position: absolute;
+    top: 400px;
+    left: 0px;
+  }
+  .treecloudmv2{
+    animation: treecloudprss2 40s infinite linear;
+    position: absolute;
+    top: 820px;
+    left: 9px;
+  }
+  .treecloudmv3{
+    animation: treecloudprss 30s infinite linear;
+    position: absolute;
+    top: 1000px;
+    left: 0px;
+  }
+  .treecloudmv4{
+    animation: treecloudprss3 80s forwards linear;
+    position: absolute;
+    top: 1400px;
+  }
+  @keyframes treecloudprss {
+    from{
+      opacity: 0.9;
+      left: -600px;
     }
-
-    #cloud:after, #cloud:before {
-      content: '';
-      position: absolute;
-      background: #f2f9fe;
-      z-index: -1
+    to{
+      opacity: 0.9;
+      left: 1800px;
     }
-
-    #cloud:after {
-      width: 100px; height: 100px;
-      top: -50px; left: 50px;
-
-      border-radius: 100px;
-      -webkit-border-radius: 100px;
-      -moz-border-radius: 100px;
+  }
+  @keyframes treecloudprss2 {
+    from{
+      opacity: 0.7;
+      left: -600px;
     }
-
-    #cloud:before {
-      width: 180px; height: 180px;
-      top: -90px; right: 50px;
-
-      border-radius: 200px;
-      -webkit-border-radius: 200px;
-      -moz-border-radius: 200px;
+    to{
+      opacity: 0.7;
+      left: 1800px;
     }
-    .cloudmv1 {
-      animation: across 60s infinite;
-      position: absolute;
-      top: 200px;
-      /*left: -100px;
-      top: 100px; over paste*/
+  }
+  @keyframes treecloudprss3 {
+    from{
+      opacity: 0.6;
+      left: -600px;
     }
+    to{
+      opacity: 0.6;
+      left: 1800px;
+    }
+  }
+
+/*cloud end*/
+
     @keyframes across {
       from {
         left: -70%;

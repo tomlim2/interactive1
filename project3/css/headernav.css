@@ -32,20 +32,20 @@ a:hover{
   top: -10px;
 }
 .navbutton1{
-  color: #f3e9e8;
+  /*color: #f3e9e8;*/
   left: 30%;
   z-index: 18;
   /*background-color: #0b873f;*/
   cursor: pointer;
 }
 .navbutton2{
-  color: #251c17;
+  /*color: #251c17;*/
   left: 50%;
   z-index: 18;
   /*background-color: rgba(196, 223, 155, 1);*/
 }
 .navbutton3{
-  color: #f3e9e8;
+  /*color: #f3e9e8;*/
   left: 70%;
   z-index: 18;
   /*background-color: #0b873f;*/
@@ -92,6 +92,12 @@ a:hover{
     border-width: 0 40px 60px 40px;
     border-color: transparent transparent #a3d49c transparent;
     z-index: 10;
+}
+.decojt1d{
+  border-color: transparent transparent #c9eee7 transparent;
+}
+.decojt2d{
+  border-color: transparent transparent #9bdadf transparent;
 }
 .decojt2 {
     position: absolute;

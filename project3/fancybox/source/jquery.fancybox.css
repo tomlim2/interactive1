@@ -26,8 +26,8 @@
 
 .fancybox-skin {
 	position: relative;
-	background: #f9f9f9;
-	color: #444;
+	background: #d3e8d9;
+	color: #126132;
 	text-shadow: none;
 	-webkit-border-radius: 4px;
 	   -moz-border-radius: 4px;
@@ -226,7 +226,7 @@
 	margin-right: -100%;
 	padding: 2px 20px;
 	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
-	background: rgba(0, 0, 0, 0.8);
+	background: #154d2b;
 	-webkit-border-radius: 15px;
 	   -moz-border-radius: 15px;
 	        border-radius: 15px;

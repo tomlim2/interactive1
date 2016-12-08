@@ -41,6 +41,9 @@ body{
   top: 95px;
   left: 5px;
 }
+.dateleft{
+  left: 10px;
+}
 .dcolor{
   color: #f5f7f6;
 }

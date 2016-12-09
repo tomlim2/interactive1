@@ -26,6 +26,47 @@
 				opacity: 0;
 		}
 
+		.intronav{
+			width: 320px;
+			position: fixed;
+			top: 75%;
+			left: 50%;
+			margin-left: -130px;
+			z-index: 20;
+			opacity: 1;
+			line-height: 160%;
+		}
+
+		.intronav2{
+			width: 320px;
+			position: fixed;
+			top: 10%;
+			left: 50%;
+			margin-left: -130px;
+			z-index: 20;
+			opacity: 1;
+			line-height: 160%;
+		}
+
+		.intronavleft{
+			width: 150px;
+			position: relative;
+			float: left;
+		}
+		.intronavright{
+			width: 160px;
+			position: relative;
+			float: left;
+		}
+
+		.navtypo{
+			font-weight: 900;
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			-moz-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			-webkit-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			color: #f6c755;
+		}
+
 		.choochoo{
 			background-image: url('pic/p00_01.png');
 			background-size: cover;
@@ -71,7 +112,19 @@
 		.popuup{
 			animation: popup 1s forwards linear;
 			animation-delay: 3s;
+			opacity: 0;
+		}
 
+		.popuup2{
+			animation: popup 0.5s forwards linear;
+			animation-delay: 6s;
+			opacity: 0;
+		}
+
+		.cbmv{
+			animation: cbprss 6s forwards linear;
+			animation-delay: 8s;
+			top:27%;
 		}
 
 		@keyframes popup{
@@ -164,17 +217,39 @@
 
 				<div class="clickbox cbmv">CLICK My logo</div>
 
-
-
-
 				<!-- <div class="name">
 					HIGHWAY
 				</div> -->
 			</div>
 		</div>
-
 		<div class="noisyberry"></div>
+		<div class="intronav2 navtypo popuup2">
+				<div class="intronavleft">
+						<a href="p08wind.html">WIND & TREE</a><br>
+						<a href="p12bug.html">BUGS & BIRDS</a><br>
+						<a href="p18dudu.html">CONSTRUCTION</a><br>
+				</div>
 
+				<div class="intronavright">
+					<a href="p10hwy.html">HIGHWAY</a><br>
+					<a href="p14cal.html">CALTRAIN</a><br>
+					<a href="p20basket.html">BASKETBALL</a><br>
+				</div>
+		</div>
+		<div class="intronav navtypo popuup2">
+
+				<div class="intronavleft">
+						<a href="p22volley.html">VOLLEYBALL</a><br>
+						<a href="p28tennis.html">TENNIS</a><br>
+						<a href="p34dog.html">DOG PARK</a>
+				</div>
+
+				<div class="intronavright">
+					<a href="p26water.html">WATERFALL</a><br>
+					<a href="p30rustle.html">GRASS</a><br>
+					<a href="index.html">NOISY BERRY</a><br>
+				</div>
+		</div>
 	</div>
 	<audio id="ctsound">
 		<source src="audio/caltrain1.wav" type="audio/wav">

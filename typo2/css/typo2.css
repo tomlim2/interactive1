@@ -5,7 +5,12 @@
 			font-family: 'Noto Sans', sans-serif;
 		}
     a{
-      color: #f6c755;
+      font-weight: 400;
+      font-size: 0.9em;
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			-moz-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			-webkit-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      color: white;
       text-decoration: none;
     }
 		.container0{
@@ -34,7 +39,7 @@
 		}
 
 		.name {
-			font-size: 24px;
+			font-size: 1.6em;
 			font-weight: 900;
 			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 			-moz-text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -96,3 +101,29 @@
 				z-index: 0;
 			}
 		}
+
+    .bottomnav{
+      color: white;
+    }
+    .bttmnv{
+      text-align: center;
+      width: 50px;
+      position: fixed;
+      left: 50%;
+      margin-left: -25px;
+      bottom: 3%;
+      z-index: 40;
+    }
+    .bnvleft{
+      width: 125px;
+      text-align: right;
+      position: absolute;
+      left: -126px;
+    }
+    .bnvright{
+      width: 125px;
+      text-align: left;
+      position: absolute;
+      bottom: 3%;
+      left: 51px;
+    }

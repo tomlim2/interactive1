@@ -12,17 +12,13 @@
 	</title>
 	<style>
 		.mainpic{
-			width: 320px;
-			height: 370px;
 			background-image: url('pic/p10_0.jpg');
 			background-size: cover;
 			background-position: right;
-			position: absolute;
-			cursor: pointer;
 		}
 		.mainpic2{
-			width: 320px;
-			height: 370px;
+			width: 400px;
+			height: 400px;
 			background-image: url('pic/p10_1.png');
 			background-size: cover;
 			background-position: right;
@@ -37,20 +33,22 @@
 			background-position: center;
 			width: 1190px;
 			height: 70px;
-			opacity: 0;
+
 		}
 		.choomv{
 			animation: chooprss 3s forwards linear;
+			opacity: 0;
 			position: absolute;
-			top: 170px;
+			top: 195px;
 			left: 50px;
 			z-index: 13;
 		}
 		.choomv2{
 			animation: chooprss 2s forwards linear;
 			animation-delay: 2.6s;
+			opacity: 0;
 			position: absolute;
-			top: 170px;
+			top: 195px;
 			left: 50px;
 			z-index: 13;
 		}
@@ -94,8 +92,10 @@
 
 				<div class="clickbox cbmv">CLICK THE IMAGE</div>
 
+				<div class="mainpicshadow"></div>
 				<div class="mainpic"></div>
 				<div class="mainpic2"></div>
+
 
 				<div class="choochoo choomv"></div>
 				<div class="choochoo choomv2"></div>
@@ -123,6 +123,7 @@
 		</div>
 
 	</div>
+
 	<audio id="ctsound">
 		<source src="audio/caltrain1.wav" type="audio/wav">
 	</audio>

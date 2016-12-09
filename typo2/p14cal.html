@@ -13,13 +13,9 @@
 	</title>
 	<style>
 		.mainpic{
-			width: 320px;
-			height: 370px;
 			background-image: url('pic/caltrain_0.jpg');
 			background-size: cover;
 			background-position: right;
-			position: absolute;
-			cursor: pointer;
 		}
 
 		.choochoo{
@@ -28,7 +24,6 @@
       background-position: center;
 			width: 600px;
 			height: 194px;
-
 		}
 		.choochoo2{
 			background-image: url('pic/caltrain_3.png');
@@ -54,8 +49,9 @@
 		.choomv3{
 			animation: chooprss3 5s forwards linear;
 			position: absolute;
-			top: 358px;
+			top: 380px;
 			left: 80%;
+			/*z-index: 20;*/
 		}
 		@keyframes chooprss{
 			0% {
@@ -98,12 +94,12 @@
 				z-index: 13;
 			}
 			99% {
-				left: -430%;
+				left: -510%;
 				opacity: 1;
 				z-index: 13;
 			}
 			100% {
-				left: -430%;
+				left: -510%;
 				opacity: 0;
 				z-index: 0;
 			}
@@ -136,7 +132,10 @@
 		<div class="container1">
 			<div class="interior">
 					<div class="clickbox cbmv">CLICK THE IMAGE</div>
+
+					<div class="mainpicshadow"></div>
 					<div class="mainpic"></div>
+
 					<div class="name">CALTRAIN</div>
 			</div>
 		</div>
@@ -150,12 +149,13 @@
 				<a href="index_1.html">HOME</a>
 
 				<div class="bnvright">
-					<a href="18dudu.html">| CONSTRUCTION</a>
+					<a href="p18dudu.html">| CONSTRUCTION</a>
 				</div>
 			</div>
 		</div>
 
 	</div>
+
 	<audio id="ctsound">
 		<source src="audio/caltrain1.wav" type="audio/wav">
 	</audio>

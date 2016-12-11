@@ -24,6 +24,7 @@
       background-position: center;
 			width: 50px;
 			height: 284px;
+			opacity: 0;
 		}
 		.choochoo2{
 			background-image: url('pic/p08_2.png');
@@ -31,27 +32,33 @@
       background-position: center;
 			width: 40px;
 			height: 235px;
+			opacity: 0;
+		}
+		.choochoo3{
+			background-image: url('pic/p08_2.png');
+			background-size: cover;
+      background-position: center;
+			width: 40px;
+			height: 235px;
+			opacity: 0;
 		}
 		.choomv{
-			animation: chooprss 2s forwards ;
+			animation: chooprss 2s;
 			animation-delay: 2.4s;
-			/*opacity: 0;*/
 			position: absolute;
 			transform: rotate(-5deg);
-			/*top: 24%;
-			left: 22%;
-			z-index: 30;*/
-			opacity: 0;
+			z-index: 1;
 		}
 		.choomv2{
-			animation: chooprss2 2s forwards ;
+			animation: chooprss2 2s;
 			animation-delay: 1.2s;
 			position: absolute;
-			opacity: 0;
-			/*transform: rotate(30deg);
-			top: 76%;
-			left: -12%;*/
-			/*z-index: 30;*/
+			z-index: 1;
+		}
+		.choomv3{
+			animation: chooprss3 2s;
+			position: absolute;
+			z-index: 1;
 		}
 		@keyframes chooprss{
 			0% {
@@ -59,7 +66,7 @@
 				top: 24%;
 	    	left: 13%;
 				z-index: 13;
-				opacity: 0;
+				opacity: 1;
 			}
 			40%{
 				transform: rotate(-5deg);
@@ -95,7 +102,7 @@
 				transform: rotate(50deg);
 				top: 70%;
 				left: 3%;
-				opacity: 0;
+				opacity: 1;
 				z-index: 13;
 			}
 
@@ -123,23 +130,13 @@
 				opacity: 0;
 			}
 		}
-		.choomv3{
-			animation: chooprss3 2s forwards;
-			animation-delay: 0s;
-			opacity: 0;
-			position: absolute;
-			/*transform: rotate(-29deg);
-			top: 18%;
-			left: 69%;*/
-			z-index: 13;
 
-		}
 		@keyframes chooprss3{
 			0% {
 				transform: rotate(51deg);
 		    top: 89%;
 		    left: 59%;
-				opacity: 0;
+				opacity: 1;
 				z-index: 13;
 			}
 
@@ -172,12 +169,20 @@
 	<script>
 	$(document).ready(function(){
 
-
 		$(".mainpic").click(function(){
 
 			$("#ctsound")[0].play();
 
+			$('.choochoo').removeClass().addclass("choomv");
+			// $('.choochoo2').toggleClass('choomv2');
+			// $('.choochoo3').toggleClass('choomv3');
+
+			// $('.choochoo').toggleClass('choomv');
+			// $('.choochoo2').toggleClass('choomv2');
+			// $('.choochoo3').toggleClass('choomv3');
+
 		});
+
 
 	});
 
@@ -190,7 +195,7 @@
 
 		<div class="choochoo choomv"></div>
 		<div class="choochoo2 choomv2"></div>
-		<div class="choochoo2 choomv3"></div>
+		<div class="choochoo3 choomv3"></div>
 
 		<div class="container1">
 			<div class="interior">
@@ -202,7 +207,7 @@
 				<div class="name">
 					WIND & TREE
 				</div>
-				
+
 			</div>
 		</div>
 

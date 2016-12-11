@@ -1,0 +1,394 @@
+
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+        <link rel="stylesheet" href="css/project3.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/pics.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/background.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/headernav.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+        <title>          project3        </title>
+        <style>
+
+        </style>
+
+        <script>
+        $(document).ready(function(){
+
+
+          $(".playbttn").click(function(){
+
+            $(this).hide();
+            $(".psbttn").show();
+            $("#mv1115")[0].play();
+
+          });
+
+          $(".psbttn").click(function(){
+            $(this).hide();
+            $(".playbttn").show();
+            $("#mv1115")[0].pause();
+
+          });
+
+          $("#mv1115").on('ended',function(){
+
+            $(".playbttn").show();
+            $(".psbttn").hide();
+
+          });
+
+
+          $(".fancybox").fancybox({
+
+                nextEffect:'none',
+                prevEffect:'none',
+                openEffect:'none',
+                closeEffect:'none'
+
+              });
+
+          $("#mario").hover(function(){
+            $("#mjump")[0].pause();
+            $("#mjump")[0].currentTime=0;
+            $("#mjump")[0].play();
+          },
+          function(){
+          }
+        );
+
+        $("#thumb1102").hover(function(){
+          $(".tb1102").toggleClass("txtbblapp");
+        });
+
+        });
+        </script>
+    </head>
+
+    <body>
+      <div class="container0">
+        <div class="audio">
+          <audio id="mjump">
+            <source src="audio/mjump.wav" type="audio/wav">
+          </audio>
+          <audio id="missile">
+            <source src="audio/Missile_Rip.mp3" type="audio/mp3">
+          </audio>
+        </div>
+        <div class="decoration">
+          <div class="treecloud treecloudmv">
+            <div class="tc1 tcps1"></div>
+            <div class="tc1 tcps2"></div>
+            <div class="tc1 tcps3"></div>
+          </div>
+          <div class="treecloud treecloudmv2">
+            <div class="tc2 tcps1"></div>
+            <div class="tc2 tc2ps1"></div>
+          </div>
+          <div class="treecloud treecloudmv3">
+            <div class="tc3 tcps1"></div>
+            <div class="tc301 tc3ps1"></div>
+            <div class="tc3 tc3ps2"></div>
+          </div>
+          <div class="treecloud treecloudmv4">
+            <div class="tc1 tcps1"></div>
+            <div class="tc1 tcps2"></div>
+            <div class="tc1 tcps3"></div>
+          </div>
+        </div>
+
+        <div class="topnav">
+          <a href="index.html">
+            <div class="decojt1"></div>
+            <div class="decojt2"></div>
+          </a>
+          <div class="topnavline novnvlin"></div>
+          <div class="dfside01">
+            <div class="decoforest1">
+              <div class="dftree1 es5"></div>
+              <div class="dftree2 dft1 es6"></div>
+              <div class="dftree3 dft2 es7"></div>
+              <div class="dftree4 dft3 es8"></div>
+              <div class="dftree1 dft4 es9"></div>
+              <div class="dftree2 dft5 es8"></div>
+              <div class="dftree3 dft6 es7"></div>
+            </div>
+            <div class="decoforest2">
+              <div class="dftree1 es6"></div>
+              <div class="dftree2 dft1 es7"></div>
+              <div class="dftree3 dft2 es8"></div>
+              <div class="dftree4 dft3 es9"></div>
+              <div class="dftree1 dft4 es8"></div>
+              <div class="dftree2 dft5 es7"></div>
+              <div class="dftree3 dft6 es6"></div>
+            </div>
+
+            <div class="decoforest3">
+              <div class="dftree1 es5"></div>
+              <div class="dftree2 dft1 es6"></div>
+              <div class="dftree3 dft2 es7"></div>
+              <div class="dftree4 dft3 es8"></div>
+              <div class="dftree1 dft4 es9"></div>
+              <div class="dftree2 dft5 es8"></div>
+              <div class="dftree3 dft6 es7"></div>
+            </div>
+
+            <div class="decoforest4">
+              <div class="dftree1 es8"></div>
+              <div class="dftree2 dft1 es9"></div>
+              <div class="dftree3 dft2 es8"></div>
+              <div class="dftree4 dft3 es7"></div>
+              <div class="dftree1 dft4 es6"></div>
+              <div class="dftree2 dft5 es5"></div>
+              <div class="dftree3 dft6 es6"></div>
+            </div>
+          </div>
+
+          <div class="dfside02">
+            <div class="decoforest1">
+              <div class="dftree1 es5"></div>
+              <div class="dftree2 dft1 es6"></div>
+              <div class="dftree3 dft2 es7"></div>
+              <div class="dftree4 dft3 es8"></div>
+              <div class="dftree1 dft4 es9"></div>
+              <div class="dftree2 dft5 es8"></div>
+              <div class="dftree3 dft6 es7"></div>
+            </div>
+            <div class="decoforest2">
+              <div class="dftree1 es6"></div>
+              <div class="dftree2 dft1 es7"></div>
+              <div class="dftree3 dft2 es8"></div>
+              <div class="dftree4 dft3 es9"></div>
+              <div class="dftree1 dft4 es8"></div>
+              <div class="dftree2 dft5 es7"></div>
+              <div class="dftree3 dft6 es6"></div>
+            </div>
+
+            <div class="decoforest3">
+              <div class="dftree1 es5"></div>
+              <div class="dftree2 dft1 es6"></div>
+              <div class="dftree3 dft2 es7"></div>
+              <div class="dftree4 dft3 es8"></div>
+              <div class="dftree1 dft4 es9"></div>
+              <div class="dftree2 dft5 es8"></div>
+              <div class="dftree3 dft6 es7"></div>
+            </div>
+
+            <div class="decoforest4">
+              <div class="dftree1 es8"></div>
+              <div class="dftree2 dft1 es9"></div>
+              <div class="dftree3 dft2 es8"></div>
+              <div class="dftree4 dft3 es7"></div>
+              <div class="dftree1 dft4 es6"></div>
+              <div class="dftree2 dft5 es5"></div>
+              <div class="dftree3 dft6 es6"></div>
+            </div>
+          </div>
+
+          <div class="dfside03">
+            <div class="decoforest1">
+              <div class="dftree1 es5"></div>
+              <div class="dftree2 dft1 es6"></div>
+              <div class="dftree3 dft2 es7"></div>
+              <div class="dftree4 dft3 es8"></div>
+              <div class="dftree1 dft4 es9"></div>
+              <div class="dftree2 dft5 es8"></div>
+              <div class="dftree3 dft6 es7"></div>
+            </div>
+            <div class="decoforest2">
+              <div class="dftree1 es6"></div>
+              <div class="dftree2 dft1 es7"></div>
+              <div class="dftree3 dft2 es8"></div>
+              <div class="dftree4 dft3 es9"></div>
+              <div class="dftree1 dft4 es8"></div>
+              <div class="dftree2 dft5 es7"></div>
+              <div class="dftree3 dft6 es6"></div>
+            </div>
+
+            <div class="decoforest3">
+              <div class="dftree1 es5"></div>
+              <div class="dftree2 dft1 es6"></div>
+              <div class="dftree3 dft2 es7"></div>
+              <div class="dftree4 dft3 es8"></div>
+              <div class="dftree1 dft4 es9"></div>
+              <div class="dftree2 dft5 es8"></div>
+              <div class="dftree3 dft6 es7"></div>
+            </div>
+
+            <div class="decoforest4">
+              <div class="dftree1 es8"></div>
+              <div class="dftree2 dft1 es9"></div>
+              <div class="dftree3 dft2 es8"></div>
+              <div class="dftree4 dft3 es7"></div>
+              <div class="dftree1 dft4 es6"></div>
+              <div class="dftree2 dft5 es5"></div>
+              <div class="dftree3 dft6 es6"></div>
+            </div>
+          </div>
+
+          <div class="dfside04">
+            <div class="decoforest1">
+              <div class="dftree1 es5"></div>
+              <div class="dftree2 dft1 es6"></div>
+              <div class="dftree3 dft2 es7"></div>
+              <div class="dftree4 dft3 es8"></div>
+              <div class="dftree1 dft4 es9"></div>
+              <div class="dftree2 dft5 es8"></div>
+              <div class="dftree3 dft6 es7"></div>
+            </div>
+            <div class="decoforest2">
+              <div class="dftree1 es6"></div>
+              <div class="dftree2 dft1 es7"></div>
+              <div class="dftree3 dft2 es8"></div>
+              <div class="dftree4 dft3 es9"></div>
+              <div class="dftree1 dft4 es8"></div>
+              <div class="dftree2 dft5 es7"></div>
+              <div class="dftree3 dft6 es6"></div>
+            </div>
+
+            <div class="decoforest3">
+              <div class="dftree1 es5"></div>
+              <div class="dftree2 dft1 es6"></div>
+              <div class="dftree3 dft2 es7"></div>
+              <div class="dftree4 dft3 es8"></div>
+              <div class="dftree1 dft4 es9"></div>
+              <div class="dftree2 dft5 es8"></div>
+              <div class="dftree3 dft6 es7"></div>
+            </div>
+
+            <div class="decoforest4">
+              <div class="dftree1 es8"></div>
+              <div class="dftree2 dft1 es9"></div>
+              <div class="dftree3 dft2 es8"></div>
+              <div class="dftree4 dft3 es7"></div>
+              <div class="dftree1 dft4 es6"></div>
+              <div class="dftree2 dft5 es5"></div>
+              <div class="dftree3 dft6 es6"></div>
+            </div>
+          </div>
+
+          <div class="dfside05">
+            <div class="decoforest1">
+              <div class="dftree1 es5"></div>
+              <div class="dftree2 dft1 es6"></div>
+              <div class="dftree3 dft2 es7"></div>
+              <div class="dftree4 dft3 es8"></div>
+              <div class="dftree1 dft4 es9"></div>
+              <div class="dftree2 dft5 es8"></div>
+              <div class="dftree3 dft6 es7"></div>
+            </div>
+            <div class="decoforest2">
+              <div class="dftree1 es6"></div>
+              <div class="dftree2 dft1 es7"></div>
+              <div class="dftree3 dft2 es8"></div>
+              <div class="dftree4 dft3 es9"></div>
+              <div class="dftree1 dft4 es8"></div>
+              <div class="dftree2 dft5 es7"></div>
+              <div class="dftree3 dft6 es6"></div>
+            </div>
+
+            <div class="decoforest3">
+              <div class="dftree1 es5"></div>
+              <div class="dftree2 dft1 es6"></div>
+              <div class="dftree3 dft2 es7"></div>
+              <div class="dftree4 dft3 es8"></div>
+              <div class="dftree1 dft4 es9"></div>
+              <div class="dftree2 dft5 es8"></div>
+              <div class="dftree3 dft6 es7"></div>
+            </div>
+
+            <div class="decoforest4">
+              <div class="dftree1 es8"></div>
+              <div class="dftree2 dft1 es9"></div>
+              <div class="dftree3 dft2 es8"></div>
+              <div class="dftree4 dft3 es7"></div>
+              <div class="dftree1 dft4 es6"></div>
+              <div class="dftree2 dft5 es5"></div>
+              <div class="dftree3 dft6 es6"></div>
+            </div>
+          </div>
+
+          <div class="dfside06">
+            <div class="decoforest1">
+              <div class="dftree1 es5"></div>
+              <div class="dftree2 dft1 es6"></div>
+              <div class="dftree3 dft2 es7"></div>
+              <div class="dftree4 dft3 es8"></div>
+              <div class="dftree1 dft4 es9"></div>
+              <div class="dftree2 dft5 es8"></div>
+              <div class="dftree3 dft6 es7"></div>
+            </div>
+            <div class="decoforest2">
+              <div class="dftree1 es6"></div>
+              <div class="dftree2 dft1 es7"></div>
+              <div class="dftree3 dft2 es8"></div>
+              <div class="dftree4 dft3 es9"></div>
+              <div class="dftree1 dft4 es8"></div>
+              <div class="dftree2 dft5 es7"></div>
+              <div class="dftree3 dft6 es6"></div>
+            </div>
+
+            <div class="decoforest3">
+              <div class="dftree1 es5"></div>
+              <div class="dftree2 dft1 es6"></div>
+              <div class="dftree3 dft2 es7"></div>
+              <div class="dftree4 dft3 es8"></div>
+              <div class="dftree1 dft4 es9"></div>
+              <div class="dftree2 dft5 es8"></div>
+              <div class="dftree3 dft6 es7"></div>
+            </div>
+
+            <div class="decoforest4">
+              <div class="dftree1 es8"></div>
+              <div class="dftree2 dft1 es9"></div>
+              <div class="dftree3 dft2 es8"></div>
+              <div class="dftree4 dft3 es7"></div>
+              <div class="dftree1 dft4 es6"></div>
+              <div class="dftree2 dft5 es5"></div>
+              <div class="dftree3 dft6 es6"></div>
+            </div>
+          </div>
+
+
+          <div class="topbutton navbutton1">
+            <div class="maintptree1">
+            <div class="maintpttrunk1"></div></div>
+            <a href="index_oct.html">Oct</a>
+          </div>
+
+
+          <div class="topbutton navbutton2">
+            <div class="maintptree1">
+              <div class="maintpttrunk1"></div>
+            </div>
+            Nov
+          </div>
+          <div class="topbutton navbutton3">
+            <div class="maintptree1">
+            <div class="maintpttrunk1"></div></div>
+            <a href="index_dec.html">Dec</a>
+          </div>
+        </div>
+
+
+
+        <div class="wholetree1">
+          <div class="timetable1">
+            <div class="topleaves"></div>
+            <div class="topbrunch"></div>
+            <div class="topbrunch2"></div>
+            <div class="date"></div>
+          </div>
+
+
+        <div class="mountain2"></div>
+        <div class="mountain1"></div>
+
+        <div class="ground0"> </div>
+      </div>
+    </body>
+</html>

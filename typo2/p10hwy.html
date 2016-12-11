@@ -36,21 +36,21 @@
 
 		}
 		.choomv{
-			animation: chooprss 4s forwards linear;
+			animation: chooprss 4s linear;
 			opacity: 0;
 			position: absolute;
 			top: 145px;
 			left: 50px;
-			z-index: 13;
+			z-index: 1;
 		}
 		.choomv2{
-			animation: chooprss 2s forwards linear;
+			animation: chooprss 2s linear;
 			animation-delay: 3s;
 			opacity: 0;
 			position: absolute;
 			top: 145px;
 			left: 50px;
-			z-index: 13;
+			z-index: 1;
 		}
 		@keyframes chooprss{
 			0% {
@@ -76,8 +76,12 @@
 	<script>
 	$(document).ready(function(){
 
-		$(".mainpic").click(function(){
+		$(".mainpic2").click(function(){
+
 			$("#ctsound")[0].play();
+			$(".choochoo").toggleClass('choomv');
+			$(".choochoo").toggleClass('choomv2');
+
 		});
 
 	});

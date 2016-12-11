@@ -134,11 +134,19 @@
     top: 400px;
     left: 0px;
   }
+
+  .tcps11{
+    top: 20%;
+  }
+
   .treecloudmv2{
     animation: treecloudprss2 40s infinite linear;
     position: absolute;
     top: 820px;
     left: 9px;
+  }
+  .tcps21{
+    top: 50%;
   }
   .treecloudmv3{
     animation: treecloudprss 30s infinite linear;
@@ -146,10 +154,16 @@
     top: 1000px;
     left: 0px;
   }
+  .tcps31{
+    top: 70%;
+  }
   .treecloudmv4{
     animation: treecloudprss3 80s forwards linear;
     position: absolute;
     top: 1400px;
+  }
+  .tcps41{
+    top: 40%;
   }
   @keyframes treecloudprss {
     from{
@@ -199,16 +213,20 @@
       height: 20px;
       background-color: #c4df9b;
       position: absolute;
+    }
+    .gnov{
       top: 5310px;
     }
     .gdec{
       background-color: white;
       top: 1730px;
     }
+    .goct{
+      bottom: 0%;
+    }
 
     .mountain1{
       position: absolute;
-      top: 4910px;
       left: 70%;
       width: 0;
       height: 0;
@@ -220,10 +238,15 @@
       top: 1330px;
       border-color: transparent transparent #c9eee7 transparent;
     }
+    .m1nov{
+      top: 4910px;
+    }
+    .m1oct{
+      bottom: 20px;
+    }
 
     .mountain2{
       position: absolute;
-      top: 5110px;
       left: 60%;
       width: 0;
       height: 0;
@@ -234,4 +257,10 @@
     .m2dec{
       top: 1530px;
       border-color: transparent transparent #9bdadf transparent;
+    }
+    .m1nov{
+      top: 5110px;
+    }
+    .m2oct{
+      bottom: 20px;
     }

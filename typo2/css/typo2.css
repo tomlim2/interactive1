@@ -20,7 +20,7 @@
 			text-align: center;
 			width: 320px;
 			position: absolute;
-			bottom: 14%;
+			bottom: 10%;
 			left: 50%;
 			margin-left: -160px;
 			z-index: 20;
@@ -32,7 +32,7 @@
 			text-align: center;
 			width: 320px;
 			position: absolute;
-			top: 14%;
+			top: 10%;
 			left: 50%;
 			margin-left: -160px;
 			z-index: 20;
@@ -125,7 +125,7 @@
 			font-weight: 700;
 			line-height: 210%;
 			color: white;
-			z-index: 10;
+			z-index: 30;
 			width: 160px;
 			height: 30px;
 			border-radius: 1%;

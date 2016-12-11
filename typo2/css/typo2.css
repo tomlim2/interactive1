@@ -1,5 +1,6 @@
 
 		body {
+			background-color: gray;
 			margin: 0px;
 			/*max-width: 320px;*/
 			font-family: 'Noto Sans', sans-serif;
@@ -17,8 +18,8 @@
 
 		.intronav{
 			width: 320px;
-			position: fixed;
-			bottom: 8%;
+			position: absolute;
+			bottom: 12%;
 			left: 50%;
 			margin-left: -130px;
 			z-index: 20;
@@ -28,8 +29,8 @@
 
 		.intronav2{
 			width: 320px;
-			position: fixed;
-			top: 6%;
+			position: absolute;
+			top: 10%;
 			left: 50%;
 			margin-left: -130px;
 			z-index: 20;
@@ -40,7 +41,7 @@
 		.intronavleft{
 			width: 150px;
 			position: relative;
-			/*top: -3px;*/
+			top: -13px;
 			float: left;
 		}
 		.intronavright{
@@ -51,20 +52,20 @@
 		}
 
 		.container00{
+			background-image: url('../pic/bgbackgound.jpg');
+			background-size: cover;
 			width: 100%;
 			height: 100%;
-			background-image: url('../pic/bgbackgound.jpg');
 			/*background-color: rgba(0, 0, 0, 0.9);*/
-			background-size: cover;
 			position: absolute;
 			overflow: hidden;
 		}
 
 		.container0{
-			width: 100%;
-			height: 100%;
 			background-image: url('../pic/bgbackgound.jpg');
 			background-size: cover;
+			width: 100%;
+			height: 100%;
 			background-position: bottom;
 			position: absolute;
 			overflow: hidden;
@@ -172,7 +173,7 @@
     .bttmnv{
       text-align: center;
       width: 50px;
-      position: fixed;
+      position: absolute;
       left: 50%;
       margin-left: -25px;
       bottom: 3%;
@@ -191,3 +192,42 @@
       bottom: 3%;
       left: 51px;
     }
+		@media screen and (min-width: 400px) {
+			body{
+				background-color: #2e2c2d;
+				/*background-image: url('../pic/bgbackgound2.jpg');
+				background-position: center;
+				background-size: auto;
+				background-repeat: no-repeat;*/
+			}
+			.container0{
+				width: 400px;
+				height: 680px;
+				/*background-color: rgba(0, 0, 0, 0.9);*/
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin-left: -200px;
+				margin-top: -340px;
+				overflow: hidden;
+				border-radius: 0.5%;
+			}
+			.container1{
+				width: 400px;
+				height: 680px;
+				top: 0px;
+				left: 0px;
+				margin: 0px;
+				border-radius: 0.5%;
+			}
+
+			.interior{
+				width: 400px;
+				height: 680px;
+		    position: absolute;
+				left: 0px;
+				margin-left: 0px;
+				border-radius: 0.5%;
+
+			}
+		}

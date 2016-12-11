@@ -192,7 +192,7 @@
       bottom: 3%;
       left: 51px;
     }
-		@media screen and (min-width: 400px) {
+		@media screen and (min-width: 370px) {
 			body{
 				background-color: #2e2c2d;
 				/*background-image: url('../pic/bgbackgound2.jpg');
@@ -201,20 +201,20 @@
 				background-repeat: no-repeat;*/
 			}
 			.container0{
-				width: 400px;
-				height: 680px;
+				width: 370px;
+				height: 600px;
 				/*background-color: rgba(0, 0, 0, 0.9);*/
 				position: absolute;
 				left: 50%;
 				top: 50%;
-				margin-left: -200px;
-				margin-top: -340px;
+				margin-left: -185px;
+				margin-top: -300px;
 				overflow: hidden;
 				border-radius: 0.5%;
 			}
 			.container1{
-				width: 400px;
-				height: 680px;
+				width: 370px;
+				height: 600px;
 				top: 0px;
 				left: 0px;
 				margin: 0px;
@@ -222,8 +222,8 @@
 			}
 
 			.interior{
-				width: 400px;
-				height: 680px;
+				width: 370px;
+				height: 600px;
 		    position: absolute;
 				left: 0px;
 				margin-left: 0px;

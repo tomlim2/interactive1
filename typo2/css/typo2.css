@@ -17,22 +17,24 @@
 
 
 		.intronav{
+			text-align: center;
 			width: 320px;
 			position: absolute;
-			bottom: 12%;
+			bottom: 14%;
 			left: 50%;
-			margin-left: -130px;
+			margin-left: -160px;
 			z-index: 20;
 			opacity: 1;
 			line-height: 160%;
 		}
 
 		.intronav2{
+			text-align: center;
 			width: 320px;
 			position: absolute;
-			top: 10%;
+			top: 14%;
 			left: 50%;
-			margin-left: -130px;
+			margin-left: -160px;
 			z-index: 20;
 			opacity: 1;
 			line-height: 160%;
@@ -41,13 +43,11 @@
 		.intronavleft{
 			width: 150px;
 			position: relative;
-			top: -13px;
 			float: left;
 		}
 		.intronavright{
 			width: 160px;
 			position: relative;
-			top: 15px;
 			float: left;
 		}
 

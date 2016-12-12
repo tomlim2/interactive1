@@ -1,0 +1,28 @@
+
+		body {
+			margin: 0px;
+		}
+
+		.container0{
+			width: 320px;
+			height: 3648px;
+			background-image: url('../pic/mobile.jpg');
+			background-position: center;
+			background-size: cover;
+			position: absolute;
+			left: 50%;
+			margin-left: -160px;
+		}
+
+		@media screen and (min-width: 500px) {
+			.container0{
+				width: 1280px;
+				height: 4466px;
+				background-image: url('../pic/fonduecowboy2.jpg');
+				background-position: center;
+				background-size: cover;
+				position: absolute;
+				left: 50%;
+				margin-left: -640px;
+			}
+		}

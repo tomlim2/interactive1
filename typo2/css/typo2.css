@@ -232,19 +232,23 @@
 
 			}
 		}
-
-		@media screen and (min-width: 900px) {
-		.goback{
-			display: block;
-			text-align: center;
-		  line-height: 700%;
-		  width: 100px;
-		  height: 100px;
-		  background-color: #7acdc8;
-		  border-radius: 10%;
-		  position: fixed;
-		  left: 2%;
-		  top: -3%;
-		  z-index: 1000;
-		}
 	}
+
+	.goback{
+		display: none;
+	}
+	@media screen and (min-width: 900px) {
+	.goback{
+		display: block;
+		text-align: center;
+		line-height: 700%;
+		width: 100px;
+		height: 100px;
+		position: fixed;
+		left: 50%;
+		margin-left: -50px;
+		bottom: 0%;
+		z-index: 1000;
+		opacity: 0.1;
+	}
+}

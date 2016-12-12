@@ -24,18 +24,22 @@
       background-position: center;
 			width: 97px;
 			height: 53px;
+			opacity: 0;
+			z-index: 1;
 		}
 		.choomv1{
 			animation: chooprss1 0.6s forwards linear;
 			animation-delay: 0s;
-			opacity: 0;
 			position: absolute;
 			top: 450px;
 			left: 10px;
-			z-index: 13;
 		}
 		@keyframes chooprss1{
 			0% {
+				opacity: 0;
+				z-index: 1;
+			}
+			1% {
 				opacity: 0;
 				z-index: 13;
 			}
@@ -64,18 +68,22 @@
       background-position: center;
 			width: 106px;
 			height: 53px;
+			opacity: 0;
+			z-index: 1;
 		}
 		.choomv2{
 			animation: chooprss2 0.6s forwards linear;
 			animation-delay: 0.6s;
-			opacity: 0;
 			position: absolute;
 			top: 460px;
 			right: 20px;
-			z-index: 13;
 		}
 		@keyframes chooprss2{
 			0% {
+				opacity: 0;
+				z-index: 1;
+			}
+			1% {
 				opacity: 0;
 				z-index: 13;
 			}
@@ -104,18 +112,22 @@
       background-position: center;
 			width: 95px;
 			height: 53px;
+			opacity: 0;
+			z-index: 1;
 		}
 		.choomv3{
 			animation: chooprss3 0.6s forwards linear;
 			animation-delay: 1.2s;
-			opacity: 0;
 			position: absolute;
 			top: 420px;
 			left: 70px;
-			z-index: 13;
 		}
 		@keyframes chooprss3{
 			0% {
+				opacity: 0;
+				z-index: 1;
+			}
+			1% {
 				opacity: 0;
 				z-index: 13;
 			}
@@ -144,18 +156,22 @@
       background-position: center;
 			width: 108px;
 			height: 53px;
+			opacity: 0;
+			z-index: 1;
 		}
 		.choomv4{
 			animation: chooprss4 0.6s forwards linear;
 			animation-delay: 1.4s;
-			opacity: 0;
 			position: absolute;
 			top: 380px;
 			left: 15px;
-			z-index: 13;
 		}
 		@keyframes chooprss4{
 			0% {
+				opacity: 0;
+				z-index: 1;
+			}
+			1% {
 				opacity: 0;
 				z-index: 13;
 			}
@@ -184,18 +200,22 @@
 			background-position: center;
 			width: 235px;
 			height: 114px;
+			opacity: 0;
+			z-index: 1;
 		}
 		.choomv5{
 			animation: chooprss5 0.9s forwards linear;
 			animation-delay: 2.0s;
-			opacity: 0;
 			position: absolute;
 			top: 240px;
 			left: 10px;
-			z-index: 13;
 		}
 		@keyframes chooprss5{
 			0% {
+				opacity: 0;
+				z-index: 1;
+			}
+			1% {
 				opacity: 0;
 				z-index: 13;
 			}
@@ -224,18 +244,22 @@
 			background-position: center;
 			width: 327px;
 			height: 376px;
+			opacity: 0;
+			z-index: 1;
 		}
 		.choomv6{
 			animation: chooprss6 2s forwards linear;
 			animation-delay: 2.8s;
-			opacity: 0;
 			position: absolute;
 			top: 10px;
 			left: 0%;
-			z-index: 13;
 		}
 		@keyframes chooprss6{
 			0% {
+				opacity: 0;
+				z-index: 1;
+			}
+			1% {
 				opacity: 0;
 				z-index: 13;
 			}
@@ -284,18 +308,22 @@
 			background-position: center;
 			width: 201px;
 			height: 75px;
+			opacity: 0;
+			z-index: 1;
 		}
 		.choomv7{
 			animation: chooprss7 1.2s forwards linear;
 			animation-delay: 4.2s;
-			opacity: 0;
 			position: absolute;
 			top: 280px;
 			left: 30px;
-			z-index: 13;
 		}
 		@keyframes chooprss7{
 			0% {
+				opacity: 0;
+				z-index: 1;
+			}
+			1% {
 				opacity: 0;
 				z-index: 13;
 			}
@@ -324,19 +352,23 @@
 			background-position: center;
 			width: 110px;
 			height: 66px;
+			opacity: 0;
+			z-index: 1;
 		}
 		.choomv8{
 			animation: chooprss8 1.2s forwards linear;
 			animation-delay: 4.8s;
-			opacity: 0;
 			position: absolute;
 			transform: rotate(40deg);
 			top: 100px;
 			right: 20px;
-			z-index: 13;
 		}
 		@keyframes chooprss8{
 			0% {
+				opacity: 0;
+				z-index: 1;
+			}
+			1% {
 				opacity: 0;
 				z-index: 13;
 			}
@@ -366,7 +398,16 @@
 
 		$(".mainpic").click(function(){
 
-			$("#ctsound")[0].play();
+			$('.choochoo1').toggleClass('choomv1');
+			$('.choochoo2').toggleClass('choomv2');
+			$('.choochoo3').toggleClass('choomv3');
+			$('.choochoo4').toggleClass('choomv4');
+			$('.choochoo5').toggleClass('choomv5');
+			$('.choochoo6').toggleClass('choomv6');
+			$('.choochoo7').toggleClass('choomv7');
+			$('.choochoo8').toggleClass('choomv8');
+
+			// $("#ctsound")[0].play();
 
 		});
 

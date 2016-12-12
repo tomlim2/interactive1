@@ -169,19 +169,43 @@
 	<script>
 	$(document).ready(function(){
 
-		$(".mainpic").click(function(){
 
-			$("#ctsound")[0].play();
+		$(".mainpic").click(function() {
 
-			$('.choochoo').removeClass().addclass("choomv");
-			// $('.choochoo2').toggleClass('choomv2');
-			// $('.choochoo3').toggleClass('choomv3');
+			$('.choochoo').toggleClass('choomv');
+			$('.choochoo2').toggleClass('choomv2');
+			$('.choochoo3').toggleClass('choomv3');
 
-			// $('.choochoo').toggleClass('choomv');
-			// $('.choochoo2').toggleClass('choomv2');
-			// $('.choochoo3').toggleClass('choomv3');
+			// $("#ctsound")[0].play();
 
 		});
+
+		// $(".mainpic").click(function(){
+		//
+		//
+		//
+		//
+		// 	$('.choochoo').removeClass('choomv');
+		// 	setTimeout(function() {
+		// 	$('.choochoo').addClass('choomv');
+		// 	},1);
+		// 	$('.choochoo2').removeClass('choomv2');
+		// 	setTimeout(function() {
+		// 	$('.choochoo2').addClass('choomv2');
+		// 	},1);
+		// 	$('.choochoo3').removeClass('choomv3');
+		// 	setTimeout(function() {
+		// 	$('.choochoo3').addClass('choomv3');
+		// 	},1);
+		//
+		// 	$("#ctsound")[0].play();
+		//
+		//
+		// 	// $('.choochoo').toggleClass('choomv');
+		// 	// $('.choochoo2').toggleClass('choomv2');
+		// 	// $('.choochoo3').toggleClass('choomv3');
+		//
+		// });
 
 
 	});

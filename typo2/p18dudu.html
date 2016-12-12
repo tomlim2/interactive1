@@ -24,7 +24,15 @@
       background-position: center;
 			width: 2573px;
 			height: 90px;
-
+			opacity: 0;
+		}
+		.choochoo2{
+			background-image: url('pic/p18_1.png');
+			background-size: cover;
+      background-position: center;
+			width: 2573px;
+			height: 90px;
+			opacity: 0;
 		}
 		.choomv{
 			animation: chooprss 6s forwards linear;
@@ -84,7 +92,10 @@
 
 		$(".mainpic").click(function(){
 
-			$("#ctsound")[0].play();
+			$('.choochoo').toggleClass('choomv');
+			$('.choochoo2').toggleClass('choomv2');
+
+			// $("#ctsound")[0].play();
 
 		});
 
@@ -97,7 +108,7 @@
 	<div class="container0">
 
 		<div class="choochoo choomv"></div>
-		<div class="choochoo choomv2"></div>
+		<div class="choochoo2 choomv2"></div>
 
 		<div class="container1">
 			<div class="interior">

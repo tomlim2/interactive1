@@ -24,6 +24,8 @@
 			background-position: center;
 			width: 94px;
 			height: 49px;
+			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo2{
 			background-image: url('pic/p22_2.png');
@@ -31,20 +33,26 @@
 			background-position: center;
 			width: 94px;
 			height: 49px;
+			opacity: 0;
+			z-index: 1;
 		}
-		.choochoo3{
+		.choochoo10{
 			background-image: url('pic/p22_3.png');
 			background-size: cover;
 			background-position: center;
 			width: 364px;
 			height: 56px;
+			opacity: 0;
+			z-index: 1;
 		}
-		.choochoo4{
+		.choochoo6{
 			background-image: url('pic/p22_4.png');
 			background-size: cover;
 			background-position: center;
 			width: 336px;
 			height: 56px;
+			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo5{
 			background-image: url('pic/p22_5.png');
@@ -52,6 +60,8 @@
 			background-position: center;
 			width: 292px;
 			height: 74px;
+			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo6{
 			background-image: url('pic/p22_6.png');
@@ -59,6 +69,8 @@
 			background-position: center;
 			width: 292px;
 			height: 80px;
+			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo7{
 			background-image: url('pic/p22_7.png');
@@ -66,6 +78,8 @@
 			background-position: center;
 			width: 332px;
 			height: 290px;
+			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo8{
 			background-image: url('pic/p22_8.png');
@@ -73,110 +87,74 @@
 			background-position: center;
 			width: 211px;
 			height: 126px;
+			opacity: 0;
+			z-index: 1;
 		}
+		.choochoo9{
+			background-image: url('pic/p22_1.png');
+			background-size: cover;
+			background-position: center;
+			width: 94px;
+			height: 49px;
+			opacity: 0;
+			z-index: 1;
+		}
+
 
 		.choomv9{
 			animation: chooprss9 1s forwards linear;
-			opacity: 0;
 			position: absolute;
 			top: 420px;
 			left: 20px;
-			z-index: 13;
 		}
 		.choomv{
 			animation: chooprss9 1s forwards linear;
 			animation-delay: 1.0s;
-			opacity: 0;
 			position: absolute;
 			top: 310px;
 			right: 20px;
-			z-index: 13;
 		}
 		.choomv8{
 			animation: chooprss9 0.6s forwards linear;
 			animation-delay: 2.2s;
-			opacity: 0;
 			position: absolute;
 			top: 12%;
 			left: 10px;
-			z-index: 13;
 		}
 		.choomv2{
 			animation: chooprss9 1s forwards linear;
 			animation-delay: 2.6s;
-			opacity: 0;
 			position: absolute;
 			top: 38%;
 			right: 20px;
-			z-index: 16;
 		}
 		.choomv7{
 			animation: chooprss7 1s forwards linear;
 			animation-delay: 3.2s;
-			opacity: 0;
 			position: absolute;
 			top: -20px;
 			left: 4%;
-			z-index: 13;
 		}
-
-
-
 		.choomv6{
 			animation: chooprss3 3.6s forwards linear;
-			opacity: 0;
 			position: absolute;
 			top: 310px;
 			left: 50px;
-			z-index: 13;
 		}
 		.choomv10{
 			animation: chooprss3 3.6s forwards linear;
 			animation-delay: 1.8s;
-			opacity: 0;
 			position: absolute;
 			top: 80%;
 			left: 50px;
-			z-index: 13;
 		}
 		.choomv4{
 			animation: chooprss3 3.6s forwards linear;
 			animation-delay: 3.4s;
-			opacity: 0;
 			position: absolute;
 			top: 60px;
 			left: -280px;
-			z-index: 13;
 		}
-
-
-		/*.choomv11{
-			animation: chooprss3 5s forwards linear;
-			animation-delay: 3s;
-			opacity: 0;
-			position: absolute;
-			top: 380px;
-			left: 50px;
-			z-index: 13;
-		}*/
-		/*.choomv3{
-			animation: chooprss3 4s forwards linear;
-			opacity: 0;
-			position: absolute;
-			top: 40px;
-			left: 20px;
-			z-index: 13;
-		}*/
-		/*.choomv5{
-			animation: chooprss3 3s forwards linear;
-			animation-delay: 2s;
-			opacity: 0;
-			position: absolute;
-			top: 290px;
-			left: 210px;
-			z-index: 13;
-		}*/
-
 
 
 		@keyframes chooprss3{
@@ -294,7 +272,18 @@
 	$(document).ready(function(){
 
 		$(".mainpic").click(function(){
-			$("#ctsound")[0].play();
+
+			$('.choochoo').toggleClass('choomv');
+			$('.choochoo2').toggleClass('choomv2');
+			$('.choochoo4').toggleClass('choomv4');
+			$('.choochoo6').toggleClass('choomv6');
+			$('.choochoo7').toggleClass('choomv7');
+			$('.choochoo8').toggleClass('choomv8');
+			$('.choochoo9').toggleClass('choomv9');
+			$('.choochoo10').toggleClass('choomv10');
+
+			// $("#ctsound")[0].play();
+
 		});
 
 	});
@@ -309,14 +298,11 @@
 		<div class="choochoo2 choomv2"></div>
 		<div class="choochoo7 choomv7"></div>
 		<div class="choochoo8 choomv8"></div>
-		<div class="choochoo choomv9"></div>
+		<div class="choochoo9 choomv9"></div>
 
-		<!-- <div class="choochoo3 choomv3"></div> -->
-		<!-- <div class="choochoo4 choomv11"></div> -->
-		<!-- <div class="choochoo5 choomv5"></div> -->
 		<div class="choochoo4 choomv4"></div>
-		<div class="choochoo3 choomv10"></div>
-		<div class="choochoo4 choomv6"></div>
+		<div class="choochoo10 choomv10"></div>
+		<div class="choochoo6 choomv6"></div>
 
 
 		<div class="container1">

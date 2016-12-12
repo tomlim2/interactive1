@@ -33,7 +33,13 @@
 			background-position: center;
 			width: 1697px;
 			height: 100px;
-
+		}
+		.choochoo2{
+			background-image: url('pic/p10_2.png');
+			background-size: cover;
+			background-position: center;
+			width: 1697px;
+			height: 100px;
 		}
 		.choomv{
 			animation: chooprss 4s linear;
@@ -78,9 +84,10 @@
 
 		$(".mainpic2").click(function(){
 
-			$("#ctsound")[0].play();
-			$(".choochoo").toggleClass('choomv');
-			$(".choochoo").toggleClass('choomv2');
+			$('.choochoo').toggleClass('choomv');
+			$('.choochoo2').toggleClass('choomv2');
+
+			// $("#ctsound")[0].play();
 
 		});
 
@@ -102,7 +109,7 @@
 
 
 				<div class="choochoo choomv"></div>
-				<div class="choochoo choomv2"></div>
+				<div class="choochoo2 choomv2"></div>
 
 				<div class="name">
 					HIGHWAY

@@ -24,8 +24,28 @@
       background-position: center;
 			width: 65px;
 			height: 770px;
+			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo2{
+			background-image: url('pic/p26_2.png');
+			background-size: cover;
+      background-position: center;
+			width: 64px;
+			height: 728px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo3{
+			background-image: url('pic/p26_1.png');
+			background-size: cover;
+      background-position: center;
+			width: 65px;
+			height: 770px;
+			opacity: 0;
+			z-index: 1;
+		}
+		.choochoo4{
 			background-image: url('pic/p26_2.png');
 			background-size: cover;
       background-position: center;
@@ -91,7 +111,12 @@
 
 		$(".mainpic").click(function(){
 
-			$("#ctsound")[0].play();
+			$('.choochoo').toggleClass('choomv');
+			$('.choochoo2').toggleClass('choomv2');
+			$('.choochoo3').toggleClass('choomv3');
+			$('.choochoo4').toggleClass('choomv4');
+
+			// $("#ctsound")[0].play();
 
 		});
 
@@ -105,8 +130,8 @@
 
 		<div class="choochoo choomv"></div>
 		<div class="choochoo2 choomv2"></div>
-		<div class="choochoo choomv3"></div>
-		<div class="choochoo2 choomv4"></div>
+		<div class="choochoo3 choomv3"></div>
+		<div class="choochoo4 choomv4"></div>
 
 
 		<div class="container1">

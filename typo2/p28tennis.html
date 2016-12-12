@@ -64,7 +64,7 @@
 			animation: chooprss2 1.2s forwards;
 			opacity: 0;
 			position: absolute;
-			z-index: 13;
+			z-index: 1;
 			top: 8%;
 			left: 10%;
 			transform: rotate(-90deg);
@@ -73,7 +73,7 @@
 			animation: chooprss 1.2s forwards;
 			opacity: 0;
 			position: absolute;
-			z-index: 13;
+			z-index: 1;
 			top: 10%;
 			left: 6%;
 		}
@@ -82,7 +82,7 @@
 			animation-delay: 1.6s;
 			opacity: 0;
 			position: absolute;
-			z-index: 13;
+			z-index: 1;
 			top: 42%;
 			left: 62%;
 		}
@@ -91,7 +91,7 @@
 			animation-delay: 2.8s;
 			opacity: 0;
 			position: absolute;
-			z-index: 13;
+			z-index: 1;
 			top: 56%;
 			left: 2%;
 		}
@@ -100,7 +100,7 @@
 			animation-delay: 4.6s;
 			opacity: 0;
 			position: absolute;
-			z-index: 13;
+			z-index: 1;
 			top: 35%;
 			right: 7%;
 		}
@@ -111,7 +111,7 @@
 			position: absolute;
 			top: 25%;
 			left: 18%;
-			z-index: 13;
+			z-index: 1;
 		}
 
 		@keyframes chooprss{
@@ -164,7 +164,15 @@
 
 		$(".mainpic").click(function(){
 
-			$("#ctsound")[0].play();
+			element = document.getElementById("logo");
+
+			$('.choochoo').toggleClass('choomv');
+			$('.choochoo3').toggleClass('choomv3');
+			$('.choochoo4').toggleClass('choomv4');
+			$('.choochoo5').toggleClass('choomv5');
+			$('.choochoo6').toggleClass('choomv6');
+
+			// $("#ctsound")[0].play();
 
 		});
 

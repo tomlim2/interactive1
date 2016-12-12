@@ -92,6 +92,8 @@
 			width: 400px;
 			height: 340px;
 			position: absolute;
+			z-index: 10;
+			cursor: pointer;
 		}
 
 		.mainpicshadow{

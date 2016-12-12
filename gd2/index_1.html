@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+	<title>
+		Introduction
+	</title>
+	<style>
+
+	body {
+		margin: 0px;
+	}
+	.container0{
+		width: 320px;
+		height: 3803px;
+		background-image: url('pic/mobile.jpg');
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+		left: 50%;
+		margin-left: -160px;
+	}
+	#box1{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 200px;
+		left: 50%;
+		margin-left: -50px;
+	}
+	#box2{
+		width: 100px;
+		height: 30px;
+		position: absolute;
+		top: 336px;
+		left: 50%;
+		margin-left: -50px;
+	}
+	#box3{
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		top: 25px;
+		left: 227px;
+	}
+	.container2{
+		width: 320px;
+		height: 568px;
+		position: absolute;
+		top: 3195px;
+		left: 50%;
+		margin-left: -160px;
+	}
+	.container3{
+		background-image: url(pic/mobilemenu.jpg);
+		width: 320px;
+		height: 73px;
+		position: fixed;
+		top: 0px;
+		left: 50%;
+		margin-left: -160px;
+		display: none;
+	}
+
+	</style>
+	<script>
+	$(document).ready(function(){
+
+		$("#box2,#box3").click(function() {
+	  $('html, body').animate({
+	    scrollTop: $(".s1").offset().top
+	  }, 1000);
+
+	});
+
+
+		var vi= 568; //스크롤 위치값
+		$(window).scroll(function(){
+
+			var num=$(window).scrollTop();
+				if(num>vi){
+					$(".container3").fadeIn();
+				}else{
+					$(".container3").fadeOut();
+				}
+			});
+
+	});
+
+	</script>
+</head>
+
+<body>
+	<div class="container0">
+	</div>
+<a href="index.html"><div id="box1"></div></a>
+
+	<div id="box2"></div>
+	<div class="container2 s1"></div>
+
+	<div class="container3">
+		<div id="box3"></div>
+
+</body>
+</html>

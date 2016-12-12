@@ -25,6 +25,7 @@
 			width: 600px;
 			height: 194px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo2{
 			background-image: url('pic/caltrain_2.png');
@@ -33,6 +34,7 @@
 			width: 600px;
 			height: 194px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo3{
 			background-image: url('pic/caltrain_4.png');
@@ -41,18 +43,17 @@
 			width: 2555px;
 			height: 50px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choomv{
 			animation: chooprss 2s forwards linear;
 			animation-delay: 2s;
-			opacity: 0;
 			transform: rotate(-15deg);
 			position: absolute;
 		}
 		.choomv2{
 			animation: chooprss2 2s forwards linear;
 			animation-delay: 2.3s;
-			opacity: 0;
 			transform: rotate(10deg);
 			position: absolute;
 		}
@@ -61,7 +62,6 @@
 			position: absolute;
 			top: 320px;
 			left: 80%;
-			/*z-index: 20;*/
 		}
 		@keyframes chooprss{
 			0% {
@@ -143,6 +143,10 @@
 		<div class="choochoo choomv"></div>
 		<div class="choochoo2 choomv2"></div>
 		<div class="choochoo3 choomv3"></div>
+
+		<div class="choochoo"></div>
+		<div class="choochoo2"></div>
+		<div class="choochoo3"></div>
 
 		<div class="container1">
 			<div class="interior">

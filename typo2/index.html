@@ -153,7 +153,24 @@
 			}
 		}
 
-
+		.goback{
+			display: none;
+		}
+		@media screen and (min-width: 900px) {
+		.goback{
+			display: block;
+			text-align: center;
+			line-height: 700%;
+			width: 100px;
+			height: 100px;
+			position: fixed;
+			left: 50%;
+			margin-left: -50px;
+			bottom: 0%;
+			z-index: 1000;
+			opacity: 0.2;
+		}
+	}
 
 	</style>
 	<script>
@@ -215,6 +232,9 @@
 		<source src="audio/caltrain1.wav" type="audio/wav">
 	</audio>
 
+	<div class="goback">
+		<a href="../index.html">HOME</a>
+	</div>
 
 </body>
 </html>

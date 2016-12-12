@@ -27,6 +27,7 @@
 			width: 123px;
 			height: 50px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo2{
 			background-image: url('pic/p32_2.png');
@@ -35,6 +36,7 @@
 			width: 134px;
 			height: 45px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo3{
 			background-image: url('pic/p32_3.png');
@@ -43,6 +45,7 @@
 			width: 178px;
 			height: 76px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo4{
 			background-image: url('pic/p32_4.png');
@@ -51,6 +54,7 @@
 			width: 185px;
 			height: 91px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo5{
 			background-image: url('pic/p32_5.png');
@@ -59,6 +63,7 @@
 			width: 94px;
 			height: 41px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo6{
 			background-image: url('pic/p32_6.png');
@@ -67,6 +72,7 @@
 			width: 96px;
 			height: 47px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo7{
 			background-image: url('pic/p32_7.png');
@@ -75,6 +81,7 @@
 			width: 315px;
 			height: 43px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo8{
 			background-image: url('pic/p32_8.png');
@@ -83,6 +90,7 @@
 			width: 293px;
 			height: 43px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo9{
 			background-image: url('pic/p32_9.png');
@@ -91,6 +99,7 @@
 			width: 238px;
 			height: 45px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo10{
 			background-image: url('pic/p32_10.png');
@@ -99,6 +108,7 @@
 			width: 328px;
 			height: 94px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo11{
 			background-image: url('pic/p32_7.png');
@@ -107,6 +117,7 @@
 			width: 315px;
 			height: 43px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo12{
 			background-image: url('pic/p32_8.png');
@@ -115,6 +126,7 @@
 			width: 293px;
 			height: 43px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo13{
 			background-image: url('pic/p32_9.png');
@@ -123,6 +135,7 @@
 			width: 238px;
 			height: 45px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo14{
 			background-image: url('pic/p32_7.png');
@@ -131,6 +144,7 @@
 			width: 315px;
 			height: 43px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo15{
 			background-image: url('pic/p32_8.png');
@@ -139,6 +153,7 @@
 			width: 293px;
 			height: 43px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo16{
 			background-image: url('pic/p32_9.png');
@@ -147,44 +162,45 @@
 			width: 238px;
 			height: 45px;
 			opacity: 0;
+			z-index: 1;
 		}
 
 		.choomv{
-			animation: chooprss 1.8s forwards;
-			animation-delay: 0.6s;
+			animation: chooprss 1.8s forwards linear;
+			animation-delay: 0.3s;
 			position: absolute;
 			top: 75%;
-			left: 1%;
+			left: 3%;
 		}
 		.choomv2{
-			animation: chooprss 1.4s forwards;
+			animation: chooprss 1.4s forwards linear;
 			position: absolute;
 			top: 81%;
 			left: 20%;
 		}
 		.choomv3{
-			animation: chooprss 1.8s forwards;
+			animation: chooprss 1.6s forwards linear;
 			animation-delay: 1.2s;
 			position: absolute;
-			top: 63%;
+			top: 58%;
 			left: 40%;
 		}
 		.choomv4{
-			animation: chooprss 1.6s forwards;
-			animation-delay: 2s;
+			animation: chooprss 1.6s forwards linear;
+			animation-delay: 1.8s;
 			position: absolute;
 			top: 50%;
 			left: 50%;
 		}
 		.choomv5{
-			animation: chooprss 1.2s forwards;
+			animation: chooprss 1.2s forwards linear;
 			animation-delay: 3.3s;
 			position: absolute;
 			top: 27%;
 			left: 5%;
 		}
 		.choomv6{
-			animation: chooprss 1.2s forwards;
+			animation: chooprss 1.2s forwards linear;
 			animation-delay: 3.2s;
 			position: absolute;
 			top: 32%;
@@ -214,8 +230,9 @@
 			animation: chooprss2 2s forwards;
 			animation-delay: 3.7s;
 			position: absolute;
-			top: 11%;
-			left: 7%;
+			top: 12%;
+			left: 50%;
+			margin-left: -164px;
 		}
 		.choomv11{
 			animation: chooprss4 1.3s forwards linear;
@@ -281,7 +298,7 @@
 		@keyframes chooprss2{
 			0%{
 			opacity: 1;
-			z-index: 13;
+			z-index: 16;
 			transform: rotate(0deg) translateY(0px);
 		}
 		10%{
@@ -303,7 +320,7 @@
 		99% {
 			transform: translateY(-20px);
 			opacity: 0;
-			z-index: 13;
+			z-index: 16;
 		}
 		100% {
 			transform: translateY(-20px);
@@ -400,6 +417,22 @@
 		<div class="choochoo15 choomv15"></div>
 		<div class="choochoo16 choomv16"></div>
 
+		<div class="choochoo"></div>
+		<div class="choochoo2"></div>
+		<div class="choochoo3"></div>
+		<div class="choochoo4"></div>
+		<div class="choochoo5"></div>
+		<div class="choochoo6"></div>
+		<div class="choochoo7"></div>
+		<div class="choochoo8"></div>
+		<div class="choochoo9"></div>
+		<div class="choochoo10"></div>
+		<div class="choochoo11"></div>
+		<div class="choochoo12"></div>
+		<div class="choochoo13"></div>
+		<div class="choochoo14"></div>
+		<div class="choochoo15"></div>
+		<div class="choochoo16"></div>
 
 		<div class="container1">
 

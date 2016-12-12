@@ -1,3 +1,17 @@
+.goback{
+  text-align: center;
+  line-height: 700%;
+  width: 100px;
+  height: 100px;
+  background-color: #7acdc8;
+  border-radius: 10%;
+  position: fixed;
+  left: 2%;
+  top: -3%;
+  z-index: 1000;
+}
+
+
 .introcloud{
 }
 .ic1{

@@ -25,6 +25,7 @@
 			width: 2573px;
 			height: 90px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choochoo2{
 			background-image: url('pic/p18_1.png');
@@ -33,14 +34,19 @@
 			width: 2573px;
 			height: 90px;
 			opacity: 0;
+			z-index: 1;
 		}
 		.choomv{
 			animation: chooprss 6s forwards linear;
-			opacity: 0;
 			position: absolute;
 			top: 300px;
 			left: 20%;
-			z-index: 13;
+		}
+		.choomv2{
+			animation: chooprss2 6s forwards linear;
+			opacity: 0.6;
+			position: absolute;
+			top: 299px;
 		}
 		@keyframes chooprss{
 			0% {
@@ -58,13 +64,6 @@
 				opacity: 0;
 				z-index: 1;
 			}
-		}
-		.choomv2{
-			animation: chooprss2 6s forwards linear;
-			opacity: 0.6;
-			position: absolute;
-			top: 299px;
-			z-index: 13;
 		}
 		@keyframes chooprss2{
 			0% {
@@ -109,6 +108,9 @@
 
 		<div class="choochoo choomv"></div>
 		<div class="choochoo2 choomv2"></div>
+
+		<div class="choochoo"></div>
+		<div class="choochoo2"></div>
 
 		<div class="container1">
 			<div class="interior">

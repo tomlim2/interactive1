@@ -225,6 +225,165 @@
       bottom: 0%;
     }
 
+
+    #wholetree4{
+      position: absolute;
+      bottom: 300px;
+      left: 50%;
+      z-index: 21;
+    }
+
+    .wholetreetruck{
+      background-color: #fae3c3;
+      width: 30px;
+      height: 280px;
+      position: absolute;
+      left: 50%;
+      margin-left: -15px;
+    }
+    .wholetreeleavse1{
+      width: 200px;
+      height: 200px;
+      border-radius: 5%;
+    }
+    .wholetreeleavse2{
+      width: 240px;
+      height: 240px;
+      border-radius: 5%;
+    }
+    .wholetreeps1{
+      position: absolute;
+      top: -120px;
+      left: -230px;
+    }
+    .wholetreeps2{
+      position: absolute;
+      top: -50px;
+      left: 30px;
+    }
+
+    #bigforest0{
+      position: absolute;
+      bottom: 70px;
+    }
+    #bigforest1{
+      position: absolute;
+      bottom: 70px;
+      left: 170px;
+    }
+    #bigforest2{
+      position: absolute;
+      bottom: 70px;
+      left: 340px;
+    }
+    #bigforest3{
+      position: absolute;
+      bottom: 70px;
+      left: 510px;
+    }
+    #bigforest4{
+      position: absolute;
+      bottom: 70px;
+      left: 680px;
+    }
+    #bigforest5{
+      position: absolute;
+      bottom: 70px;
+      left: 850px;
+    }
+    #bigforest6{
+      position: absolute;
+      bottom: 70px;
+      left: 1020px;
+    }
+    #bigforest7{
+      position: absolute;
+      bottom: 70px;
+      left: 1190px;
+    }
+
+    .bgftree1{
+      width: 30px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .bgftps1{
+      position: absolute;
+      left: -10px;
+      z-index: 2;
+    }
+    .bgftps2{
+      position: absolute;
+      left: 15px;
+      z-index: 1;
+    }
+    .bgftps3{
+      position: absolute;
+      left: 40px;
+      z-index: 2;
+    }
+    .bgftps4{
+      position: absolute;
+      left: 65px;
+      z-index: 1;
+    }
+    .bgftps5{
+      position: absolute;
+      left: 90px;
+      z-index: 1;
+    }
+    .bgftps6{
+      position: absolute;
+      left: 115px;
+      z-index: 2;
+    }
+
+    #bigmiddletree0{
+      position: absolute;
+      bottom: 190px;
+      left: 40px;
+    }
+    .bgmidtree1{
+      width: 100px;
+      height: 150px;
+      background-color: #8ac745;
+      border-radius: 10%;
+      z-index: 12;
+    }
+    .bgmidtreet1{
+      width: 15px;
+      height: 30px;
+      background-color: #d1af94;
+      z-index: 12;
+      position: absolute;
+      top: 150px;
+      left: 40px;
+    }
+    .bgmddtps1{
+      position: absolute;
+      top: -10px;
+    }
+    .bgmddtps2{
+      position: absolute;
+      top: -10px;
+      left: 320px;
+    }
+    .bgmddtps3{
+      position: absolute;
+      top: -10px;
+      left: 640px;
+    }
+    .bgmddtps4{
+      position: absolute;
+      top: -10px;
+      left: 960px;
+    }
+    .bgmddtps5{
+      position: absolute;
+      top: -10px;
+      left: 1280px;
+    }
+
     .mountain1{
       position: absolute;
       left: 70%;

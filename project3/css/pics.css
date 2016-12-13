@@ -12,7 +12,19 @@
   opacity: 1;
 }
 
-#thumb1206{
+#thumb1208{
+  border-radius: 2%;
+  width: 280px;
+  height: 280px;
+  background-image: url('../pic/pic1208_1.jpg');
+  background-size: cover;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/*#thumb1206{
   border-radius: 2%;
   width: 280px;
   height: 280px;
@@ -22,6 +34,24 @@
   position: absolute;
   top: 20px;
   left: 20px;
+}*/
+#pic120601{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1206_1.jpg');
+}
+#pic120602{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1206_2.jpg');
 }
 
 #thumb1205{
@@ -35,6 +65,34 @@
   top: 20px;
   left: 20px;
 }
+#pic120501{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1205_1.jpg');
+}
+#pic120502{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1205_2.jpg');
+}
+#pic120503{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1205_3.jpg');
+}
+
 
 #thumb1203{
   border-radius: 2%;
@@ -60,6 +118,26 @@
   top: 20px;
   left: 20px;
 }
+#pic112901{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1129_1.jpg');
+}
+#pic112902{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1129_2.jpg');
+}
+
+
 #thumb1130{
   border-radius: 2%;
   width: 280px;
@@ -73,17 +151,32 @@
   left: 20px;
 }
 
-#thumb1128{
-  border-radius: 2%;
-  width: 280px;
-  height: 280px;
-  background-image: url('../pic/pic1128_2.jpg');
+#pic112801{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
   background-size: cover;
-  background-position: center;
+  background-position:center;
   cursor: pointer;
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  background-image: url('../pic/pic1128_1.jpg');
+}
+#pic112802{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1128_2.jpg');
+}
+#pic112803{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1128_3.jpg');
 }
 
 #thumb1126{
@@ -102,20 +195,23 @@
   opacity: 1;
 }
 
-#thumb1124{
-  border-radius: 2%;
-  width: 280px;
-  height: 280px;
-  background-image: url('../pic/thumb1124.jpg');
+#pic112401{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
   cursor: pointer;
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  background-image: url('../pic/pic1124_4.jpg');
 }
-#thumb1124:hover{
-  /*background-image: url('mario2.jpg');*/
-  background-position: bottom;
-  opacity: 1;
+#pic112402{
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position:center;
+  cursor: pointer;
+  background-image: url('../pic/pic1124_1.jpg');
 }
 
 #pic112201{
@@ -548,8 +644,8 @@
   margin-left: -50px;
   width: 100px;
   height: 150px;
-  border-top: 2px solid #76cc6a;
-  border-bottom: 2px solid #76cc6a;
+  border-top: 2px solid #0c7d85;
+  border-bottom: 2px solid #0c7d85;
 }
 .otdc1{
   width: 100px;
@@ -565,7 +661,7 @@
 .otdeco1{
   position: absolute;
   top: -35px;
-  background-color: #76cc6a;
+  background-color: #0c7d85;
   width: 10px;
   height: 30px;
   border-radius: 50%;

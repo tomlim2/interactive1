@@ -15,7 +15,7 @@ a:hover{
   height: 72px;
   top: 0%;
   position: fixed;
-  z-index: 20;
+  z-index: 25;
 }
 
 .topbutton{
@@ -36,7 +36,6 @@ a:hover{
   left: 30%;
   z-index: 18;
   /*background-color: #0b873f;*/
-  cursor: pointer;
 }
 .navbutton2{
   /*color: #251c17;*/
@@ -49,14 +48,13 @@ a:hover{
   left: 70%;
   z-index: 18;
   /*background-color: #0b873f;*/
-  cursor: pointer;
 }
 
 .maintptree1 {
     width: 18px;
     height: 30px;
     border-radius: 10%;
-    background-color: #88b14b;
+    background-color: #75c167;
     position: absolute;
     top: 45px;
     left: 50%;
@@ -65,7 +63,7 @@ a:hover{
 .maintpttrunk1{
   width: 4px;
   height: 5px;
-  background-color: #d1af94;
+  background-color: #db9c66;
   position: absolute;
   top: 30px;
   left: 50%;
@@ -79,7 +77,7 @@ a:hover{
   background-color: white;
 }
 .novnvlin{
-  background-color: rgba(196, 223, 155, 1);
+  background-color: #d7e7a0;
 }
 
 .decojt1 {
@@ -111,7 +109,7 @@ a:hover{
     z-index: 9;
 }
 .topnavline{
-  height: 2px;
+  height: 3px;
   width: 100%;
   position: fixed;
   top: 70px;

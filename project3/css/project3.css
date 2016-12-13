@@ -42,11 +42,11 @@ body{
 .date{
   text-align: center;
   font-size: 16pt;
-  color: #564221;
+  color: rgba(0, 0, 0, 0.5);
   line-height: 800%;
   position: absolute;
   top: 95px;
-  left: 5px;
+  left: 4px;
 }
 .dateleft{
   left: 10px;
@@ -87,7 +87,7 @@ body{
 }
 
 .timetable1{
-  background-color: #fae3c3;
+  background-color: #f4d1a9;
   width: 30px;
   height: 5080px;
   position: absolute;
@@ -97,7 +97,7 @@ body{
 }
 
 .timetable2{
-  background-color: #b4712d;
+  background-color: #a96f61;
   width: 30px;
   height: 1500px;
   position: absolute;
@@ -278,7 +278,7 @@ body{
   height: 0;
   border-style: solid;
   border-width: 0px 110px 30px 0;
-  border-color: transparent #fae3c3 transparent transparent;
+  border-color: transparent #f4d1a9 transparent transparent;
   position: absolute;
   top: 245px;
   left: 275px;
@@ -289,7 +289,7 @@ body{
   height: 0;
   border-style: solid;
   border-width: 0px 0 30px 100px;
-  border-color: transparent transparent transparent #fae3c3;
+  border-color: transparent transparent transparent #f4d1a9;
   position: absolute;
   top: 245px;
   right: 265px;
@@ -299,7 +299,7 @@ body{
   height: 0;
   border-style: solid;
   border-width: 0px 110px 30px 0;
-  border-color: transparent #b4712d transparent transparent;
+  border-color: transparent #a96f61 transparent transparent;
   position: absolute;
   top: 245px;
   left: 275px;
@@ -310,7 +310,7 @@ body{
   height: 0;
   border-style: solid;
   border-width: 0px 0 30px 100px;
-  border-color: transparent transparent transparent #b4712d;
+  border-color: transparent transparent transparent #a96f61;
   position: absolute;
   top: 245px;
   right: 265px;
@@ -356,36 +356,7 @@ body{
   background-color: #73ce65;
 }
 
-.des1{
-  background-color: #c5322b;
-}
-.des2{
-  background-color: #c85835;
-}
-.des3{
-  background-color: #cc7e3e;
-}
-.des4{
-  background-color: #cfa347;
-}
-.des5{
-  background-color: #d2c951;
-}
-.des6{
-  background-color: #acb74c;
-}
-.des7{
-  background-color: #85a547;
-}
-.des8{
-  background-color: #5f9442;
-}
-.des9{
-  background-color: #39823d;
-}
-.des0{
-  background-color: #39823d;
-}
+
 
 /*leaves*/
 /*right*/

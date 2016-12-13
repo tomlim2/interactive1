@@ -4,12 +4,12 @@
   .topleaves{
     position: absolute;
     background-color: #73ce65;
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     border-radius: 10%;
     z-index: 2;
-    top: -70px;
-    left: 40px;
+    top: -127px;
+    left: 50px;
     transform: rotate(-22deg);
   }
 
@@ -35,20 +35,22 @@
     border-color: #bee4e7 transparent transparent transparent;
     z-index: 4;
   }
-  .topbrunch2{
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 12px 20px 10px 60px;
-    border-color: transparent transparent transparent #fae3c3;
-    position: absolute;
-    top: -18px;
-    right: -68px;
-    transform: rotate(-32deg);
-    z-index: 2;
+
+
+  .topbrunch2 {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 0px 30px 120px;
+      border-color: transparent transparent transparent #f4d1a9;
+      position: absolute;
+      top: -35px;
+      right: -93px;
+      transform: rotate(-32deg);
+      z-index: 2;
   }
 
-  .topbrunch3{
+  /*.topbrunch3{
     position: absolute;
     width: 0;
     height: 0;
@@ -56,13 +58,13 @@
     border-width: 11px 30px 0 0;
     border-color: #0f555f transparent transparent transparent;
     z-index: 4;
-  }
+  }*/
   .topbrunch4{
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 12px 20px 10px 60px;
-    border-color: transparent transparent transparent #b4712d;
+    border-width: 20px 0px 10px 90px;
+    border-color: transparent transparent transparent #a96f61;
     position: absolute;
     top: -18px;
     right: -68px;
@@ -211,7 +213,7 @@
     .ground0{
       width: 100%;
       height: 20px;
-      background-color: #c4df9b;
+      background-color: #d7e7a0;
       position: absolute;
     }
     .gnov{
@@ -234,7 +236,7 @@
     }
 
     .wholetreetruck{
-      background-color: #fae3c3;
+      background-color: #f4d1a9;
       width: 30px;
       height: 280px;
       position: absolute;
@@ -253,12 +255,12 @@
     }
     .wholetreeps1{
       position: absolute;
-      top: -120px;
-      left: -230px;
+      top: -80px;
+      left: -240px;
     }
     .wholetreeps2{
       position: absolute;
-      top: -50px;
+      top: -180px;
       left: 30px;
     }
 
@@ -346,14 +348,14 @@
     .bgmidtree1{
       width: 100px;
       height: 150px;
-      background-color: #8ac745;
+      background-color: #75c167;
       border-radius: 10%;
       z-index: 12;
     }
     .bgmidtreet1{
       width: 15px;
       height: 30px;
-      background-color: #d1af94;
+      background-color: #db9c66;
       z-index: 12;
       position: absolute;
       top: 150px;

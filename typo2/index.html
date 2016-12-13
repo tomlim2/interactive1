@@ -158,6 +158,8 @@
 	$(document).ready(function(){
 
 		$(".mainpic").click(function(){
+			$('#ctsound')[0].pause();
+	 		$('#ctsound')[0].currentTime = 0;
 			$("#ctsound")[0].play();
 		});
 

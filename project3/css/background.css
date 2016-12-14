@@ -1,5 +1,77 @@
 /* triangle generator: http://apps.eky.hk/css-triangle-generator/ */
 /*decoration*/
+  /*birds*/
+  .treebrids3{
+    position: absolute;
+    left: 350px;
+  }
+  .bhalf3{
+    background-color: #7accc0;
+    width: 20px;
+    height: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+  }
+  .bbody3{
+    background-color: #7accc0;
+    width: 17px;
+    height: 11px;
+    position: absolute;
+    top: 10px;
+    left: 3px;
+  }
+  .btail3{
+    top: 21px;
+    left: 3px;
+    transform: rotate(180deg);
+  }
+  .beye3{
+    background-color: #037987;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    border-radius: 50%;
+  }
+  .treebrids4{
+    position: absolute;
+    left: 450px;
+  }
+  .bhalf4{
+    background-color: #7accc0;
+    width: 20px;
+    height: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+  }
+  .bbody4{
+    background-color: #7accc0;
+    width: 17px;
+    height: 11px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+  }
+  .btail4{
+    top: 21px;
+    left: -3px;
+    transform: rotate(180deg);
+  }
+  .beye4{
+    background-color: #037987;
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 4px;
+    left: 9px;
+    border-radius: 50%;
+  }
+  /*birds end*/
+
+
   /*leaves*/
   .topleaves{
     position: absolute;

@@ -240,6 +240,34 @@
 	$(document).ready(function(){
 
 
+				var myAudio = ['a01', 'a02', 'a03'];
+
+				$(".mainpic").click(function(){
+					var rand = myAudio[Math.floor(Math.random() * myAudio.length)];
+					if(rand == 'a01'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound1')[0].currentTime = 0;
+						$("#ctsound1")[0].play();
+					}
+					if(rand == 'a02'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound2')[0].currentTime = 0;
+						$("#ctsound2")[0].play();
+					}
+					if(rand == 'a03'){
+						$('#ctsound1')[0].pause();
+						$('#ctsound2')[0].pause();
+						$('#ctsound3')[0].pause();
+				 		$('#ctsound3')[0].currentTime = 0;
+						$("#ctsound3")[0].play();
+					}
+					// console.log(rand);
+				});
+
 		$(".mainpic").click(function(){
 
 			// $("#ctsound")[0].play();
@@ -302,10 +330,15 @@
 
 	</div>
 
-
-
-	<audio id="ctsound">
-		<source src="audio/caltrain1.wav" type="audio/wav">
+	<audio id="ctsound1">
+		<source src="audio/p12bog01.wav" type="audio/wav">
 	</audio>
+	<audio id="ctsound2">
+		<source src="audio/p12bog02.wav" type="audio/wav">
+	</audio>
+	<audio id="ctsound3">
+		<source src="audio/p12bog03.wav" type="audio/wav">
+	</audio>
+
 </body>
 </html>

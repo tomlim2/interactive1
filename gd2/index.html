@@ -11,8 +11,6 @@
 		Introduction
 	</title>
 	<style>
-
-
 			body {
 				margin: 0px;
 			}
@@ -33,6 +31,7 @@
 				top: 330px;
 				left: 50%;
 				margin-left: -50px;
+				cursor: pointer;
 			}
 			#box2{
 				width: 100px;
@@ -41,6 +40,7 @@
 				top: 614px;
 				left: 50%;
 				margin-left: -50px;
+				cursor: pointer;
 			}
 			#box3{
 				width: 100px;
@@ -48,6 +48,15 @@
 				position: absolute;
 				top: 38px;
 				left: 1020px;
+				cursor: pointer;
+			}
+			#box4{
+				width: 208px;
+		    height: 58px;
+		    position: absolute;
+		    top: 25px;
+		    left: 157px;
+				cursor: pointer;
 			}
 			.container2{
 				width: 320px;
@@ -64,6 +73,13 @@
 				position: fixed;
 				top: 0px;
 				display: none;
+			}
+			.container4{
+				width: 320px;
+				height: 568px;
+				position: absolute;
+				top: 0px;
+				z-index: 0;
 			}
 
 			/*@media screen and (min-height: 800px) {
@@ -84,7 +100,14 @@
 
 	});
 
-	var vi= 800; //스크롤 위치값
+	$("#box4").click(function() {
+	$('html, body').animate({
+		scrollTop: $(".s2").offset().top
+	}, 1000);
+
+});
+
+	var vi= 400; //스크롤 위치값
 	$(window).scroll(function(){
 
 		var num=$(window).scrollTop();
@@ -107,9 +130,11 @@
 
 <div id="box2"></div>
 <div class="container2 s1"></div>
+<div class="container4 s2"></div>
 
 <div class="container3">
 	<div id="box3"></div>
+	<div id="box4"></div>
 </div>
 
 

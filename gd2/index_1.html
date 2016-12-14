@@ -8,7 +8,7 @@
 	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
 	<title>
-		Introduction
+		Fondue Cowboy Mobile
 	</title>
 	<style>
 
@@ -32,6 +32,8 @@
 		top: 200px;
 		left: 50%;
 		margin-left: -50px;
+		z-index: 10;
+		cursor: pointer;
 	}
 	#box2{
 		width: 100px;
@@ -40,6 +42,8 @@
 		top: 336px;
 		left: 50%;
 		margin-left: -50px;
+		z-index: 10;
+		cursor: pointer;
 	}
 	#box3{
 		width: 25px;
@@ -47,6 +51,15 @@
 		position: absolute;
 		top: 25px;
 		left: 227px;
+		cursor: pointer;
+	}
+	#box4{
+		width: 125px;
+		height: 25px;
+		position: absolute;
+		top: 25px;
+		left: 27px;
+		cursor: pointer;
 	}
 	.container2{
 		width: 320px;
@@ -66,6 +79,12 @@
 		margin-left: -160px;
 		display: none;
 	}
+	.container4{
+		width: 320px;
+		height: 568px;
+		position: absolute;
+		top: 0px;
+	}
 
 	</style>
 	<script>
@@ -78,8 +97,15 @@
 
 	});
 
+		$("#box4").click(function() {
+		$('html, body').animate({
+			scrollTop: $(".s2").offset().top
+		}, 1000);
 
-		var vi= 568; //스크롤 위치값
+	});
+
+
+		var vi= 500; //스크롤 위치값
 		$(window).scroll(function(){
 
 			var num=$(window).scrollTop();
@@ -102,9 +128,11 @@
 
 	<div id="box2"></div>
 	<div class="container2 s1"></div>
+	<div class="container4 s2"></div>
 
 	<div class="container3">
 		<div id="box3"></div>
+		<div id="box4"></div>
 
 </body>
 </html>

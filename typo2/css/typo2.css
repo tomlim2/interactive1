@@ -39,14 +39,12 @@
 		}
 
 		.intronavleft{
-
 			border-right: 2px black solid;
 			width: 159px;
 			position: relative;
 			float: left;
 		}
 		.intronavright{
-
 			width: 150px;
 			position: relative;
 			float: left;
@@ -88,12 +86,21 @@
 	    position: relative;
 		}
 
+		.mainpic0{
+			width: 370px;
+			height: 340px;
+			position: absolute;
+			z-index: 10;
+			cursor: pointer;
+		}
+
 		.mainpic{
 			width: 370px;
 			height: 340px;
 			position: absolute;
 			z-index: 10;
 			cursor: pointer;
+			border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 			border-bottom-right-radius: 1%;
 			border-bottom-left-radius: 1%;
 		}
@@ -109,8 +116,8 @@
 			height: 340px;
 			position: absolute;
 			background-color: rgba(0, 0, 0, 1);
-			opacity: 0.16;
-			top: 4px;
+			opacity: 0.3;
+			top: 5px;
 			border-bottom-right-radius: 1%;
 			border-bottom-left-radius: 1%;
 		}
@@ -135,7 +142,7 @@
 		.clickbox{
 			text-align: center;
 			text-transform: capitalize;
-			font-size: 16px;
+			font-size: 14px;
 			font-weight: 700;
 			line-height: 210%;
 			color: black;
@@ -143,8 +150,9 @@
 			width: 160px;
 			height: 30px;
 			border-radius: 1%;
-			border: 2px black solid;
-			background-color: #f6c755	;
+			border: 2px black double;
+			border-style: outset;
+			background-color: #f6c755;
 		}
 		.cbmv{
 			animation: cbprss 6s forwards linear;
@@ -157,7 +165,7 @@
 		}
 		@keyframes cbprss {
 			0%{
-				z-index: 12;
+				z-index: 20;
 				opacity: 1;
 			}
 			8%{
@@ -174,7 +182,7 @@
 			}
 			99%{
 				opacity: 1;
-				z-index: 12;
+				z-index: 20;
 			}
 			100%{
 				opacity: 0;

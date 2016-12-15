@@ -195,6 +195,23 @@
   opacity: 1;
 }
 
+#thumb1124{
+  border-radius: 2%;
+  width: 200px;
+  height: 200px;
+  background-image: url('../pic/thumb1124.jpg');
+  background-size: cover;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#thumb1124:hover{
+  /*background-image: url('mario2.jpg');*/
+  background-position: bottom;
+  opacity: 1;
+}
+
 #pic112401{
   border-radius: 5%;
   width: 200px;

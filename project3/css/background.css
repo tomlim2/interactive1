@@ -239,34 +239,99 @@
   .tcps41{
     top: 40%;
   }
+
+  .treecloudmv5{
+    animation: treecloudprss3 30s infinite linear;
+    position: absolute;
+    top: 1800px;
+    left: 0px;
+  }
+
+  .treecloudmv10{
+    animation: treecloudprss3 30s infinite linear;
+    position: absolute;
+    top: 2200px;
+    left: 0px;
+  }
+
+  .treecloudmv6{
+    animation: treecloudprss3 30s infinite linear;
+    position: absolute;
+    top: 2600px;
+    left: 0px;
+  }
+  .treecloudmv11{
+    animation: treecloudprss3 70s infinite linear;
+    position: absolute;
+    top: 3000px;
+    left: 0px;
+  }
+  .treecloudmv7{
+    animation: treecloudprss2 60s infinite linear;
+    position: absolute;
+    top: 3400px;
+    left: 0px;
+  }
+  .treecloudmv12{
+    animation: treecloudprss 40s infinite linear;
+    position: absolute;
+    top: 3800px;
+    left: 0px;
+  }
+  .treecloudmv8{
+    animation: treecloudprss 30s infinite linear;
+    position: absolute;
+    top: 4200px;
+    left: 0px;
+  }
+  .treecloudmv13{
+    animation: treecloudprss 80s infinite linear;
+    position: absolute;
+    top: 4600px;
+    left: 0px;
+  }
+  .treecloudmv9{
+    animation: treecloudprss3 40s infinite linear;
+    position: absolute;
+    top: 5000px;
+    left: 0px;
+  }
+
+
   @keyframes treecloudprss {
     from{
+      z-index: 1;
       opacity: 0.9;
       left: -600px;
     }
     to{
+      z-index: 1;
       opacity: 0.9;
-      left: 1800px;
+      left: 100%;
     }
   }
   @keyframes treecloudprss2 {
     from{
+      z-index: 1;
       opacity: 0.7;
       left: -600px;
     }
     to{
+      z-index: 1;
       opacity: 0.7;
-      left: 1800px;
+      left: 100%;
     }
   }
   @keyframes treecloudprss3 {
     from{
+      z-index: 1;
       opacity: 0.6;
       left: -600px;
     }
     to{
+      z-index: 1;
       opacity: 0.6;
-      left: 1800px;
+      left: 100%;
     }
   }
 
@@ -287,6 +352,7 @@
       height: 20px;
       background-color: #d7e7a0;
       position: absolute;
+      z-index: 1;
     }
     .gnov{
       top: 5310px;
@@ -466,6 +532,7 @@
       border-style: solid;
       border-width: 0 300px 400px 300px;
       border-color: transparent transparent #a3d49c transparent;
+      z-index: 1;
     }
     .m1dec{
       top: 1330px;
@@ -486,6 +553,7 @@
       border-style: solid;
       border-width: 0 150px 200px 150px;
       border-color: transparent transparent #7acdc8 transparent;
+      z-index: 1;
     }
     .m2dec{
       top: 1530px;
